@@ -33,15 +33,15 @@ for index in range(len(rawTables)):
         end = start + 31
     
     table = rawTables[start:end]
+    table = list(filter(None, table))
     for i, element in enumerate(table):
         if i == 0:
             match = re.search(r'\d{2}.\d{2}.\d{4}', element)
+            
             table.remove(element)
+
             table.insert(0, match.group(0))
             tables.append(table)
-        if i > 1:
-            table.remove(element)
     break
-
 for t in tables:
     print(t)

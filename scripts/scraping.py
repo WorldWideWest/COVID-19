@@ -1,7 +1,8 @@
-from bs4 import BeautifulSoup 
 import requests
-from datetime import datetime
 import re
+import sqlite3
+from bs4 import BeautifulSoup 
+from datetime import datetime
 
 url = "http://mcp.gov.ba/Publication/Read/epidemioloska-slika-covid-19#"
 
@@ -31,6 +32,9 @@ for element in rawTables:
     else: 
         elements.append(element)
 
+rawTables.clear()
+elements.clear()
+
 tables = []
 
 for table in formated:
@@ -45,5 +49,39 @@ for table in formated:
             tables.append(table)
         else:
             pass
-for t in tables:
-   print(t)
+
+formated.clear()
+
+#for t in tables:
+#   print(t)
+
+#### Parssing the data for BiH ####
+
+
+#startIndex, endIndex = 0, 0
+def getData(start, end, tables):
+    formated = []
+    for table in tables:
+        startIndex, endIndex = 0, 0
+        entity = []
+
+        for index, element in enumerate(table):
+       
+            if index == 0:
+                entity.append(element)
+            elif element == f"{start}":
+                startIndex = index + 1
+            elif element == f"{end}":
+                endIndex = index
+
+                for item in table[startIndex : endIndex]:
+                    entity.append(item)
+
+                formated.append(entity)
+    return formated
+
+myData = getData("BiH", "RS", tables)
+
+for i in myData:
+    print(i)
+

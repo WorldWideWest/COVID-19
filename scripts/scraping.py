@@ -18,30 +18,32 @@ for i in soup.find_all("table"):
         for ind in data:
             rawTables.append(ind.text.strip())
 
+elements, formated = [], []
 
-## Table dimensions 0:31
-start, end = 0, 0
+for element in rawTables:
+    pattern = re.compile(r'\d{2}.\d{2}.\d{4}')
+    if pattern.match(element):
+        if len(elements) > 0:
+            elements = list(filter(None, elements))
+            formated.append(elements)
+            elements.clear()
+        elements.append(element)
+    else: 
+        elements.append(element)
+
 tables = []
 
-for index in range(len(rawTables)):
-    table = []
-    if index == 0:
-        start = index
-        end = index + 31
-    else:
-        start = end
-        end = start + 31
-    
-    table = rawTables[start:end]
-    table = list(filter(None, table))
-    for i, element in enumerate(table):
-        if i == 0:
-            match = re.search(r'\d{2}.\d{2}.\d{4}', element)
-            
+for table in formated:
+    for index, element in enumerate(table):
+        pattern = re.compile(r'\d{2}.\d{2}.\d{4}')
+        match = pattern.match(element)
+        if match:
             table.remove(element)
-
             table.insert(0, match.group(0))
+        elif len(table) == index + 1:
+            table = list(filter(None, table))
             tables.append(table)
-    break
+        else:
+            pass
 for t in tables:
-    print(t)
+   print(t)

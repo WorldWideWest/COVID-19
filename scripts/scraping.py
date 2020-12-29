@@ -52,10 +52,8 @@ for table in formated:
 
 formated.clear()
 
-#for t in tables:
-#   print(t)
 
-#### Parssing the data for BiH ####
+#### Parssing the function  ####
 
 
 #startIndex, endIndex = 0, 0
@@ -73,15 +71,50 @@ def getData(start, end, tables):
                 startIndex = index + 1
             elif element == f"{end}":
                 endIndex = index
-
+            
                 for item in table[startIndex : endIndex]:
+                    item = item.replace("*", "")
+                    item = item.replace(" ", "")
                     entity.append(item)
 
                 formated.append(entity)
     return formated
 
-myData = getData("BiH", "RS", tables)
+def getDataBD(tables):
+    formated = []
+    for table in tables:
+        startIndex, endIndex = 0, 0
+        entity = []
+    
+        for index, element in enumerate(table):
+            if index == 0:
+                entity.append(element)
+            elif element == "BD":
+                startIndex = index + 1 
+                endIndex = len(table) - 1
+            elif len(table) == index + 1:
+                for item in table[startIndex : endIndex]:
+                    item = item.replace(" ", "")
+                    item = item.replace("*", "")
+                    entity.append(item)
+                formated.append(entity) 
+    return formated
 
-for i in myData:
+bih = getData("BiH", "RS", tables)
+rs = getData("RS", "FBiH", tables)
+fbih = getData("FBiH", "BD", tables)
+bd = getDataBD(tables)
+
+print("BiH data")
+for i in bih:
+    print(i)
+print("RS")
+for i in rs:
+    print(i)
+print("FBIH")
+for i in fbih:
+    print(i)
+print("BD")
+for i in bd:
     print(i)
 

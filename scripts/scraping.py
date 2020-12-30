@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np
 import requests
 import re
 import sqlite3
@@ -75,17 +77,21 @@ def getData(start, end, tables):
                 for item in table[startIndex : endIndex]:
                     item = item.replace("*", "")
                     item = item.replace(" ", "")
-                    entity.append(item)
-
+                    entity.append(int(item))
                 formated.append(entity)
-    return formated
+    columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva']
+
+    dataFrame = pd.DataFrame(
+        columns = columns,
+        data = formated
+    )
+    return dataFrame
 
 def getDataBD(tables):
     formated = []
     for table in tables:
         startIndex, endIndex = 0, 0
         entity = []
-    
         for index, element in enumerate(table):
             if index == 0:
                 entity.append(element)
@@ -96,25 +102,28 @@ def getDataBD(tables):
                 for item in table[startIndex : endIndex]:
                     item = item.replace(" ", "")
                     item = item.replace("*", "")
-                    entity.append(item)
-                formated.append(entity) 
-    return formated
+                    entity.append(int(item))
+                if len(entity) < 6:
+                    entity.append(0)
+                formated.append(entity)
+    columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva']
+
+    dataFrame = pd.DataFrame(
+        columns = columns,
+        data = formated
+    )
+    return dataFrame
 
 bih = getData("BiH", "RS", tables)
 rs = getData("RS", "FBiH", tables)
 fbih = getData("FBiH", "BD", tables)
 bd = getDataBD(tables)
 
-print("BiH data")
-for i in bih:
-    print(i)
-print("RS")
-for i in rs:
-    print(i)
-print("FBIH")
-for i in fbih:
-    print(i)
-print("BD")
-for i in bd:
-    print(i)
 
+## Appending data to dataFrame for BiH ##
+
+
+print(bih)
+print(rs)
+print(fbih)
+print(bd)

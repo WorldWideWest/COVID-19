@@ -2,7 +2,8 @@
 
 # Table of Contets:
 * [General Info](#general-info)
-
+* [Technologies](#technologies)
+* [Project Workflow](#project-workflow)
 
 ## General Info
 
@@ -21,3 +22,71 @@ The flowing thing to do is to visualize the cleaned dataset. By visualizing the 
 When all of this is set and done we start to model our data so we can apply statistical methods to make predictions. 
 
 And at the end we make the conclusion and give the output to the people who make decisions. 
+
+## Technologies
+
+<table>
+<thead>
+<tr>
+<td>Name</td>
+<td>Link</td>
+</tr>
+</thead>
+<tobdy>
+<tr>
+<td>WSL2</td>
+<td>https://docs.microsoft.com/en-us/windows/wsl/install-win10</td>
+</tr>
+<tr>
+<td>Jupyter Notebook</td>
+<td>https://jupyter.org/</td>
+</tr>
+<tr>
+<td>Pytorch</td>
+<td>https://pytorch.org/</td>
+</tr>
+<tr>
+<td>Bash</td>
+<td>https://www.gnu.org/software/bash/</td>
+</tr>
+</tobdy>
+</table>
+
+<br>
+
+## Project Workflow
+
+<br>
+<table>
+<thead>
+<tr>
+<td>Action Name</td>
+<td>Progress</td>
+<td>Status</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scraping the website for the data</td>
+<td><progress value="100" max="100"></progress></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Transforming the data into a DataFrame</td>
+<td><progress value="100" max="100"></progress></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Extracting the meaningful data</td>
+<td><progress value="0" max="100"></progress></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Creating a dashboard</td>
+<td><progress value="0" max="100"></progress></td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<br>
+Be aware that more actions will be added once we progress through the tasks

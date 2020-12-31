@@ -1,3 +1,5 @@
+import os
+import wget
 import pandas as pd
 import numpy as np
 import requests
@@ -120,10 +122,12 @@ fbih = getData("FBiH", "BD", tables)
 bd = getDataBD(tables)
 
 
-## Appending data to dataFrame for BiH ##
+## Saving data to excel ##
+
+bih.to_excel("../dataSet/rawData/bih.xlsx")
+rs.to_excel("../dataSet/rawData/rs.xlsx")
+fbih.to_excel("../dataSet/rawData/fbih.xlsx")
+bd.to_excel("../dataSet/rawData/bd.xlsx")
 
 
-print(bih)
-print(rs)
-print(fbih)
-print(bd)
+

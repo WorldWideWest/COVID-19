@@ -5,17 +5,14 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-PATH = "/mnt/c/Program Files (x86)/msedgedriver.exe"
+display = Display(visible = 0, size = (800, 600))
+display.start()
 
-driver = webdriver.Edge(PATH)
+driver = webdriver.Chrome()
 
 driver.get("https://ourworldindata.org/coronavirus#coronavirus-country-profiles")
 
-search = driver.find_element_by_id("react-select-2-input")
-search.send_keys("Bosnia and Herzegovina")
-search.send_keys(Keys.RETURN)
-
-
+#print(driver.title)
 #rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "mbih.xlsx"), engine='openpyxl')
 #rawData = rawData[rawData['location'] == 'Bosnia and Herzegovina']
 #rawData = rawData.dropna(axis = 1)

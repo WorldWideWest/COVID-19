@@ -6,7 +6,7 @@ import requests
 import re
 import sqlite3
 from bs4 import BeautifulSoup 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 url = "http://mcp.gov.ba/Publication/Read/epidemioloska-slika-covid-19#"
 
@@ -54,13 +54,14 @@ for table in formated:
         else:
             pass
 
+
+#for i in tables:
+ #   print(i)
 formated.clear()
 
 
-#### Parssing the function  ####
+#### Parssing ####
 
-
-#startIndex, endIndex = 0, 0
 def getData(start, end, tables):
     formated = []
     for table in tables:
@@ -75,19 +76,69 @@ def getData(start, end, tables):
                 startIndex = index + 1
             elif element == f"{end}":
                 endIndex = index
-            
-                for item in table[startIndex : endIndex]:
-                    item = item.replace("*", "")
-                    item = item.replace(" ", "")
-                    entity.append(int(item))
-                formated.append(entity)
-    columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva']
+                
+                date = datetime.strptime(entity[0], "%d.%m.%Y")
 
-    dataFrame = pd.DataFrame(
-        columns = columns,
-        data = formated
-    )
-    return dataFrame
+                cDate = datetime.strptime("26.8.2020", "%d.%m.%Y")
+                scDate = datetime.strptime("21.5.2020", "%d.%m.%Y")
+                tcDate = datetime.strptime("13.4.2020", "%d.%m.%Y")
+
+                if date > cDate:
+                    for item in table[startIndex : endIndex]:
+                        item = item.replace("*", "")
+                        item = item.replace(" ", "")
+                        entity.append(int(item))
+
+                    entity.insert(6, 0)
+                    formated.append(entity)
+
+                elif date > scDate:
+                    for item in table[startIndex : endIndex]:
+                        item = item.replace("*", "")
+                        item = item.replace(" ", "")
+                        entity.append(int(item))
+                    
+                    entity.insert(5, 0)
+                    entity.insert(6, 0)
+                    formated.append(entity)
+
+                elif scDate >= date and date > tcDate:
+                    for item in table[startIndex : endIndex]:
+                        item = item.replace("*", "")
+                        item = item.replace(" ", "")
+                        entity.append(int(item))
+
+                    entity.insert(6, 0)
+                    entity.insert(7, entity[3])
+                    del entity[3]
+                    formated.append(entity)
+
+                elif tcDate >= date:
+                    for item in table[startIndex : endIndex]:
+                        item = item.replace("*", "")
+                        item = item.replace(" ", "")
+                        entity.append(int(item))
+
+                    entity.insert(5, 0)
+                    entity.insert(6, 0)
+                    entity.insert(7, entity[3])
+                    del entity[3]
+                    formated.append(entity)
+
+
+   # 26.08.20
+   # columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva']
+    # 25.08.20
+   # columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba']
+    # 21.05.20
+    columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva',  'Broj osoba pod nadzorom']
+
+
+   # dataFrame = pd.DataFrame(
+    #    columns = columns,
+     #   data = formated
+   # )
+    return formated
 
 def getDataBD(tables):
     formated = []
@@ -117,17 +168,21 @@ def getDataBD(tables):
     return dataFrame
 
 bih = getData("BiH", "RS", tables)
-rs = getData("RS", "FBiH", tables)
-fbih = getData("FBiH", "BD", tables)
-bd = getDataBD(tables)
+#rs = getData("RS", "FBiH", tables)
+#fbih = getData("FBiH", "BD", tables)
+#bd = getDataBD(tables)
 
 
 ## Saving data to excel ##
 
-bih.to_excel("../dataSet/rawData/bih.xlsx")
-rs.to_excel("../dataSet/rawData/rs.xlsx")
-fbih.to_excel("../dataSet/rawData/fbih.xlsx")
-bd.to_excel("../dataSet/rawData/bd.xlsx")
+#bih.to_excel("../dataSet/rawData/bih.xlsx")
+#rs.to_excel("../dataSet/rawData/rs.xlsx")
+#fbih.to_excel("../dataSet/rawData/fbih.xlsx")
+#bd.to_excel("../dataSet/rawData/bd.xlsx")
 
+#pd.options.display.max_rows = 1000
+#print(bih)
 
+for i in bih:
+    print(i)
 

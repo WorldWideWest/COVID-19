@@ -85,6 +85,22 @@ fullDataFrame = pd.merge(left = fullDataFrame, left_on = 'date', how = 'left',
                         right = died[['Datum', 'Broj smrtnih slučajeva']], right_on = 'Datum').drop('Datum', axis = 1)
 
 
+availableData = [item for item in fullDataFrame.count()]
+missingData = [item for item in fullDataFrame.isnull().sum()]
+missingPct = []
+
+for i,j in zip(availableData, missingData):
+    missingPct.append(j/i)
+
+missingData = pd.DataFrame({
+    "Column Name": fullDataFrame.columns,
+    "Available Data": availableData,
+    "Missing Data": missingData,
+    "Missing Pct": missingPct})
+
+
+
+
 fullDataFrame.to_excel(os.path.join("../dataSet/cleanData/", "missingData.xlsx"), index = False)
 
 

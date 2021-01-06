@@ -216,8 +216,8 @@ bd = getDataBD(tables)
 
 ## Saving data to excel ##
 
-bih.to_excel("../dataSet/rawData/bih.xlsx")
-rs.to_excel("../dataSet/rawData/rs.xlsx")
-fbih.to_excel("../dataSet/rawData/fbih.xlsx")
-bd.to_excel("../dataSet/rawData/bd.xlsx")
+bih.to_excel("../dataSet/rawData/bih.xlsx", index = False)
+rs.to_excel("../dataSet/rawData/rs.xlsx", index = False)
+fbih.to_excel("../dataSet/rawData/fbih.xlsx", index = False)
+bd.to_excel("../dataSet/rawData/bd.xlsx", index = False)
 

@@ -86,7 +86,7 @@ fig = MissingDataPlot(missingData)
 
 
 st.set_page_config(layout="wide")
-st.title("COVID - 19 analysis in Bosnia and Herzegovina")
+st.markdown("<h1 style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
 
 
 """This analysis is based on data that is provided by Ministry of Civil Affairs and the ourworldindata, so we can create an overview of the COVID - 19 situation in Bosnia and Herzegovina."""

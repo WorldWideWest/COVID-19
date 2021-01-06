@@ -75,7 +75,7 @@ def MissingDataPlot(dataFrame):
             position += move
             fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
             fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-        fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set")
+        fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
     return fig
 
 ## Application Logic ##
@@ -83,5 +83,12 @@ def MissingDataPlot(dataFrame):
 missingData = Import(fileName = "missingDataValues.xlsx")
 
 fig = MissingDataPlot(missingData)
+
+
+st.set_page_config(layout="wide")
+st.title("COVID - 19 analysis in Bosnia and Herzegovina")
+
+
+"""This analysis is based on data that is provided by Ministry of Civil Affairs and the ourworldindata, so we can create an overview of the COVID - 19 situation in Bosnia and Herzegovina."""
 
 st.plotly_chart(fig)

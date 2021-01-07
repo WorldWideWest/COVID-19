@@ -12,5 +12,9 @@ echo "Combining all files gathered from the previous scripts"
 
 python3 combining.py
 
+echo "Filling missing Data"
+
+python3 replacing.py
+
 echo "All procesess are completed successfuly" 
 

@@ -25,14 +25,14 @@ for index in range(0, len(bih["Broj testiranih"])):
         i, j = index, len(bih["Broj testiranih"]) - 1
         
         tested = tested.append(
-            {"Datum": str(bih.iloc[index, 0]), "Testirani": bih.iloc[i, 2] - bih.iloc[j, 2]},
+            {"Datum": str(bih.iloc[index, 0]), "Testirani": int(bih.iloc[i, 2] - bih.iloc[j, 2])},
             ignore_index = True)
         
         break
     else:
         i, j = index, index + 1
         tested = tested.append(
-            {"Datum": str(bih.iloc[index, 0]), "Testirani": bih.iloc[i, 2] - bih.iloc[j, 2]},
+            {"Datum": str(bih.iloc[index, 0]), "Testirani": int(bih.iloc[i, 2] - bih.iloc[j, 2])},
             ignore_index = True)   
 
 
@@ -42,7 +42,7 @@ for index in range(0, len(bih["Broj oporavljenih osoba"])):
         i, j = index, len(bih["Broj testiranih"]) - 1
 
         recovered = recovered.append(
-            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": bih.iloc[i, 4] - bih.iloc[j, 4]},
+            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": int(bih.iloc[i, 4] - bih.iloc[j, 4])},
             ignore_index = True)
         
         break
@@ -50,7 +50,7 @@ for index in range(0, len(bih["Broj oporavljenih osoba"])):
         i, j = index, index + 1
         
         recovered = recovered.append(
-            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": bih.iloc[i, 4] - bih.iloc[j, 4]},
+            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": int(bih.iloc[i, 4] - bih.iloc[j, 4])},
             ignore_index = True)
 
 for index in range(0, len(bih["Broj smrtnih slučajeva"])):    
@@ -58,14 +58,14 @@ for index in range(0, len(bih["Broj smrtnih slučajeva"])):
         i, j = index, len(bih["Broj smrtnih slučajeva"]) - 1
         
         died = died.append(
-            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": bih.iloc[i, 3] - bih.iloc[j, 3]},
+            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": int(bih.iloc[i, 3] - bih.iloc[j, 3])},
             ignore_index = True)
         
         break
     else:
         i, j = index, index + 1
         died = died.append(
-            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": bih.iloc[i, 3] - bih.iloc[j, 3]},
+            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": int(bih.iloc[i, 3] - bih.iloc[j, 3])},
             ignore_index = True)
 
 fullDataFrame = pd.merge(left = rawData, left_on = 'date', how = 'left',

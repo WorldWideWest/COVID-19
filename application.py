@@ -83,8 +83,8 @@ st.set_page_config(layout="wide")
 
 
 st.sidebar.title('Navigation')
-st.sidebar.markdown("<a style = 'a:link{text-decoration: none;}' href = '#home'>Home</a>", unsafe_allow_html=True)
-st.sidebar.markdown("<a href = '#datagethering'>Data Gethering</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#home'>Home</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#datagethering'>Data Gethering and Preprocessing</a>", unsafe_allow_html=True)
 st.sidebar.markdown("<a href = '#datagethering'>Data Visualization</a>", unsafe_allow_html=True)
 st.sidebar.markdown("<a href = '#datagethering'>Metrics Calculation</a>", unsafe_allow_html=True)
 st.sidebar.markdown("<a href = '#datagethering'>Recurent Neural Network</a>", unsafe_allow_html=True)
@@ -97,7 +97,7 @@ based on the data that is gathered. Then will continue on visualizing the data a
 we have about 30% of missing data in the columns that are valuable to us so we must fill them somehow. The analysis will contain the entity's and
 the District. To fulfill our analysis we must calculate some metrics and based on that make predictions for the future.""" 
 
-st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gathering</h1>", unsafe_allow_html=True)
+st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gethering and Preprocessing</h1>", unsafe_allow_html=True)
 """The data that we have here and will display it to you in the later part of this analysis is gathered from two webistes, the first website is
 ourworldindata and the second website is the website of the Ministry of Civil Affairs.
 
@@ -110,3 +110,4 @@ and for the ourworldindata as it was a webapp we used selenium to get our hands 
 try to fix that using custom functions from sklearn library, but we need to be carefoul because we can't take the whole dataset and have an average
 to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
 st.plotly_chart(fig)
+

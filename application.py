@@ -24,16 +24,12 @@ def MissingDataPlot(dataFrame):
     columns = [col for col in dataFrame["Column Name"]]
     
     specs = []
-
     
     for sp in range(len(columns)):
         specs.append({"type": "pie", "rowspan": 0})
     
     fig = make_subplots(rows = 1, cols = len(columns), specs = [specs], subplot_titles = columns)
     
-    data = []
-    
- 
     position = 0.03
     
     for index in range(len(missingData["Missing Data"])):
@@ -83,12 +79,34 @@ def MissingDataPlot(dataFrame):
 missingData = Import(fileName = "missingDataValues.xlsx")
 
 fig = MissingDataPlot(missingData)
-
-
 st.set_page_config(layout="wide")
-st.markdown("<h1 style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
 
 
-"""This analysis is based on data that is provided by Ministry of Civil Affairs and the ourworldindata, so we can create an overview of the COVID - 19 situation in Bosnia and Herzegovina."""
+st.sidebar.title('Navigation')
+st.sidebar.markdown("<a style = 'a:link{text-decoration: none;}' href = '#home'>Home</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#datagethering'>Data Gethering</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#datagethering'>Data Visualization</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#datagethering'>Metrics Calculation</a>", unsafe_allow_html=True)
+st.sidebar.markdown("<a href = '#datagethering'>Recurent Neural Network</a>", unsafe_allow_html=True)
 
+st.markdown("<h1 id='home' style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
+
+
+"""This analysis will provide a complete overview of the COVID - 19 situation in Bosnia and Herzegovina. The first part of this analysis will be
+based on the data that is gathered. Then will continue on visualizing the data and get a more complete overview of the situation. Keep in mind that
+we have about 30% of missing data in the columns that are valuable to us so we must fill them somehow. The analysis will contain the entity's and
+the District. To fulfill our analysis we must calculate some metrics and based on that make predictions for the future.""" 
+
+st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gathering</h1>", unsafe_allow_html=True)
+"""The data that we have here and will display it to you in the later part of this analysis is gathered from two webistes, the first website is
+ourworldindata and the second website is the website of the Ministry of Civil Affairs.
+
+From the first website we pulled the dates, the cases and the population, and from the second website we pulled number of people recovered, died and 
+tested. The bigger problem to us was that the table structure on the second website made no sense every few days the structure of the tables
+changed. Based on that we needed to adjust our scraping algorithm, because it was a plain html website we used BeautifulSoup to scrape the data
+and for the ourworldindata as it was a webapp we used selenium to get our hands on the data."""
+
+"""We are at the first part of the analysis and as we can see we have a lot of missing data in the columns that have the most value to us. Will
+try to fix that using custom functions from sklearn library, but we need to be carefoul because we can't take the whole dataset and have an average
+to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
 st.plotly_chart(fig)

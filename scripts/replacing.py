@@ -14,11 +14,17 @@ for i in range(0, 29):
     dataFrame.iloc[i, 6] = startDiedAvg
 
 for colIndex, column in enumerate(dataFrame.columns):
-    if column == "Oporavljeni" or column == "Testirani" or column == "Smrtni sl.":
+    if column == "Oporavljeni" or column == "Testirani":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
+                dataFrame.iloc[index, colIndex] = avgValue
+    elif column == "Smrtni sl.":
+        for index in range(len(dataFrame[column])):
+            if pd.isnull(dataFrame.iloc[index, colIndex]):
+                startIndex = index - 2
+                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 2)
                 dataFrame.iloc[index, colIndex] = avgValue
 
 dataFrame.to_excel(os.path.join("../dataSet/cleanData", "cleanData.xlsx"), index = False)

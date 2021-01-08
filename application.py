@@ -74,6 +74,10 @@ def MissingDataPlot(dataFrame):
         fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
     return fig
 
+def Plot(dataFrame):
+    fig = px.line(dataFrame, x = "date", y = "new_cases", title = "Number of Cases each day in Bosnia and Herzegovina")
+    fig.update_layout( width = 1300, height = 500)
+    return fig
 ## Application Logic ##
 
 missingData = Import(fileName = "missingDataValues.xlsx")
@@ -123,4 +127,15 @@ average for the first 5 days that we have data and put it into the row at the be
 Because we have missing data in the new cases column we will take the same approach to this task also and take a 5 day average to get the data
 for the missing value. Now you can see our dataframe with no missing valus."""
 
-st.dataframe(Import('cleanData.xlsx'), width = 1150)
+data = Import('cleanData.xlsx')
+
+st.dataframe(data, width = 1150)
+st.markdown("<br>", unsafe_allow_html=True)
+
+st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)
+
+"""For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 
+over time."""
+daily = Plot(data)
+st.plotly_chart(daily)
+# st.line_chart(data[["new_cases"]])

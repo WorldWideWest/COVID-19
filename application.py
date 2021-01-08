@@ -111,3 +111,16 @@ try to fix that using custom functions from sklearn library, but we need to be c
 to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
 st.plotly_chart(fig)
 
+"""Now that the data is layed out we need to fill the missing values. One way to fill the data would be to import as described a custom function
+from sklearn, but we are not going to do that because there is a lot of missing data and in the case of the COVID pandemic we don't have the 
+same values at the begining in the middle and now.
+
+So we must be creative. The way we are going to aproach this problem is when ever we encounter a missing value we are going to take an average 
+of the previous 5 days and take this as our new value. But there is one more problem we can't just do that with the number of died, we will lower
+the number of days we calculate the average to 2 days. For the first days of the pandemic we are also missing data and for that we will take the 
+average for the first 5 days that we have data and put it into the row at the begining of the pandemic.
+
+Because we have missing data in the new cases column we will take the same approach to this task also and take a 5 day average to get the data
+for the missing value. Now you can see our dataframe with no missing valus."""
+
+st.dataframe(Import('cleanData.xlsx'), width = 1150)

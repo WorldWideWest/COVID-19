@@ -21,9 +21,9 @@ jobs:
         uses: py-actions/py-dependency-install@v2
         with:
           path: "./requirements.txt" 
-          update-pip: "false"
-          update-setuptools: "false"
-          update-wheel: "false"
+          # update-pip: "false"
+          # update-setuptools: "false"
+          # update-wheel: "false"
     - name: Testing
       run: |
         cd scripts

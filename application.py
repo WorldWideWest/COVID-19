@@ -128,10 +128,25 @@ Because we have missing data in the new cases column we will take the same appro
 for the missing value. Now you can see our dataframe with no missing valus."""
 
 data = Import('cleanData.xlsx')
+fbih = Import('fbih.xlsx')
+rs = Import('rs.xlsx')
+bd = Import('bd.xlsx')
 
+st.markdown("<h3 style = 'text-align: left;'>Data for Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
 st.dataframe(data, width = 1150)
-st.markdown("<br>", unsafe_allow_html=True)
 
+st.markdown("<h3 style = 'text-align: left;'>Data for Federation Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+st.dataframe(fbih, width = 840)
+
+st.markdown("<h3 style = 'text-align: left;'>Data for RS Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+
+st.dataframe(rs, width = 840)
+
+st.markdown("<h3 style = 'text-align: left;'>Data for Brčko District</h3>", unsafe_allow_html=True)
+
+st.dataframe(bd, width = 840)
+
+st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)
 
 """For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 

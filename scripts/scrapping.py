@@ -1,5 +1,4 @@
 import os
-import wget
 import pandas as pd
 import numpy as np
 import requests

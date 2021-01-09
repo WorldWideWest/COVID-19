@@ -20,7 +20,6 @@ cffi==1.14.4
 chardet==3.0.4
 chart-studio==1.1.0
 Click==7.0
-cloud-init==20.2
 colorama==0.4.3
 colorlover==0.3.0
 command-not-found==0.3

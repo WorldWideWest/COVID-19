@@ -18,7 +18,7 @@ python3 replacing.py
 
 echo "Relplacing missing data in the entity files"
 
-python3 entityParsing.py
+python3 entityReplace.py
 
 echo "All procesess are completed successfuly" 
 

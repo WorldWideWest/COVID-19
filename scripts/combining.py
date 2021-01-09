@@ -27,7 +27,7 @@ def GetDay(dataFrame, column, newColumn, columnIndex):
             data = data.append(
                 {"Datum": str(dataFrame.iloc[index, 0]), f"{newColumn}": int(dataFrame.iloc[i, columnIndex] - dataFrame.iloc[j, columnIndex ])},
                 ignore_index = True)
-             break
+            break
         else:
             i, j = index, index + 1
             data = data.append(

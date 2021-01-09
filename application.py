@@ -74,9 +74,10 @@ def MissingDataPlot(dataFrame):
         fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
     return fig
 
-def Plot(dataFrame):
-    fig = px.line(dataFrame, x = "date", y = "new_cases", title = "Number of Cases each day in Bosnia and Herzegovina")
+def Plot(dataFrame, columns, title):
+    fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}")
     fig.update_layout( width = 1300, height = 500)
+    fig.update_traces(line_color = "#001024")
     return fig
 ## Application Logic ##
 
@@ -151,6 +152,9 @@ st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualiza
 
 """For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 
 over time."""
-daily = Plot(data)
+daily = Plot(data, ['date', 'new_cases'], "Number of COVID - 19 Cases in Bosnia and Herzegovina")
 st.plotly_chart(daily)
+
+tested = Plot(data, ['date', 'Testirani'], "Number of tested people daily in Bosnia and Herzegovina")
+st.plotly_chart(tested)
 # st.line_chart(data[["new_cases"]])

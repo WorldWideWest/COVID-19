@@ -20,6 +20,9 @@ for colIndex, column in enumerate(dataFrame.columns):
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
+            elif dataFrame.iloc[index, colIndex] < 0:
+                dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
+    
 
     elif column == "Smrtni sl.":
         for index in range(len(dataFrame[column])):
@@ -27,6 +30,10 @@ for colIndex, column in enumerate(dataFrame.columns):
                 startIndex = index - 2
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 2)
                 dataFrame.iloc[index, colIndex] = avgValue
+            elif dataFrame.iloc[index, colIndex] < 0:
+                dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
+ 
+
 
     elif column == "new_cases":
         for index in range(len(dataFrame[column])):
@@ -39,7 +46,10 @@ for colIndex, column in enumerate(dataFrame.columns):
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
-
+        
+            elif dataFrame.iloc[index, colIndex] < 0:
+                dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
  
+                
 
 dataFrame.to_excel(os.path.join("../dataSet/cleanData", "cleanData.xlsx"), index = False)

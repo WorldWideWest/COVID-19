@@ -23,7 +23,6 @@ jobs:
           update-pip: "false"
           update-setuptools: "false"
           update-wheel: "false"
-        with:
           path: "./requirements.txt" 
     - name: Testing
       run: |

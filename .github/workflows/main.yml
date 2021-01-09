@@ -20,10 +20,11 @@ jobs:
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v2
         with:
+          path: "./requirements.txt" 
           update-pip: "false"
           update-setuptools: "false"
           update-wheel: "false"
-          path: "./requirements.txt" 
+         
     - name: Testing
       run: |
         cd scripts

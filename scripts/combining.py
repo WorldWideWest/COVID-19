@@ -16,57 +16,30 @@ bih = pd.read_excel(os.path.join("../dataSet/rawData/", "bih.xlsx"), engine='ope
 
 ## Extracting data ##
 
-tested = pd.DataFrame(columns = ["Datum", "Testirani"])
-recovered = pd.DataFrame(columns = ["Datum", "Oporavljenih"])
-died = pd.DataFrame(columns = ["Datum", "Smrtni ls."])
 
-for index in range(0, len(bih["Broj testiranih"])):    
-    if index == len(bih["Broj testiranih"]) - 2:
-        i, j = index, len(bih["Broj testiranih"]) - 1
+def GetDay(dataFrame, column, newColumn, columnIndex):
+    data = pd.DataFrame(columns = ["Datum", f"{newColumn}"])
+
+    for index in range(0, len(dataFrame[f"{column}"])):    
+        if index == len(dataFrame[f"{column}"]) - 2:
+            i, j = index, len(dataFrame[f"{column}"]) - 1
         
-        tested = tested.append(
-            {"Datum": str(bih.iloc[index, 0]), "Testirani": int(bih.iloc[i, 2] - bih.iloc[j, 2])},
-            ignore_index = True)
-        
-        break
-    else:
-        i, j = index, index + 1
-        tested = tested.append(
-            {"Datum": str(bih.iloc[index, 0]), "Testirani": int(bih.iloc[i, 2] - bih.iloc[j, 2])},
-            ignore_index = True)   
+            data = data.append(
+                {"Datum": str(dataFrame.iloc[index, 0]), f"{newColumn}": int(dataFrame.iloc[i, columnIndex] - dataFrame.iloc[j, columnIndex ])},
+                ignore_index = True)
+             break
+        else:
+            i, j = index, index + 1
+            data = data.append(
+                {"Datum": str(dataFrame.iloc[index, 0]), f"{newColumn}": int(dataFrame.iloc[i, columnIndex] - dataFrame.iloc[j, columnIndex])},
+                ignore_index = True)
+    return data
 
 
-for index in range(0, len(bih["Broj oporavljenih osoba"])):    
-    if index == len(bih["Broj testiranih"]) - 2:
-        
-        i, j = index, len(bih["Broj testiranih"]) - 1
+tested = GetDay(bih, "Broj testiranih", "Testirani", 2)
+recovered = GetDay(bih, "Broj oporavljenih osoba", "Oporavljeni", 4)
+died = GetDay(bih, "Broj smrtnih slučajeva", "Smrtni sl.", 3)
 
-        recovered = recovered.append(
-            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": int(bih.iloc[i, 4] - bih.iloc[j, 4])},
-            ignore_index = True)
-        
-        break
-    else:
-        i, j = index, index + 1
-        
-        recovered = recovered.append(
-            {"Datum": str(bih.iloc[index, 0]), "Oporavljeni": int(bih.iloc[i, 4] - bih.iloc[j, 4])},
-            ignore_index = True)
-
-for index in range(0, len(bih["Broj smrtnih slučajeva"])):    
-    if index == len(bih["Broj smrtnih slučajeva"]) - 1:
-        i, j = index, len(bih["Broj smrtnih slučajeva"]) - 1
-        
-        died = died.append(
-            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": int(bih.iloc[i, 3] - bih.iloc[j, 3])},
-            ignore_index = True)
-        
-        break
-    else:
-        i, j = index, index + 1
-        died = died.append(
-            {"Datum": str(bih.iloc[index, 0]), "Smrtni sl.": int(bih.iloc[i, 3] - bih.iloc[j, 3])},
-            ignore_index = True)
 
 fullDataFrame = pd.merge(left = rawData, left_on = 'date', how = 'left',
          right = recovered[['Oporavljeni', 'Datum']], right_on = 'Datum').drop('Datum', axis = 1)

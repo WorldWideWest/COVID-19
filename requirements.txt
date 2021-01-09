@@ -4,3 +4,4 @@ selenium==3.141.0
 bs4==0.0.1
 requests==2.22.0
 regex==2020.11.13
+openpyxl==3.0.5

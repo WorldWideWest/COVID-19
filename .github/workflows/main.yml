@@ -12,15 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
-    steps:
-      - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v2
-        with:
-          path: "requirements.txt"
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip3
+        pip3 install -r requirements.txt
     - name: Testing
       run: |
         cd scripts

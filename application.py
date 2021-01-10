@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import datetime as dt
+from datetime import datetime as dt
 import cufflinks as cf
 
 import chart_studio.plotly as py
@@ -90,65 +90,78 @@ missingData = Import(fileName = "missingDataValues.xlsx")
 fig = MissingDataPlot(missingData)
 st.set_page_config(layout="centered")
 
-data = Import('cleanData.xlsx')
+select = st.sidebar.selectbox("Odaberite regiju:", ('Bosna i Hercegovina', 'Federacija Bosne i Hercegovine', 'Republika Srpska', 'Brčko Distrikt'))
 
-# ('Bosnia and Herzegovina', 'Federation Bosnia and Herzegovina', 'Republic of Srpska', 'Brčko District')
+data, fbih, rs, bd = 0, 0, 0, 0
 
-select = st.sidebar.selectbox("Select Region", ('Bosnia and Herzegovina', 'Federation Bosnia and Herzegovina', 'Republic of Srpska', 'Brčko District'))
-
-# st.markdown("<h1 id='home' style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
-
-
-# """This analysis will provide a complete overview of the COVID - 19 situation in Bosnia and Herzegovina. The first part of this analysis will be
-# based on the data that is gathered. Then will continue on visualizing the data and get a more complete overview of the situation. Keep in mind that
-# we have about 30% of missing data in the columns that are valuable to us so we must fill them somehow. The analysis will contain the entity's and
-# the District. To fulfill our analysis we must calculate some metrics and based on that make predictions for the future.""" 
-
-# st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gethering and Preprocessing</h1>", unsafe_allow_html=True)
-# """The data that we have here and will display it to you in the later part of this analysis is gathered from two webistes, the first website is
-# ourworldindata and the second website is the website of the Ministry of Civil Affairs.
-
-# From the first website we pulled the dates, the cases and the population, and from the second website we pulled number of people recovered, died and 
-# tested. The bigger problem to us was that the table structure on the second website made no sense every few days the structure of the tables
-# changed. Based on that we needed to adjust our scraping algorithm, because it was a plain html website we used BeautifulSoup to scrape the data
-# and for the ourworldindata as it was a webapp we used selenium to get our hands on the data."""
-
-# """We are at the first part of the analysis and as we can see we have a lot of missing data in the columns that have the most value to us. Will
-# try to fix that using custom functions from sklearn library, but we need to be carefoul because we can't take the whole dataset and have an average
-# to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
-# st.plotly_chart(fig)
-
-# """Now that the data is layed out we need to fill the missing values. One way to fill the data would be to import as described a custom function
-# from sklearn, but we are not going to do that because there is a lot of missing data and in the case of the COVID pandemic we don't have the 
-# same values at the begining in the middle and now.
-
-# So we must be creative. The way we are going to aproach this problem is when ever we encounter a missing value we are going to take an average 
-# of the previous 5 days and take this as our new value. But there is one more problem we can't just do that with the number of died, we will lower
-# the number of days we calculate the average to 2 days. For the first days of the pandemic we are also missing data and for that we will take the 
-# average for the first 5 days that we have data and put it into the row at the begining of the pandemic.
-
-# Because we have missing data in the new cases column we will take the same approach to this task also and take a 5 day average to get the data
-# for the missing value. Now you can see our dataframe with no missing valus."""
+startDate, endDate = 0, 0
 
 
 
+if select == "Bosna i Hercegovina":
+    st.markdown("<h3 style = 'text-align: left;'>Podaci za Bosnu i Hercegovinu</h3>", unsafe_allow_html=True)
+    data = Import("cleanData.xlsx")
+
+    
+    date = st.sidebar.slider(
+        "Odaberi vremenski opseg:",
+        value = (dt.strptime(data['date'][0], "%d.%m.%Y"), dt.strptime(data.date[len(data.date) - 1], "%d.%m.%Y")),
+        min_value = dt.strptime(data['date'][0], "%d.%m.%Y"),
+        max_value = dt.strptime(data.date[len(data.date) - 1], "%d.%m.%Y"),
+        format = "DD.MM.YY")
 
 
-if select == "Bosnia and Herzegovina":
-    st.markdown("<h3 style = 'text-align: left;'>Data for Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
-    st.dataframe(data, width = 1150)
-elif select == "Federation Bosnia and Herzegovina":
+    startDate = dt.strftime(date[0], "%d.%m.%Y")
+    endDate = dt.strftime(date[1], "%d.%m.%Y")
+
+    print(data.info())
+    print(startDate, endDate)
+    
+    show = st.checkbox("Prikaži podatke", True)
+    if show:
+        st.dataframe(data, height = 400, width = 850)
+        st.markdown("<br>", unsafe_allow_html = True)
+        st.markdown("<br>", unsafe_allow_html = True)
+    
+    
+
+
+elif select == "Federacija Bosne i Hercegovine":
     fbih = Import('fbih.xlsx')
-    st.markdown("<h3 style = 'text-align: left;'>Data for Federation Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style = 'text-align: left;'>Podaci za Federaciju BiH</h3>", unsafe_allow_html=True)
     st.dataframe(fbih, width = 840)
-elif select == "Republic of Srpska":
+elif select == "Republika Srpska":
     rs = Import('rs.xlsx')
-    st.markdown("<h3 style = 'text-align: left;'>Data for RS Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style = 'text-align: left;'>Podaci za RS</h3>", unsafe_allow_html=True)
     st.dataframe(rs, width = 840)
-elif select == "Brčo District":
+elif select == "Brčko Distrikt":
     bd = Import('bd.xlsx')
-    st.markdown("<h3 style = 'text-align: left;'>Data for Brčko District</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style = 'text-align: left;'>Podaci za Brčko Distrikt</h3>", unsafe_allow_html=True)
     st.dataframe(bd, width = 840)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # st.markdown("<br>", unsafe_allow_html=True)
 # st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)

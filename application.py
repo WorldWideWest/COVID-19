@@ -74,8 +74,12 @@ def MissingDataPlot(dataFrame):
         fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
     return fig
 
-def Plot(dataFrame, columns, title):
-    fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}")
+def Plot(dataFrame, columns, title, labels):
+    fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
+                  labels={
+                      "sepal_lenght": labels[0],
+                      "sepla_width": labels[1]
+                  })
     fig.update_layout( width = 1300, height = 500)
     fig.update_traces(line_color = "#001024")
     return fig
@@ -84,77 +88,76 @@ def Plot(dataFrame, columns, title):
 missingData = Import(fileName = "missingDataValues.xlsx")
 
 fig = MissingDataPlot(missingData)
-st.set_page_config(layout="wide")
-
-
-st.sidebar.title('Navigation')
-st.sidebar.markdown("<a href = '#home'>Home</a>", unsafe_allow_html=True)
-st.sidebar.markdown("<a href = '#datagethering'>Data Gethering and Preprocessing</a>", unsafe_allow_html=True)
-st.sidebar.markdown("<a href = '#datagethering'>Data Visualization</a>", unsafe_allow_html=True)
-st.sidebar.markdown("<a href = '#datagethering'>Metrics Calculation</a>", unsafe_allow_html=True)
-st.sidebar.markdown("<a href = '#datagethering'>Recurent Neural Network</a>", unsafe_allow_html=True)
-
-st.markdown("<h1 id='home' style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
-
-
-"""This analysis will provide a complete overview of the COVID - 19 situation in Bosnia and Herzegovina. The first part of this analysis will be
-based on the data that is gathered. Then will continue on visualizing the data and get a more complete overview of the situation. Keep in mind that
-we have about 30% of missing data in the columns that are valuable to us so we must fill them somehow. The analysis will contain the entity's and
-the District. To fulfill our analysis we must calculate some metrics and based on that make predictions for the future.""" 
-
-st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gethering and Preprocessing</h1>", unsafe_allow_html=True)
-"""The data that we have here and will display it to you in the later part of this analysis is gathered from two webistes, the first website is
-ourworldindata and the second website is the website of the Ministry of Civil Affairs.
-
-From the first website we pulled the dates, the cases and the population, and from the second website we pulled number of people recovered, died and 
-tested. The bigger problem to us was that the table structure on the second website made no sense every few days the structure of the tables
-changed. Based on that we needed to adjust our scraping algorithm, because it was a plain html website we used BeautifulSoup to scrape the data
-and for the ourworldindata as it was a webapp we used selenium to get our hands on the data."""
-
-"""We are at the first part of the analysis and as we can see we have a lot of missing data in the columns that have the most value to us. Will
-try to fix that using custom functions from sklearn library, but we need to be carefoul because we can't take the whole dataset and have an average
-to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
-st.plotly_chart(fig)
-
-"""Now that the data is layed out we need to fill the missing values. One way to fill the data would be to import as described a custom function
-from sklearn, but we are not going to do that because there is a lot of missing data and in the case of the COVID pandemic we don't have the 
-same values at the begining in the middle and now.
-
-So we must be creative. The way we are going to aproach this problem is when ever we encounter a missing value we are going to take an average 
-of the previous 5 days and take this as our new value. But there is one more problem we can't just do that with the number of died, we will lower
-the number of days we calculate the average to 2 days. For the first days of the pandemic we are also missing data and for that we will take the 
-average for the first 5 days that we have data and put it into the row at the begining of the pandemic.
-
-Because we have missing data in the new cases column we will take the same approach to this task also and take a 5 day average to get the data
-for the missing value. Now you can see our dataframe with no missing valus."""
+st.set_page_config(layout="centered")
 
 data = Import('cleanData.xlsx')
-fbih = Import('fbih.xlsx')
-rs = Import('rs.xlsx')
-bd = Import('bd.xlsx')
 
-st.markdown("<h3 style = 'text-align: left;'>Data for Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
-st.dataframe(data, width = 1150)
+# ('Bosnia and Herzegovina', 'Federation Bosnia and Herzegovina', 'Republic of Srpska', 'Brčko District')
 
-st.markdown("<h3 style = 'text-align: left;'>Data for Federation Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
-st.dataframe(fbih, width = 840)
+select = st.sidebar.selectbox("Select Region", ('Bosnia and Herzegovina', 'Federation Bosnia and Herzegovina', 'Republic of Srpska', 'Brčko District'))
 
-st.markdown("<h3 style = 'text-align: left;'>Data for RS Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+# st.markdown("<h1 id='home' style = 'text-align: center;'>COVID - 19 analysis in Bosnia and Herzegovina</h1>", unsafe_allow_html=True)
 
-st.dataframe(rs, width = 840)
 
-st.markdown("<h3 style = 'text-align: left;'>Data for Brčko District</h3>", unsafe_allow_html=True)
+# """This analysis will provide a complete overview of the COVID - 19 situation in Bosnia and Herzegovina. The first part of this analysis will be
+# based on the data that is gathered. Then will continue on visualizing the data and get a more complete overview of the situation. Keep in mind that
+# we have about 30% of missing data in the columns that are valuable to us so we must fill them somehow. The analysis will contain the entity's and
+# the District. To fulfill our analysis we must calculate some metrics and based on that make predictions for the future.""" 
 
-st.dataframe(bd, width = 840)
+# st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Gethering and Preprocessing</h1>", unsafe_allow_html=True)
+# """The data that we have here and will display it to you in the later part of this analysis is gathered from two webistes, the first website is
+# ourworldindata and the second website is the website of the Ministry of Civil Affairs.
 
-st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)
+# From the first website we pulled the dates, the cases and the population, and from the second website we pulled number of people recovered, died and 
+# tested. The bigger problem to us was that the table structure on the second website made no sense every few days the structure of the tables
+# changed. Based on that we needed to adjust our scraping algorithm, because it was a plain html website we used BeautifulSoup to scrape the data
+# and for the ourworldindata as it was a webapp we used selenium to get our hands on the data."""
 
-"""For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 
-over time."""
-daily = Plot(data, ['date', 'new_cases'], "Number of COVID - 19 Cases in Bosnia and Herzegovina")
-st.plotly_chart(daily)
+# """We are at the first part of the analysis and as we can see we have a lot of missing data in the columns that have the most value to us. Will
+# try to fix that using custom functions from sklearn library, but we need to be carefoul because we can't take the whole dataset and have an average
+# to fill the missing values because at the begining of the pandemic we have not had the same numbers as today."""
+# st.plotly_chart(fig)
 
-tested = Plot(data, ['date', 'Testirani'], "Number of tested people daily in Bosnia and Herzegovina")
-st.plotly_chart(tested)
-# st.line_chart(data[["new_cases"]])
+# """Now that the data is layed out we need to fill the missing values. One way to fill the data would be to import as described a custom function
+# from sklearn, but we are not going to do that because there is a lot of missing data and in the case of the COVID pandemic we don't have the 
+# same values at the begining in the middle and now.
+
+# So we must be creative. The way we are going to aproach this problem is when ever we encounter a missing value we are going to take an average 
+# of the previous 5 days and take this as our new value. But there is one more problem we can't just do that with the number of died, we will lower
+# the number of days we calculate the average to 2 days. For the first days of the pandemic we are also missing data and for that we will take the 
+# average for the first 5 days that we have data and put it into the row at the begining of the pandemic.
+
+# Because we have missing data in the new cases column we will take the same approach to this task also and take a 5 day average to get the data
+# for the missing value. Now you can see our dataframe with no missing valus."""
+
+
+
+
+
+if select == "Bosnia and Herzegovina":
+    st.markdown("<h3 style = 'text-align: left;'>Data for Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+    st.dataframe(data, width = 1150)
+elif select == "Federation Bosnia and Herzegovina":
+    fbih = Import('fbih.xlsx')
+    st.markdown("<h3 style = 'text-align: left;'>Data for Federation Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+    st.dataframe(fbih, width = 840)
+elif select == "Republic of Srpska":
+    rs = Import('rs.xlsx')
+    st.markdown("<h3 style = 'text-align: left;'>Data for RS Bosnia and Herzegovina</h3>", unsafe_allow_html=True)
+    st.dataframe(rs, width = 840)
+elif select == "Brčo District":
+    bd = Import('bd.xlsx')
+    st.markdown("<h3 style = 'text-align: left;'>Data for Brčko District</h3>", unsafe_allow_html=True)
+    st.dataframe(bd, width = 840)
+
+# st.markdown("<br>", unsafe_allow_html=True)
+# st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)
+
+# """For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 
+# over time."""
+# daily = Plot(data, ['date', 'new_cases'], "Number of COVID - 19 Cases in Bosnia and Herzegovina", ["Date", "New Cases"])
+# st.plotly_chart(daily)
+
+# tested = Plot(data, ['date', 'Testirani'], "Number of tested people daily in Bosnia and Herzegovina", ["Date", "Tested"])
+# st.plotly_chart(tested)
+# # st.line_chart(data[["new_cases"]])

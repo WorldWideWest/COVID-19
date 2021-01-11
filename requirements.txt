@@ -6,3 +6,4 @@ requests==2.22.0
 regex==2020.11.13
 openpyxl==3.0.5
 urllib3==1.25.8
+streamlit==0.73.1

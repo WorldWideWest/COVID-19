@@ -117,7 +117,6 @@ if showMetrics:
 
 
     st.plotly_chart(Recovered(metrics, ['date', 'smrt_slucaj'], "Procent smrtnosti okviru testiranih osoba", ['Datum', 'Procent']))
-    
     C1, C2 = st.beta_columns([8,1])
 
     averageDeath = (sum(filtered['Smrtni sl.']) / sum(filtered['new_cases']))

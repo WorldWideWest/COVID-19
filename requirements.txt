@@ -5,3 +5,4 @@ bs4==0.0.1
 requests==2.22.0
 regex==2020.11.13
 openpyxl==3.0.5
+urllib3==1.25.8

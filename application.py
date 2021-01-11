@@ -74,15 +74,33 @@ def MissingDataPlot(dataFrame):
         fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
     return fig
 
-def Plot(dataFrame, columns, title, labels):
+def Covid(dataFrame, columns, title, labels):
+    one, two = labels[0], labels[1]
     fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
-                  labels={
-                      "sepal_lenght": labels[0],
-                      "sepla_width": labels[1]
-                  })
-    fig.update_layout( width = 1300, height = 500)
+    labels=dict(date="Datum", new_cases="Broj solučajeva zaraze"))
+
+    fig.update_layout(width = 700, height = 500)
     fig.update_traces(line_color = "#001024")
     return fig
+
+def Tested(dataFrame, columns, title, labels):
+    one, two = labels[0], labels[1]
+    fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
+    labels=dict(date="Datum", Testirani="Broj testiranih osoba"))
+
+    fig.update_layout(width = 700, height = 500)
+    fig.update_traces(line_color = "#001024")
+    return fig
+
+def Recovered(dataFrame, columns, title, labels):
+    one, two = labels[0], labels[1]
+    fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
+    labels=dict(date="Datum", Oporavljeni="Broj oporavljenih osoba"))
+
+    fig.update_layout(width = 700, height = 500)
+    fig.update_traces(line_color = "#001024")
+    return fig
+
 ## Application Logic ##
 
 missingData = Import(fileName = "missingDataValues.xlsx")
@@ -90,41 +108,45 @@ missingData = Import(fileName = "missingDataValues.xlsx")
 fig = MissingDataPlot(missingData)
 st.set_page_config(layout="centered")
 
+st.sidebar.title("Konfiguracija")
 select = st.sidebar.selectbox("Odaberite regiju:", ('Bosna i Hercegovina', 'Federacija Bosne i Hercegovine', 'Republika Srpska', 'Brčko Distrikt'))
 
 data, fbih, rs, bd = 0, 0, 0, 0
 
 startDate, endDate = 0, 0
 
-
+filtered = 0
 
 if select == "Bosna i Hercegovina":
     st.markdown("<h3 style = 'text-align: left;'>Podaci za Bosnu i Hercegovinu</h3>", unsafe_allow_html=True)
     data = Import("cleanData.xlsx")
 
-    
     date = st.sidebar.slider(
         "Odaberi vremenski opseg:",
         value = (dt.strptime(data['date'][0], "%d.%m.%Y"), dt.strptime(data.date[len(data.date) - 1], "%d.%m.%Y")),
         min_value = dt.strptime(data['date'][0], "%d.%m.%Y"),
         max_value = dt.strptime(data.date[len(data.date) - 1], "%d.%m.%Y"),
-        format = "DD.MM.YY")
-
-
-    startDate = dt.strftime(date[0], "%d.%m.%Y")
-    endDate = dt.strftime(date[1], "%d.%m.%Y")
-
-    print(data.info())
-    print(startDate, endDate)
+        format = "MM.DD.YY")
     
+    st.sidebar.error("Format datuma je (mm.dd.gggg)")
+
+    startDate, endDate = dt.strftime(date[0], "%m.%d.%Y"), dt.strftime(date[1], "%m.%d.%Y")
+    data.date = pd.to_datetime(data.date, infer_datetime_format=True, dayfirst = True)
+
+    filtered = data[(data.date >= startDate) & (data.date <= endDate)]
+
     show = st.checkbox("Prikaži podatke", True)
     if show:
-        st.dataframe(data, height = 400, width = 850)
+        
+        st.dataframe(filtered, height = 400, width = 850)
         st.markdown("<br>", unsafe_allow_html = True)
         st.markdown("<br>", unsafe_allow_html = True)
-    
-    
 
+
+    st.plotly_chart(Covid(filtered, ['date', 'new_cases'], "Broj novih slučajeva korona virusa u Bosni i Hercegovini", ["Datum", "Slučajevi"]))
+    st.plotly_chart(Tested(filtered, ['date', 'Testirani'], "Broj testiranih osoba u Bosni i Hercegovini", ["Datum", "Testirani"]))
+    st.plotly_chart(Covid(filtered, ['date', 'Smrtni sl.'], "Broj smrtnih slučajeva uzrokovani COVID-om u Bosni i Hercegovini", ["Datum", "Testirani"]))
+    st.plotly_chart(Recovered(filtered, ['date', 'Oporavljeni'], "Broj oporavljenih osoba u Bosni i Hercegovini", ["Datum", "Oporavljeni"]))
 
 elif select == "Federacija Bosne i Hercegovine":
     fbih = Import('fbih.xlsx')

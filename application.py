@@ -1,10 +1,8 @@
 import streamlit as st
 import os
-import numpy as np
 import pandas as pd
 from datetime import datetime as dt
 import cufflinks as cf
-
 import chart_studio.plotly as py
 import plotly.express as px
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot

@@ -43,7 +43,6 @@ def Recovered(dataFrame, columns, title, labels):
 
 
 ## Application Logic ##
-st.beta_set_page_title("COVID - 19 Izvještaj za BiH")
 missingData = Import(fileName = "missingDataValues.xlsx")
 
 st.set_page_config(layout="centered")

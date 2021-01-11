@@ -17,63 +17,6 @@ from  plotly.subplots import make_subplots
 def Import(fileName, path = "dataSet/cleanData/"):
     return pd.read_excel(os.path.join(path, str(fileName)), engine = "openpyxl")
 
-def MissingDataPlot(dataFrame):
-    colors = ["#FF800B", "#001024"]
-    names = ["Missing Values", "Present Values"]
-    
-    columns = [col for col in dataFrame["Column Name"]]
-    
-    specs = []
-    
-    for sp in range(len(columns)):
-        specs.append({"type": "pie", "rowspan": 0})
-    
-    fig = make_subplots(rows = 1, cols = len(columns), specs = [specs], subplot_titles = columns)
-    
-    position = 0.03
-    
-    for index in range(len(missingData["Missing Data"])):
-        move = 0.15
-        avail = missingData.iloc[index, 2] 
-        miss = missingData.iloc[index, 1]
-        pct = missingData.iloc[index, 3]
-    
-        fig.add_trace(go.Pie(labels = names, values = [avail, miss], textinfo = "none", hole = .8),
-                     row = 1, col = index + 1)
-        
-        if index == 0:
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-
-        elif index <= 2:
-            move = 0.15
-            position += move
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-          
-        elif index == 3:
-            move = 0.175
-            position += move
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-        elif index == 4:
-            move = 0.14
-            position += move
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-        elif index == 5:
-            move = 0.18
-            position += move
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-        elif index == 6:
-            move = 0.15
-            position += move
-            fig.add_annotation(x = position, y=0.5, text="{:.2%}".format(pct), font_size = 15, showarrow = False)
-            fig.update_traces(hoverinfo = 'label + value', marker = dict(colors = colors), col = index + 1)
-        fig.update_layout(title_text="Procentage of Missing Values for Each Column in the Data Set", width = 1300, height = 500)
-    return fig
-
 def Covid(dataFrame, columns, title, labels):
     one, two = labels[0], labels[1]
     fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
@@ -93,7 +36,6 @@ def Tested(dataFrame, columns, title, labels):
     return fig
 
 def Recovered(dataFrame, columns, title, labels):
-    one, two = labels[0], labels[1]
     fig = px.line(dataFrame, x = f"{columns[0]}", y = f"{columns[1]}", title = f"{title}",
     labels=dict(date="Datum", Oporavljeni="Broj oporavljenih osoba"))
 
@@ -101,11 +43,13 @@ def Recovered(dataFrame, columns, title, labels):
     fig.update_traces(line_color = "#001024")
     return fig
 
+
+
+
 ## Application Logic ##
 
 missingData = Import(fileName = "missingDataValues.xlsx")
 
-fig = MissingDataPlot(missingData)
 st.set_page_config(layout="centered")
 
 st.sidebar.title("Konfiguracija")
@@ -142,11 +86,35 @@ if select == "Bosna i Hercegovina":
         st.markdown("<br>", unsafe_allow_html = True)
         st.markdown("<br>", unsafe_allow_html = True)
 
+    showFigures = st.checkbox("Prikaži pojedinačne grafove (Broj novih slučajeva, testiranih, oporavljenih i smrtnih slučajeva)", True)
+    if showFigures:
+        st.plotly_chart(Covid(filtered, ['date', 'new_cases'], "Broj novih slučajeva korona virusa u Bosni i Hercegovini", ["Datum", "Slučajevi"]))
+        st.plotly_chart(Tested(filtered, ['date', 'Testirani'], "Broj testiranih osoba u Bosni i Hercegovini", ["Datum", "Testirani"]))
+        st.plotly_chart(Covid(filtered, ['date', 'Smrtni sl.'], "Broj smrtnih slučajeva uzrokovani COVID-om u Bosni i Hercegovini", ["Datum", "Testirani"]))
+        st.plotly_chart(Recovered(filtered, ['date', 'Oporavljeni'], "Broj oporavljenih osoba u Bosni i Hercegovini", ["Datum", "Oporavljeni"]))
 
-    st.plotly_chart(Covid(filtered, ['date', 'new_cases'], "Broj novih slučajeva korona virusa u Bosni i Hercegovini", ["Datum", "Slučajevi"]))
-    st.plotly_chart(Tested(filtered, ['date', 'Testirani'], "Broj testiranih osoba u Bosni i Hercegovini", ["Datum", "Testirani"]))
-    st.plotly_chart(Covid(filtered, ['date', 'Smrtni sl.'], "Broj smrtnih slučajeva uzrokovani COVID-om u Bosni i Hercegovini", ["Datum", "Testirani"]))
-    st.plotly_chart(Recovered(filtered, ['date', 'Oporavljeni'], "Broj oporavljenih osoba u Bosni i Hercegovini", ["Datum", "Oporavljeni"]))
+        st.markdown("<br>", unsafe_allow_html = True)
+        st.markdown("<br>", unsafe_allow_html = True)
+
+    metrics = pd.DataFrame()
+    
+    metrics['date'] = filtered.date
+    metrics['testirani_slucaj'] = (filtered['new_cases'] / filtered['Testirani']) * 100
+    metrics['smrt_slucaj'] = (filtered['Smrtni sl.'] / filtered['Testirani']) * 100
+    
+    showMetrics = st.checkbox("Prikaži preračunate podatke", True)
+    if showMetrics:
+        st.plotly_chart(Recovered(metrics, ['date', 'testirani_slucaj'], "Procent pozitivnih osoba u okviru testiranih osoba", ['Datum', 'Procent']))
+        CT1, CT2 = st.beta_columns([8,1])
+        CT1.info("")
+
+        st.plotly_chart(Recovered(metrics, ['date', 'smrt_slucaj'], "Procent smrtnosti okviru testiranih osoba", ['Datum', 'Procent']))
+        
+        C1, C2 = st.beta_columns([8,1])
+
+        averageDeath = (sum(filtered['Smrtni sl.']) / sum(filtered['new_cases']))
+        C1.info("Prosječna smrtnost od COVID-19 u Bosni i Hercegovini predstavlja:")
+        C2.error(f"{averageDeath:.2%}") 
 
 elif select == "Federacija Bosne i Hercegovine":
     fbih = Import('fbih.xlsx')
@@ -163,36 +131,3 @@ elif select == "Brčko Distrikt":
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# st.markdown("<br>", unsafe_allow_html=True)
-# st.markdown("<h1 id='datagethering' style = 'text-align: center;'>Data Visualization</h1>", unsafe_allow_html=True)
-
-# """For the first part in this section will see the curve movement through time. To get litle bit of understanding how the pandemic has changed 
-# over time."""
-# daily = Plot(data, ['date', 'new_cases'], "Number of COVID - 19 Cases in Bosnia and Herzegovina", ["Date", "New Cases"])
-# st.plotly_chart(daily)
-
-# tested = Plot(data, ['date', 'Testirani'], "Number of tested people daily in Bosnia and Herzegovina", ["Date", "Tested"])
-# st.plotly_chart(tested)
-# # st.line_chart(data[["new_cases"]])

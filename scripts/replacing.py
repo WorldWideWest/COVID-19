@@ -21,7 +21,9 @@ for colIndex, column in enumerate(dataFrame.columns):
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
             elif dataFrame.iloc[index, colIndex] < 0:
-                dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
+                startIndex = index - 5
+                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
+                dataFrame.iloc[index, colIndex] = avgValue
     
 
     elif column == "Smrtni sl.":

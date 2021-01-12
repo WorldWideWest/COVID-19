@@ -6,54 +6,56 @@ import re
 from bs4 import BeautifulSoup 
 from datetime import datetime, timedelta
 
-url = "http://mcp.gov.ba/Publication/Read/epidemioloska-slika-covid-19#"
+url = "http://www.mcp.gov.ba/publication/read/epidemioloska-slika-covid-19?pageId=3"
+url2 = "http://www.mcp.gov.ba/publication/read/epidemioloska-slika-novo?pageId=3"
 
-r = requests.get(url)
-soup = BeautifulSoup(r.text, 'html.parser')
+def Scrape(url):
 
-rawTables = []
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text, 'html.parser')
 
-for i in soup.find_all("table"):
-    rows = i.find_all("tr")
-    
-    for row in rows:
-        data = row.find_all("td")
-        for ind in data:
-            rawTables.append(ind.text.strip())
+    rawTables = []
 
-elements, formated = [], []
+    for i in soup.find_all("table"):
+        rows = i.find_all("tr")
+        
+        for row in rows:
+            data = row.find_all("td")
+            for ind in data:
+                rawTables.append(ind.text.strip())
 
-for element in rawTables:
-    pattern = re.compile(r'\d{2}.\d{2}.\d{4}')
-    if pattern.match(element):
-        if len(elements) > 0:
-            elements = list(filter(None, elements))
-            formated.append(elements)
-            elements.clear()
-        elements.append(element)
-    else: 
-        elements.append(element)
+    elements, formated = [], []
 
-rawTables.clear()
-elements.clear()
-
-tables = []
-
-for table in formated:
-    for index, element in enumerate(table):
+    for element in rawTables:
         pattern = re.compile(r'\d{2}.\d{2}.\d{4}')
-        match = pattern.match(element)
-        if match:
-            table.remove(element)
-            table.insert(0, match.group(0))
-        elif len(table) == index + 1:
-            table = list(filter(None, table))
-            tables.append(table)
-        else:
-            pass
+        if pattern.match(element):
+            if len(elements) > 0:
+                elements = list(filter(None, elements))
+                formated.append(elements)
+                elements.clear()
+            elements.append(element)
+        else: 
+            elements.append(element)
 
+    rawTables.clear()
+    elements.clear()
 
-formated.clear()
+    tables = []
+
+    for table in formated:
+        for index, element in enumerate(table):
+            pattern = re.compile(r'\d{2}.\d{2}.\d{4}')
+            match = pattern.match(element)
+            if match:
+                table.remove(element)
+                table.insert(0, match.group(0))
+            elif len(table) == index + 1:
+                table = list(filter(None, table))
+                tables.append(table)
+            else:
+                pass
+
+    return tables
 
 def getData(start, end, tables):
         formated = []
@@ -204,10 +206,24 @@ def getDataBD(tables):
 
 #### Parssing ####
 
-bih = getData("BiH", "RS", tables) 
-rs = getData("RS", "FBiH", tables)
-fbih = getData("FBiH", "BD", tables)
-bd = getDataBD(tables)
+bih2020 = Scrape(url)
+bih2021 = Scrape(url2)
+
+bih = getData("BiH", "RS", bih2020) 
+rs = getData("RS", "FBiH", bih2020)
+fbih = getData("FBiH", "BD", bih2020)
+bd = getDataBD(bih2020)
+
+bih1 = getData("BiH", "RS", bih2021) 
+rs1 = getData("RS", "FBiH", bih2021)
+fbih1 = getData("FBiH", "BD", bih2021)
+bd1 = getDataBD(bih2021)
+
+bih = pd.concat([bih, bih1])
+rs = pd.concat([rs, rs1])
+fbih = pd.concat([fbih, fbih1])
+bd = pd.concat([bd, bd1])
+
 
 ## Saving data to excel ##
 

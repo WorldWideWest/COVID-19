@@ -22,9 +22,4 @@ jobs:
         pip3 install -r requirements.txt
     - name: Testing
       run: |
-        cd scripts
-        python3 scrapping.py
-        python3 combining.py
-        python3 replacing.py
-        python3 entityParsing.py
-   
+        python3 -m unittest testing.py 

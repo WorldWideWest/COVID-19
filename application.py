@@ -9,9 +9,8 @@ import plotly.graph_objects as go
 from  plotly.subplots import make_subplots
 from process import Process
 
-
 ## Application Logic ##
-st.set_page_config(layout="centered")
+st.set_page_config(layout="centered", page_title='Analiza COVID - 19 u Bosni i Hercegovini')
 st.sidebar.title("Konfiguracija")
 select = st.sidebar.text("Regija: Bosna i Hercegovina")
 

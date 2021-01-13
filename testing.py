@@ -2,7 +2,9 @@ import os
 import unittest
 import pandas as pd
 import numpy as np
+from scripts.preprocessing import Preprocessing
 
+process = Preprocessing
 
 class Testing(unittest.TestCase):
 
@@ -37,6 +39,16 @@ class Testing(unittest.TestCase):
                 self.assertEqual(data.shape[1], 5)
                 for number in data.isnull().sum():
                     self.assertEqual(number, 0)
+
+    def testing_preprocessing(self):
+        """Testing the preprocessing class"""
+        url = "http://www.mcp.gov.ba/publication/read/epidemioloska-slika-covid-19?pageId=3"
+
+        tables = process.Scrape(url)
+        
+        data = process.getData("BiH", "RS", tables)
+        
+        self.assertEqual(data.shape[1], 7)     
 
 if __name__ == '__main__':
     unittest.main()

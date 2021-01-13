@@ -17,8 +17,8 @@ for colIndex, column in enumerate(dataFrame.columns):
     if column == "Oporavljeni" or column == "Testirani":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
-                startIndex = index - 5
-                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
+                startIndex = index - 6
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
             elif dataFrame.iloc[index, colIndex] < 0:
                 startIndex = index - 5
@@ -29,8 +29,8 @@ for colIndex, column in enumerate(dataFrame.columns):
     elif column == "Smrtni sl.":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
-                startIndex = index - 2
-                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 2)
+                startIndex = index - 3
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 2)
                 dataFrame.iloc[index, colIndex] = avgValue
             elif dataFrame.iloc[index, colIndex] < 0:
                 dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
@@ -40,13 +40,13 @@ for colIndex, column in enumerate(dataFrame.columns):
     elif column == "new_cases":
         for index in range(len(dataFrame[column])):
             if dataFrame.iloc[index, colIndex] == 0:
-                startIndex = index - 5
-                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
+                startIndex = index - 6
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
 
             elif pd.isnull(dataFrame.iloc[index, colIndex]):
-                startIndex = index - 5
-                avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
+                startIndex = index - 6
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
         
             elif dataFrame.iloc[index, colIndex] < 0:

@@ -9,7 +9,7 @@
 
 This project is based to practice my skills in Python and to help the decision makers and make their lifes litle bit easy because we all know how hard it is to make decisions that impact the lifes of milions of people.
 
-The data that is used here is downloaded from <a href="www.who.int">WHO</a> website and we will use it to analyse the situation in Bosnia and Herzegovina. The first part of any data analysis is to get the data and we did it when downloading it from the website given above.
+The data that is used here is downloaded from <a href="https://ourworldindata.org/coronavirus#coronavirus-country-profiles">Our World In Data</a> website and we will use it to analyse the situation in Bosnia and Herzegovina. The first part of any data analysis is to get the data and we did it when downloading it from the website given above.
 
 The next part is to extract the data for B&H to a seperate file in a new excel workbook. That is also done. 
 
@@ -22,6 +22,8 @@ The flowing thing to do is to visualize the cleaned dataset. By visualizing the 
 When all of this is set and done we start to model our data so we can apply statistical methods to make predictions. 
 
 And at the end we make the conclusion and give the output to the people who make decisions. 
+
+The websites is deployed on heroku: <a href="https://covid19bih.herokuapp.com/">Analiza COVID - 19 u Bosni i Hercegovini</a> 
 
 ## Technologies
 

@@ -109,3 +109,4 @@ bd = Imputer(bd)
 fbih.to_excel(os.path.join("../dataSet/cleanData", "fbih.xlsx"), index = False)
 rs.to_excel(os.path.join("../dataSet/cleanData", "rs.xlsx"), index = False)
 bd.to_excel(os.path.join("../dataSet/cleanData", "bd.xlsx"), index = False)
+

@@ -1,13 +1,17 @@
 import os
 import re
+import logging as lg
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from datetime import datetime
 
+# Logging configuration 
+lg.basicConfig(level = lg.INFO)
+
 class Preprocessing:
     def Scrape(url):
-        r = requests.get(url)
+        r = requests.get(url, verify = False)
         soup = BeautifulSoup(r.text, 'html.parser')
 
         rawTables = []
@@ -51,6 +55,7 @@ class Preprocessing:
                 else:
                     pass
 
+        lg.info(f"Number of days gathered { len(tables) } days")
         return tables
     
     def getData(start, end, tables):
@@ -117,82 +122,8 @@ class Preprocessing:
                         formated.append(entity)
 
 
-   # 26.08.20
-   # columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva']
-    # 25.08.20
-   # columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba']
-    # 21.05.20
         columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva',  'Broj osoba pod nadzorom']
 
-
-        dataFrame = pd.DataFrame(
-            columns = columns,
-            data = formated
-        )
-        return dataFrame
-    
-    def getDataBD(tables):
-        formated = []
-        for table in tables:
-            startIndex, endIndex = 0, 0
-            entity = []
-            for index, element in enumerate(table):
-                if index == 0:
-                    entity.append(element)
-                elif element == "BD":
-                    startIndex = index + 1 
-                    endIndex = len(table)
-                elif len(table) == index + 1:
-                    date = datetime.strptime(entity[0], "%d.%m.%Y")
-
-                    cDate = datetime.strptime("26.8.2020", "%d.%m.%Y")
-                    scDate = datetime.strptime("21.5.2020", "%d.%m.%Y")
-                    tcDate = datetime.strptime("13.4.2020", "%d.%m.%Y")
-
-                    if date > cDate:
-                        for item in table[startIndex : endIndex]:
-                            item = item.replace("*", "")
-                            item = item.replace(" ", "")
-                            entity.append(int(item))
-
-                        entity.insert(6, 0)
-                        formated.append(entity)
-
-                    elif date > scDate:
-                        for item in table[startIndex : endIndex]:
-                            item = item.replace("*", "")
-                            item = item.replace(" ", "")
-                            entity.append(int(item))
-                        
-                        entity.insert(5, 0)
-                        entity.insert(6, 0)
-                        formated.append(entity)
-
-                    elif scDate >= date and date > tcDate:
-                        for item in table[startIndex : endIndex]:
-                            item = item.replace("*", "")
-                            item = item.replace(" ", "")
-                            entity.append(int(item))
-
-                        entity.insert(6, 0)
-                        entity.insert(7, entity[3])
-                        del entity[3]
-                        formated.append(entity)
-
-                    elif tcDate >= date:
-                        for item in table[startIndex : endIndex]:
-                            item = item.replace("*", "")
-                            item = item.replace(" ", "")
-                            entity.append(int(item))
-
-                        entity.insert(5, 0)
-                        entity.insert(6, 0)
-                        entity.insert(7, entity[3])
-                        del entity[3]
-                        formated.append(entity)
-
-
-        columns = ['Datum','Potvrđeni slučajevi', 'Broj testiranih', 'Broj smrtnih slučajeva', 'Broj oporavljenih osoba', 'Broj aktivnih slučajeva',  'Broj osoba pod nadzorom']
 
         dataFrame = pd.DataFrame(
             columns = columns,

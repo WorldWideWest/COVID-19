@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 scrapping.py; python3 combining.py && python3 replacing.py; python3 entityParsing.py
+python scrapping.py; python combining.py && python replacing.py; python entityParsing.py

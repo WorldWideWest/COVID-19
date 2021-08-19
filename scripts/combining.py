@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 
 ## Data import ##
-rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "mbih.xlsx"), engine='openpyxl')
+rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "intBH.xlsx"), engine='openpyxl') # Data from ourworldindata.com
 rawData['date'] = rawData['date'].astype('datetime64')
 rawData['date'] = rawData['date'].dt.strftime('%d.%m.%Y')
 
-bih = pd.read_excel(os.path.join("../dataSet/rawData/", "bih.xlsx"), engine='openpyxl')
+bih = pd.read_excel(os.path.join("../dataSet/rawData/", "locBH.xlsx"), engine='openpyxl') # Data from local agencies
 
 ## Extracting data ##
 

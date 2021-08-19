@@ -25,7 +25,7 @@ bih = pd.concat([bih, bih1])
 
 
 ## Saving data to excel ##
-bih.to_excel("../dataSet/rawData/bih.xlsx", index = False)
+bih.to_excel("../dataSet/rawData/locBH.xlsx", index = False)
 
 ## Config ##
 directory = "/home/dzafo/COVID-19/dataSet/rawData"
@@ -54,19 +54,21 @@ while not os.path.exists("../dataSet/rawData/owid-covid-data.xlsx"):
     lg.info("The file is successfuly downloading")
 
 if os.path.isfile("../dataSet/rawData/owid-covid-data.xlsx"):
-    if os.path.isfile("../dataSet/rawData/mbih.xlsx"):
+    if os.path.isfile("../dataSet/rawData/intBH.xlsx"):
 
-        os.remove("../dataSet/rawData/mbih.xlsx")
-        os.rename("../dataSet/rawData/owid-covid-data.xlsx", "../dataSet/rawData/mbih.xlsx")
+        os.remove("../dataSet/rawData/intBH.xlsx")
+        os.rename("../dataSet/rawData/owid-covid-data.xlsx", "../dataSet/rawData/intBH.xlsx")
+        lg.info("Deleted unnececary files and renemed the owid-covid-data.xlsx to intBH.xlsx")
+    else:
+        os.rename("../dataSet/rawData/owid-covid-data.xlsx", "../dataSet/rawData/intBH.xlsx")
+        lg.info("Renemed the owid-covid-data.xlsx to intBH.xlsx")
 
-        lg.info("Deleted unnececary files and renemed the owid-covid-data.xlsx to mbih.xlsx")
-        
 driver.quit()
 
-rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "mbih.xlsx"), engine='openpyxl')
+rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "intBH.xlsx"), engine='openpyxl')
 rawData = rawData[rawData['location'] == 'Bosnia and Herzegovina']
 rawData = rawData.dropna(axis = 1)
 rawData = rawData[["date", "total_cases", "new_cases", "population"]]
-rawData.to_excel(os.path.join("../dataSet/rawData/", "mbih.xlsx"), index = False)
+rawData.to_excel(os.path.join("../dataSet/rawData/", "intBH.xlsx"), index = False)
 
-lg.info(f"All operations are completed successfuly and the file is available at: ../dataSet/rawData/mbih.xlsx")
+lg.info(f"All operations of scraping and downloading are completed successfuly and the file is available at: ../dataSet/rawData/intBH.xlsx, locBH.xlsx")

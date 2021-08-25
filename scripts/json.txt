@@ -1,0 +1,4898 @@
+[
+    {
+        "date": "2020-03-05",
+        "total_cases": 2,
+        "new_cases": 2,
+        "population": 3280815,
+        "recovered": 10779,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-06",
+        "total_cases": 2,
+        "new_cases": 0,
+        "population": 3280815,
+        "recovered": 0,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-07",
+        "total_cases": 3,
+        "new_cases": 1,
+        "population": 3280815,
+        "recovered": 0,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-08",
+        "total_cases": 3,
+        "new_cases": 0,
+        "population": 3280815,
+        "recovered": 0,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-09",
+        "total_cases": 3,
+        "new_cases": 0,
+        "population": 3280815,
+        "recovered": 0,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-10",
+        "total_cases": 5,
+        "new_cases": 2,
+        "population": 3280815,
+        "recovered": 2155,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-11",
+        "total_cases": 7,
+        "new_cases": 2,
+        "population": 3280815,
+        "recovered": 0,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-12",
+        "total_cases": 11,
+        "new_cases": 4,
+        "population": 3280815,
+        "recovered": 431,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-13",
+        "total_cases": 13,
+        "new_cases": 2,
+        "population": 3280815,
+        "recovered": 431,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-14",
+        "total_cases": 18,
+        "new_cases": 5,
+        "population": 3280815,
+        "recovered": 517,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-15",
+        "total_cases": 24,
+        "new_cases": 6,
+        "population": 3280815,
+        "recovered": 603,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-16",
+        "total_cases": 25,
+        "new_cases": 1,
+        "population": 3280815,
+        "recovered": 275,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-17",
+        "total_cases": 26,
+        "new_cases": 1,
+        "population": 3280815,
+        "recovered": 396,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-18",
+        "total_cases": 38,
+        "new_cases": 12,
+        "population": 3280815,
+        "recovered": 365,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-19",
+        "total_cases": 63,
+        "new_cases": 25,
+        "population": 3280815,
+        "recovered": 358,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-20",
+        "total_cases": 89,
+        "new_cases": 26,
+        "population": 3280815,
+        "recovered": 327,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-21",
+        "total_cases": 93,
+        "new_cases": 4,
+        "population": 3280815,
+        "recovered": 278,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-22",
+        "total_cases": 126,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 289,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-23",
+        "total_cases": 136,
+        "new_cases": 10,
+        "population": 3280815,
+        "recovered": 265,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-24",
+        "total_cases": 166,
+        "new_cases": 30,
+        "population": 3280815,
+        "recovered": 250,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-25",
+        "total_cases": 176,
+        "new_cases": 10,
+        "population": 3280815,
+        "recovered": 231,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-26",
+        "total_cases": 191,
+        "new_cases": 15,
+        "population": 3280815,
+        "recovered": 216,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-27",
+        "total_cases": 237,
+        "new_cases": 46,
+        "population": 3280815,
+        "recovered": 207,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-28",
+        "total_cases": 258,
+        "new_cases": 21,
+        "population": 3280815,
+        "recovered": 192,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-29",
+        "total_cases": 323,
+        "new_cases": 65,
+        "population": 3280815,
+        "recovered": 180,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-30",
+        "total_cases": 368,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 169,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-03-31",
+        "total_cases": 420,
+        "new_cases": 52,
+        "population": 3280815,
+        "recovered": 159,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-04-01",
+        "total_cases": 459,
+        "new_cases": 39,
+        "population": 3280815,
+        "recovered": 149,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-04-02",
+        "total_cases": 533,
+        "new_cases": 74,
+        "population": 3280815,
+        "recovered": 140,
+        "tested": 585,
+        "died": 3
+    },
+    {
+        "date": "2020-04-03",
+        "total_cases": 579,
+        "new_cases": 46,
+        "population": 3280815,
+        "recovered": 131,
+        "tested": 645,
+        "died": 3
+    },
+    {
+        "date": "2020-04-04",
+        "total_cases": 624,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 123,
+        "tested": 590,
+        "died": 3
+    },
+    {
+        "date": "2020-04-05",
+        "total_cases": 654,
+        "new_cases": 30,
+        "population": 3280815,
+        "recovered": 115,
+        "tested": 602,
+        "died": 0
+    },
+    {
+        "date": "2020-04-06",
+        "total_cases": 674,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 108,
+        "tested": 609,
+        "died": 8
+    },
+    {
+        "date": "2020-04-07",
+        "total_cases": 764,
+        "new_cases": 90,
+        "population": 3280815,
+        "recovered": 101,
+        "tested": 590,
+        "died": 1
+    },
+    {
+        "date": "2020-04-08",
+        "total_cases": 804,
+        "new_cases": 40,
+        "population": 3280815,
+        "recovered": 95,
+        "tested": 478,
+        "died": 4
+    },
+    {
+        "date": "2020-04-09",
+        "total_cases": 858,
+        "new_cases": 54,
+        "population": 3280815,
+        "recovered": 89,
+        "tested": 874,
+        "died": 1
+    },
+    {
+        "date": "2020-04-10",
+        "total_cases": 901,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 83,
+        "tested": 1028,
+        "died": 1
+    },
+    {
+        "date": "2020-04-11",
+        "total_cases": 946,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 78,
+        "tested": 782,
+        "died": 1
+    },
+    {
+        "date": "2020-04-12",
+        "total_cases": 1009,
+        "new_cases": 63,
+        "population": 3280815,
+        "recovered": 73,
+        "tested": 794,
+        "died": 1
+    },
+    {
+        "date": "2020-04-13",
+        "total_cases": 1037,
+        "new_cases": 28,
+        "population": 3280815,
+        "recovered": 69,
+        "tested": 637,
+        "died": 1
+    },
+    {
+        "date": "2020-04-14",
+        "total_cases": 1083,
+        "new_cases": 46,
+        "population": 3280815,
+        "recovered": 236,
+        "tested": 795,
+        "died": 1
+    },
+    {
+        "date": "2020-04-15",
+        "total_cases": 1110,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 17,
+        "tested": 932,
+        "died": 1
+    },
+    {
+        "date": "2020-04-16",
+        "total_cases": 1167,
+        "new_cases": 57,
+        "population": 3280815,
+        "recovered": 24,
+        "tested": 1404,
+        "died": 2
+    },
+    {
+        "date": "2020-04-17",
+        "total_cases": 1214,
+        "new_cases": 47,
+        "population": 3280815,
+        "recovered": 43,
+        "tested": 1008,
+        "died": 3
+    },
+    {
+        "date": "2020-04-18",
+        "total_cases": 1268,
+        "new_cases": 54,
+        "population": 3280815,
+        "recovered": 18,
+        "tested": 1117,
+        "died": 1
+    },
+    {
+        "date": "2020-04-19",
+        "total_cases": 1285,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 9,
+        "tested": 950,
+        "died": 1
+    },
+    {
+        "date": "2020-04-20",
+        "total_cases": 1309,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 34,
+        "tested": 540,
+        "died": 1
+    },
+    {
+        "date": "2020-04-21",
+        "total_cases": 1342,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 56,
+        "tested": 837,
+        "died": 2
+    },
+    {
+        "date": "2020-04-22",
+        "total_cases": 1368,
+        "new_cases": 26,
+        "population": 3280815,
+        "recovered": 23,
+        "tested": 930,
+        "died": 2
+    },
+    {
+        "date": "2020-04-23",
+        "total_cases": 1413,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 25,
+        "tested": 1307,
+        "died": 1
+    },
+    {
+        "date": "2020-04-24",
+        "total_cases": 1421,
+        "new_cases": 8,
+        "population": 3280815,
+        "recovered": 53,
+        "tested": 1336,
+        "died": 1
+    },
+    {
+        "date": "2020-04-25",
+        "total_cases": 1486,
+        "new_cases": 65,
+        "population": 3280815,
+        "recovered": 54,
+        "tested": 1908,
+        "died": 2
+    },
+    {
+        "date": "2020-04-26",
+        "total_cases": 1516,
+        "new_cases": 30,
+        "population": 3280815,
+        "recovered": 32,
+        "tested": 1154,
+        "died": 2
+    },
+    {
+        "date": "2020-04-27",
+        "total_cases": 1565,
+        "new_cases": 49,
+        "population": 3280815,
+        "recovered": 35,
+        "tested": 992,
+        "died": 1
+    },
+    {
+        "date": "2020-04-28",
+        "total_cases": 1585,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 23,
+        "tested": 781,
+        "died": 3
+    },
+    {
+        "date": "2020-04-29",
+        "total_cases": 1677,
+        "new_cases": 92,
+        "population": 3280815,
+        "recovered": 28,
+        "tested": 1527,
+        "died": 2
+    },
+    {
+        "date": "2020-04-30",
+        "total_cases": 1757,
+        "new_cases": 80,
+        "population": 3280815,
+        "recovered": 17,
+        "tested": 1663,
+        "died": 4
+    },
+    {
+        "date": "2020-05-01",
+        "total_cases": 1781,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 28,
+        "tested": 1385,
+        "died": 1
+    },
+    {
+        "date": "2020-05-02",
+        "total_cases": 1839,
+        "new_cases": 58,
+        "population": 3280815,
+        "recovered": 24,
+        "tested": 605,
+        "died": 2
+    },
+    {
+        "date": "2020-05-03",
+        "total_cases": 1857,
+        "new_cases": 18,
+        "population": 3280815,
+        "recovered": 46,
+        "tested": 1145,
+        "died": 5
+    },
+    {
+        "date": "2020-05-04",
+        "total_cases": 1926,
+        "new_cases": 69,
+        "population": 3280815,
+        "recovered": 30,
+        "tested": 450,
+        "died": 1
+    },
+    {
+        "date": "2020-05-05",
+        "total_cases": 1946,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 56,
+        "tested": 918,
+        "died": 1
+    },
+    {
+        "date": "2020-05-06",
+        "total_cases": 1987,
+        "new_cases": 41,
+        "population": 3280815,
+        "recovered": 17,
+        "tested": 1196,
+        "died": 7
+    },
+    {
+        "date": "2020-05-07",
+        "total_cases": 2027,
+        "new_cases": 40,
+        "population": 3280815,
+        "recovered": 26,
+        "tested": 1695,
+        "died": 4
+    },
+    {
+        "date": "2020-05-08",
+        "total_cases": 2070,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 6,
+        "tested": 604,
+        "died": 8
+    },
+    {
+        "date": "2020-05-09",
+        "total_cases": 2090,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 99,
+        "tested": 1198,
+        "died": 4
+    },
+    {
+        "date": "2020-05-10",
+        "total_cases": 2117,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 47,
+        "tested": 1293,
+        "died": 5
+    },
+    {
+        "date": "2020-05-11",
+        "total_cases": 2141,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 8,
+        "tested": 1036,
+        "died": 6
+    },
+    {
+        "date": "2020-05-12",
+        "total_cases": 2158,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 54,
+        "tested": 1133,
+        "died": 4
+    },
+    {
+        "date": "2020-05-13",
+        "total_cases": 2181,
+        "new_cases": 23,
+        "population": 3280815,
+        "recovered": 60,
+        "tested": 929,
+        "died": 3
+    },
+    {
+        "date": "2020-05-14",
+        "total_cases": 2218,
+        "new_cases": 37,
+        "population": 3280815,
+        "recovered": 44,
+        "tested": 1430,
+        "died": 2
+    },
+    {
+        "date": "2020-05-15",
+        "total_cases": 2236,
+        "new_cases": 18,
+        "population": 3280815,
+        "recovered": 64,
+        "tested": 1339,
+        "died": 6
+    },
+    {
+        "date": "2020-05-16",
+        "total_cases": 2267,
+        "new_cases": 31,
+        "population": 3280815,
+        "recovered": 19,
+        "tested": 1379,
+        "died": 1
+    },
+    {
+        "date": "2020-05-17",
+        "total_cases": 2290,
+        "new_cases": 23,
+        "population": 3280815,
+        "recovered": 81,
+        "tested": 1304,
+        "died": 4
+    },
+    {
+        "date": "2020-05-18",
+        "total_cases": 2304,
+        "new_cases": 14,
+        "population": 3280815,
+        "recovered": 28,
+        "tested": 1488,
+        "died": 0
+    },
+    {
+        "date": "2020-05-19",
+        "total_cases": 2321,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 58,
+        "tested": 2668,
+        "died": 1
+    },
+    {
+        "date": "2020-05-20",
+        "total_cases": 2338,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 35,
+        "tested": 1636,
+        "died": 2
+    },
+    {
+        "date": "2020-05-21",
+        "total_cases": 2350,
+        "new_cases": 12,
+        "population": 3280815,
+        "recovered": 39,
+        "tested": 1373,
+        "died": 4
+    },
+    {
+        "date": "2020-05-22",
+        "total_cases": 2372,
+        "new_cases": 22,
+        "population": 3280815,
+        "recovered": 18,
+        "tested": 510,
+        "died": 1
+    },
+    {
+        "date": "2020-05-23",
+        "total_cases": 2391,
+        "new_cases": 19,
+        "population": 3280815,
+        "recovered": 48,
+        "tested": 1187,
+        "died": 0
+    },
+    {
+        "date": "2020-05-24",
+        "total_cases": 2401,
+        "new_cases": 10,
+        "population": 3280815,
+        "recovered": 18,
+        "tested": 838,
+        "died": 3
+    },
+    {
+        "date": "2020-05-25",
+        "total_cases": 2406,
+        "new_cases": 5,
+        "population": 3280815,
+        "recovered": 16,
+        "tested": 402,
+        "died": 2
+    },
+    {
+        "date": "2020-05-26",
+        "total_cases": 2416,
+        "new_cases": 10,
+        "population": 3280815,
+        "recovered": 25,
+        "tested": 594,
+        "died": 3
+    },
+    {
+        "date": "2020-05-27",
+        "total_cases": 2435,
+        "new_cases": 19,
+        "population": 3280815,
+        "recovered": 23,
+        "tested": 583,
+        "died": 2
+    },
+    {
+        "date": "2020-05-28",
+        "total_cases": 2462,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 37,
+        "tested": 1456,
+        "died": 2
+    },
+    {
+        "date": "2020-05-29",
+        "total_cases": 2485,
+        "new_cases": 23,
+        "population": 3280815,
+        "recovered": 22,
+        "tested": 1029,
+        "died": 0
+    },
+    {
+        "date": "2020-05-30",
+        "total_cases": 2494,
+        "new_cases": 9,
+        "population": 3280815,
+        "recovered": 28,
+        "tested": 1027,
+        "died": 0
+    },
+    {
+        "date": "2020-05-31",
+        "total_cases": 2510,
+        "new_cases": 16,
+        "population": 3280815,
+        "recovered": 31,
+        "tested": 597,
+        "died": 0
+    },
+    {
+        "date": "2020-06-01",
+        "total_cases": 2524,
+        "new_cases": 14,
+        "population": 3280815,
+        "recovered": 26,
+        "tested": 680,
+        "died": 1
+    },
+    {
+        "date": "2020-06-02",
+        "total_cases": 2535,
+        "new_cases": 11,
+        "population": 3280815,
+        "recovered": 22,
+        "tested": 822,
+        "died": 3
+    },
+    {
+        "date": "2020-06-03",
+        "total_cases": 2551,
+        "new_cases": 16,
+        "population": 3280815,
+        "recovered": 29,
+        "tested": 1230,
+        "died": 0
+    },
+    {
+        "date": "2020-06-04",
+        "total_cases": 2594,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 12,
+        "tested": 754,
+        "died": 2
+    },
+    {
+        "date": "2020-06-05",
+        "total_cases": 2606,
+        "new_cases": 12,
+        "population": 3280815,
+        "recovered": 17,
+        "tested": 948,
+        "died": 0
+    },
+    {
+        "date": "2020-06-06",
+        "total_cases": 2606,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 17,
+        "tested": 697,
+        "died": 1
+    },
+    {
+        "date": "2020-06-07",
+        "total_cases": 2606,
+        "new_cases": 19,
+        "population": 3280815,
+        "recovered": 16,
+        "tested": 750,
+        "died": 1
+    },
+    {
+        "date": "2020-06-08",
+        "total_cases": 2704,
+        "new_cases": 98,
+        "population": 3280815,
+        "recovered": 55,
+        "tested": 2166,
+        "died": 1
+    },
+    {
+        "date": "2020-06-09",
+        "total_cases": 2728,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 26,
+        "tested": 694,
+        "died": 0
+    },
+    {
+        "date": "2020-06-10",
+        "total_cases": 2775,
+        "new_cases": 47,
+        "population": 3280815,
+        "recovered": 14,
+        "tested": 865,
+        "died": 1
+    },
+    {
+        "date": "2020-06-11",
+        "total_cases": 2832,
+        "new_cases": 57,
+        "population": 3280815,
+        "recovered": 37,
+        "tested": 1000,
+        "died": 0
+    },
+    {
+        "date": "2020-06-12",
+        "total_cases": 2893,
+        "new_cases": 61,
+        "population": 3280815,
+        "recovered": 19,
+        "tested": 792,
+        "died": 2
+    },
+    {
+        "date": "2020-06-13",
+        "total_cases": 2893,
+        "new_cases": 49,
+        "population": 3280815,
+        "recovered": 26,
+        "tested": 945,
+        "died": 0
+    },
+    {
+        "date": "2020-06-14",
+        "total_cases": 2893,
+        "new_cases": 57,
+        "population": 3280815,
+        "recovered": 19,
+        "tested": 670,
+        "died": 1
+    },
+    {
+        "date": "2020-06-15",
+        "total_cases": 3040,
+        "new_cases": 147,
+        "population": 3280815,
+        "recovered": 43,
+        "tested": 2323,
+        "died": 2
+    },
+    {
+        "date": "2020-06-16",
+        "total_cases": 3085,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 16,
+        "tested": 815,
+        "died": 3
+    },
+    {
+        "date": "2020-06-17",
+        "total_cases": 3141,
+        "new_cases": 56,
+        "population": 3280815,
+        "recovered": 19,
+        "tested": 770,
+        "died": 0
+    },
+    {
+        "date": "2020-06-18",
+        "total_cases": 3174,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 22,
+        "tested": 1035,
+        "died": 0
+    },
+    {
+        "date": "2020-06-19",
+        "total_cases": 3273,
+        "new_cases": 99,
+        "population": 3280815,
+        "recovered": 22,
+        "tested": 916,
+        "died": 1
+    },
+    {
+        "date": "2020-06-20",
+        "total_cases": 3273,
+        "new_cases": 67,
+        "population": 3280815,
+        "recovered": 20,
+        "tested": 988,
+        "died": 0
+    },
+    {
+        "date": "2020-06-21",
+        "total_cases": 3273,
+        "new_cases": 76,
+        "population": 3280815,
+        "recovered": 15,
+        "tested": 707,
+        "died": 0
+    },
+    {
+        "date": "2020-06-22",
+        "total_cases": 3525,
+        "new_cases": 252,
+        "population": 3280815,
+        "recovered": 29,
+        "tested": 2604,
+        "died": 2
+    },
+    {
+        "date": "2020-06-23",
+        "total_cases": 3588,
+        "new_cases": 63,
+        "population": 3280815,
+        "recovered": 15,
+        "tested": 1324,
+        "died": 1
+    },
+    {
+        "date": "2020-06-24",
+        "total_cases": 3676,
+        "new_cases": 88,
+        "population": 3280815,
+        "recovered": 12,
+        "tested": 1315,
+        "died": 1
+    },
+    {
+        "date": "2020-06-25",
+        "total_cases": 3796,
+        "new_cases": 120,
+        "population": 3280815,
+        "recovered": 25,
+        "tested": 1145,
+        "died": 2
+    },
+    {
+        "date": "2020-06-26",
+        "total_cases": 3935,
+        "new_cases": 139,
+        "population": 3280815,
+        "recovered": 16,
+        "tested": 1130,
+        "died": 3
+    },
+    {
+        "date": "2020-06-27",
+        "total_cases": 3935,
+        "new_cases": 119,
+        "population": 3280815,
+        "recovered": 16,
+        "tested": 1277,
+        "died": 1
+    },
+    {
+        "date": "2020-06-28",
+        "total_cases": 3935,
+        "new_cases": 132,
+        "population": 3280815,
+        "recovered": 13,
+        "tested": 982,
+        "died": 2
+    },
+    {
+        "date": "2020-06-29",
+        "total_cases": 4325,
+        "new_cases": 390,
+        "population": 3280815,
+        "recovered": 28,
+        "tested": 3244,
+        "died": 6
+    },
+    {
+        "date": "2020-06-30",
+        "total_cases": 4453,
+        "new_cases": 128,
+        "population": 3280815,
+        "recovered": 36,
+        "tested": 1177,
+        "died": 2
+    },
+    {
+        "date": "2020-07-01",
+        "total_cases": 4606,
+        "new_cases": 153,
+        "population": 3280815,
+        "recovered": 30,
+        "tested": 1157,
+        "died": 2
+    },
+    {
+        "date": "2020-07-02",
+        "total_cases": 4788,
+        "new_cases": 182,
+        "population": 3280815,
+        "recovered": 93,
+        "tested": 1759,
+        "died": 1
+    },
+    {
+        "date": "2020-07-03",
+        "total_cases": 4962,
+        "new_cases": 174,
+        "population": 3280815,
+        "recovered": 25,
+        "tested": 1851,
+        "died": 2
+    },
+    {
+        "date": "2020-07-04",
+        "total_cases": 4962,
+        "new_cases": 197,
+        "population": 3280815,
+        "recovered": 37,
+        "tested": 1467,
+        "died": 1
+    },
+    {
+        "date": "2020-07-05",
+        "total_cases": 4962,
+        "new_cases": 205,
+        "population": 3280815,
+        "recovered": 36,
+        "tested": 1188,
+        "died": 1
+    },
+    {
+        "date": "2020-07-06",
+        "total_cases": 5458,
+        "new_cases": 496,
+        "population": 3280815,
+        "recovered": 48,
+        "tested": 3650,
+        "died": 8
+    },
+    {
+        "date": "2020-07-07",
+        "total_cases": 5621,
+        "new_cases": 163,
+        "population": 3280815,
+        "recovered": 95,
+        "tested": 1329,
+        "died": 8
+    },
+    {
+        "date": "2020-07-08",
+        "total_cases": 5869,
+        "new_cases": 248,
+        "population": 3280815,
+        "recovered": 76,
+        "tested": 1628,
+        "died": 2
+    },
+    {
+        "date": "2020-07-09",
+        "total_cases": 6086,
+        "new_cases": 217,
+        "population": 3280815,
+        "recovered": 46,
+        "tested": 1871,
+        "died": 5
+    },
+    {
+        "date": "2020-07-10",
+        "total_cases": 6402,
+        "new_cases": 316,
+        "population": 3280815,
+        "recovered": 222,
+        "tested": 1796,
+        "died": 2
+    },
+    {
+        "date": "2020-07-11",
+        "total_cases": 6719,
+        "new_cases": 317,
+        "population": 3280815,
+        "recovered": 53,
+        "tested": 1695,
+        "died": 3
+    },
+    {
+        "date": "2020-07-12",
+        "total_cases": 6877,
+        "new_cases": 158,
+        "population": 3280815,
+        "recovered": 87,
+        "tested": 1324,
+        "died": 3
+    },
+    {
+        "date": "2020-07-13",
+        "total_cases": 6981,
+        "new_cases": 104,
+        "population": 3280815,
+        "recovered": 142,
+        "tested": 3526,
+        "died": 10
+    },
+    {
+        "date": "2020-07-14",
+        "total_cases": 6981,
+        "new_cases": 251,
+        "population": 3280815,
+        "recovered": 81,
+        "tested": 1337,
+        "died": 3
+    },
+    {
+        "date": "2020-07-15",
+        "total_cases": 7411,
+        "new_cases": 430,
+        "population": 3280815,
+        "recovered": 156,
+        "tested": 2808,
+        "died": 9
+    },
+    {
+        "date": "2020-07-16",
+        "total_cases": 7681,
+        "new_cases": 270,
+        "population": 3280815,
+        "recovered": 72,
+        "tested": 1576,
+        "died": 6
+    },
+    {
+        "date": "2020-07-17",
+        "total_cases": 7908,
+        "new_cases": 227,
+        "population": 3280815,
+        "recovered": 277,
+        "tested": 3558,
+        "died": 10
+    },
+    {
+        "date": "2020-07-18",
+        "total_cases": 8161,
+        "new_cases": 253,
+        "population": 3280815,
+        "recovered": 90,
+        "tested": 1849,
+        "died": 7
+    },
+    {
+        "date": "2020-07-19",
+        "total_cases": 8340,
+        "new_cases": 179,
+        "population": 3280815,
+        "recovered": 117,
+        "tested": 1855,
+        "died": 8
+    },
+    {
+        "date": "2020-07-20",
+        "total_cases": 8479,
+        "new_cases": 139,
+        "population": 3280815,
+        "recovered": 119,
+        "tested": 1958,
+        "died": 8
+    },
+    {
+        "date": "2020-07-21",
+        "total_cases": 8787,
+        "new_cases": 308,
+        "population": 3280815,
+        "recovered": 390,
+        "tested": 6142,
+        "died": 19
+    },
+    {
+        "date": "2020-07-22",
+        "total_cases": 9115,
+        "new_cases": 328,
+        "population": 3280815,
+        "recovered": 157,
+        "tested": 1474,
+        "died": 4
+    },
+    {
+        "date": "2020-07-23",
+        "total_cases": 9462,
+        "new_cases": 347,
+        "population": 3280815,
+        "recovered": 208,
+        "tested": 1784,
+        "died": 6
+    },
+    {
+        "date": "2020-07-24",
+        "total_cases": 9767,
+        "new_cases": 305,
+        "population": 3280815,
+        "recovered": 188,
+        "tested": 1631,
+        "died": 6
+    },
+    {
+        "date": "2020-07-25",
+        "total_cases": 9767,
+        "new_cases": 260,
+        "population": 3280815,
+        "recovered": 174,
+        "tested": 2271,
+        "died": 5
+    },
+    {
+        "date": "2020-07-26",
+        "total_cases": 9767,
+        "new_cases": 285,
+        "population": 3280815,
+        "recovered": 188,
+        "tested": 2206,
+        "died": 6
+    },
+    {
+        "date": "2020-07-27",
+        "total_cases": 10498,
+        "new_cases": 731,
+        "population": 3280815,
+        "recovered": 375,
+        "tested": 3713,
+        "died": 14
+    },
+    {
+        "date": "2020-07-28",
+        "total_cases": 10766,
+        "new_cases": 268,
+        "population": 3280815,
+        "recovered": 290,
+        "tested": 1518,
+        "died": 3
+    },
+    {
+        "date": "2020-07-29",
+        "total_cases": 11127,
+        "new_cases": 361,
+        "population": 3280815,
+        "recovered": 221,
+        "tested": 1596,
+        "died": 19
+    },
+    {
+        "date": "2020-07-30",
+        "total_cases": 11444,
+        "new_cases": 317,
+        "population": 3280815,
+        "recovered": 145,
+        "tested": 1844,
+        "died": 12
+    },
+    {
+        "date": "2020-07-31",
+        "total_cases": 11876,
+        "new_cases": 432,
+        "population": 3280815,
+        "recovered": 373,
+        "tested": 1739,
+        "died": 11
+    },
+    {
+        "date": "2020-08-01",
+        "total_cases": 11876,
+        "new_cases": 392,
+        "population": 3280815,
+        "recovered": 206,
+        "tested": 1734,
+        "died": 15
+    },
+    {
+        "date": "2020-08-02",
+        "total_cases": 12296,
+        "new_cases": 420,
+        "population": 3280815,
+        "recovered": 205,
+        "tested": 1339,
+        "died": 11
+    },
+    {
+        "date": "2020-08-03",
+        "total_cases": 12462,
+        "new_cases": 166,
+        "population": 3280815,
+        "recovered": 400,
+        "tested": 3061,
+        "died": 23
+    },
+    {
+        "date": "2020-08-04",
+        "total_cases": 12856,
+        "new_cases": 394,
+        "population": 3280815,
+        "recovered": 233,
+        "tested": 1569,
+        "died": 11
+    },
+    {
+        "date": "2020-08-05",
+        "total_cases": 13138,
+        "new_cases": 282,
+        "population": 3280815,
+        "recovered": 247,
+        "tested": 1586,
+        "died": 6
+    },
+    {
+        "date": "2020-08-06",
+        "total_cases": 13396,
+        "new_cases": 258,
+        "population": 3280815,
+        "recovered": 203,
+        "tested": 1464,
+        "died": 5
+    },
+    {
+        "date": "2020-08-07",
+        "total_cases": 13687,
+        "new_cases": 291,
+        "population": 3280815,
+        "recovered": 331,
+        "tested": 1067,
+        "died": 10
+    },
+    {
+        "date": "2020-08-08",
+        "total_cases": 13687,
+        "new_cases": 304,
+        "population": 3280815,
+        "recovered": 216,
+        "tested": 1536,
+        "died": 5
+    },
+    {
+        "date": "2020-08-09",
+        "total_cases": 13687,
+        "new_cases": 278,
+        "population": 3280815,
+        "recovered": 202,
+        "tested": 1137,
+        "died": 7
+    },
+    {
+        "date": "2020-08-10",
+        "total_cases": 14498,
+        "new_cases": 811,
+        "population": 3280815,
+        "recovered": 786,
+        "tested": 4256,
+        "died": 31
+    },
+    {
+        "date": "2020-08-11",
+        "total_cases": 14708,
+        "new_cases": 210,
+        "population": 3280815,
+        "recovered": 252,
+        "tested": 2130,
+        "died": 22
+    },
+    {
+        "date": "2020-08-12",
+        "total_cases": 14961,
+        "new_cases": 253,
+        "population": 3280815,
+        "recovered": 416,
+        "tested": 1571,
+        "died": 6
+    },
+    {
+        "date": "2020-08-13",
+        "total_cases": 15184,
+        "new_cases": 223,
+        "population": 3280815,
+        "recovered": 329,
+        "tested": 1539,
+        "died": 5
+    },
+    {
+        "date": "2020-08-14",
+        "total_cases": 15535,
+        "new_cases": 351,
+        "population": 3280815,
+        "recovered": 188,
+        "tested": 2027,
+        "died": 11
+    },
+    {
+        "date": "2020-08-15",
+        "total_cases": 15801,
+        "new_cases": 266,
+        "population": 3280815,
+        "recovered": 356,
+        "tested": 1899,
+        "died": 5
+    },
+    {
+        "date": "2020-08-16",
+        "total_cases": 15801,
+        "new_cases": 369,
+        "population": 3280815,
+        "recovered": 237,
+        "tested": 1453,
+        "died": 8
+    },
+    {
+        "date": "2020-08-17",
+        "total_cases": 16111,
+        "new_cases": 310,
+        "population": 3280815,
+        "recovered": 512,
+        "tested": 3534,
+        "died": 17
+    },
+    {
+        "date": "2020-08-18",
+        "total_cases": 16351,
+        "new_cases": 240,
+        "population": 3280815,
+        "recovered": 423,
+        "tested": 1734,
+        "died": 9
+    },
+    {
+        "date": "2020-08-19",
+        "total_cases": 16691,
+        "new_cases": 340,
+        "population": 3280815,
+        "recovered": 432,
+        "tested": 2092,
+        "died": 12
+    },
+    {
+        "date": "2020-08-20",
+        "total_cases": 17029,
+        "new_cases": 338,
+        "population": 3280815,
+        "recovered": 170,
+        "tested": 1888,
+        "died": 8
+    },
+    {
+        "date": "2020-08-21",
+        "total_cases": 17396,
+        "new_cases": 367,
+        "population": 3280815,
+        "recovered": 320,
+        "tested": 1762,
+        "died": 10
+    },
+    {
+        "date": "2020-08-22",
+        "total_cases": 17715,
+        "new_cases": 319,
+        "population": 3280815,
+        "recovered": 307,
+        "tested": 1849,
+        "died": 10
+    },
+    {
+        "date": "2020-08-23",
+        "total_cases": 17715,
+        "new_cases": 319,
+        "population": 3280815,
+        "recovered": 269,
+        "tested": 1495,
+        "died": 9
+    },
+    {
+        "date": "2020-08-24",
+        "total_cases": 18029,
+        "new_cases": 314,
+        "population": 3280815,
+        "recovered": 980,
+        "tested": 6046,
+        "died": 32
+    },
+    {
+        "date": "2020-08-25",
+        "total_cases": 18326,
+        "new_cases": 297,
+        "population": 3280815,
+        "recovered": 220,
+        "tested": 1971,
+        "died": 13
+    },
+    {
+        "date": "2020-08-26",
+        "total_cases": 18609,
+        "new_cases": 283,
+        "population": 3280815,
+        "recovered": 255,
+        "tested": 1774,
+        "died": 11
+    },
+    {
+        "date": "2020-08-27",
+        "total_cases": 18920,
+        "new_cases": 311,
+        "population": 3280815,
+        "recovered": 144,
+        "tested": 1938,
+        "died": 11
+    },
+    {
+        "date": "2020-08-28",
+        "total_cases": 19214,
+        "new_cases": 294,
+        "population": 3280815,
+        "recovered": 253,
+        "tested": 1900,
+        "died": 9
+    },
+    {
+        "date": "2020-08-29",
+        "total_cases": 19550,
+        "new_cases": 336,
+        "population": 3280815,
+        "recovered": 125,
+        "tested": 1484,
+        "died": 3
+    },
+    {
+        "date": "2020-08-30",
+        "total_cases": 19793,
+        "new_cases": 243,
+        "population": 3280815,
+        "recovered": 110,
+        "tested": 1151,
+        "died": 4
+    },
+    {
+        "date": "2020-08-31",
+        "total_cases": 19964,
+        "new_cases": 171,
+        "population": 3280815,
+        "recovered": 127,
+        "tested": 1407,
+        "died": 11
+    },
+    {
+        "date": "2020-09-01",
+        "total_cases": 20234,
+        "new_cases": 270,
+        "population": 3280815,
+        "recovered": 340,
+        "tested": 2201,
+        "died": 11
+    },
+    {
+        "date": "2020-09-02",
+        "total_cases": 20517,
+        "new_cases": 283,
+        "population": 3280815,
+        "recovered": 191,
+        "tested": 2038,
+        "died": 7
+    },
+    {
+        "date": "2020-09-03",
+        "total_cases": 20804,
+        "new_cases": 287,
+        "population": 3280815,
+        "recovered": 494,
+        "tested": 1785,
+        "died": 9
+    },
+    {
+        "date": "2020-09-04",
+        "total_cases": 21142,
+        "new_cases": 338,
+        "population": 3280815,
+        "recovered": 356,
+        "tested": 2284,
+        "died": 3
+    },
+    {
+        "date": "2020-09-05",
+        "total_cases": 21439,
+        "new_cases": 297,
+        "population": 3280815,
+        "recovered": 160,
+        "tested": 1518,
+        "died": 12
+    },
+    {
+        "date": "2020-09-06",
+        "total_cases": 21560,
+        "new_cases": 121,
+        "population": 3280815,
+        "recovered": 276,
+        "tested": 1661,
+        "died": 6
+    },
+    {
+        "date": "2020-09-07",
+        "total_cases": 21660,
+        "new_cases": 100,
+        "population": 3280815,
+        "recovered": 194,
+        "tested": 2153,
+        "died": 13
+    },
+    {
+        "date": "2020-09-08",
+        "total_cases": 21961,
+        "new_cases": 301,
+        "population": 3280815,
+        "recovered": 342,
+        "tested": 2014,
+        "died": 5
+    },
+    {
+        "date": "2020-09-09",
+        "total_cases": 22258,
+        "new_cases": 297,
+        "population": 3280815,
+        "recovered": 36,
+        "tested": 615,
+        "died": 6
+    },
+    {
+        "date": "2020-09-10",
+        "total_cases": 22544,
+        "new_cases": 286,
+        "population": 3280815,
+        "recovered": 65,
+        "tested": 521,
+        "died": 5
+    },
+    {
+        "date": "2020-09-11",
+        "total_cases": 22834,
+        "new_cases": 290,
+        "population": 3280815,
+        "recovered": 399,
+        "tested": 582,
+        "died": 6
+    },
+    {
+        "date": "2020-09-12",
+        "total_cases": 23138,
+        "new_cases": 304,
+        "population": 3280815,
+        "recovered": 127,
+        "tested": 1060,
+        "died": 5
+    },
+    {
+        "date": "2020-09-13",
+        "total_cases": 23465,
+        "new_cases": 327,
+        "population": 3280815,
+        "recovered": 168,
+        "tested": 746,
+        "died": 5
+    },
+    {
+        "date": "2020-09-14",
+        "total_cases": 23635,
+        "new_cases": 170,
+        "population": 3280815,
+        "recovered": 494,
+        "tested": 9086,
+        "died": 19
+    },
+    {
+        "date": "2020-09-15",
+        "total_cases": 23929,
+        "new_cases": 294,
+        "population": 3280815,
+        "recovered": 535,
+        "tested": 2217,
+        "died": 20
+    },
+    {
+        "date": "2020-09-16",
+        "total_cases": 24211,
+        "new_cases": 282,
+        "population": 3280815,
+        "recovered": 289,
+        "tested": 2150,
+        "died": 11
+    },
+    {
+        "date": "2020-09-17",
+        "total_cases": 24605,
+        "new_cases": 394,
+        "population": 3280815,
+        "recovered": 229,
+        "tested": 2349,
+        "died": 11
+    },
+    {
+        "date": "2020-09-18",
+        "total_cases": 24897,
+        "new_cases": 292,
+        "population": 3280815,
+        "recovered": 146,
+        "tested": 2233,
+        "died": 5
+    },
+    {
+        "date": "2020-09-19",
+        "total_cases": 25217,
+        "new_cases": 320,
+        "population": 3280815,
+        "recovered": 309,
+        "tested": 3160,
+        "died": 11
+    },
+    {
+        "date": "2020-09-20",
+        "total_cases": 25428,
+        "new_cases": 211,
+        "population": 3280815,
+        "recovered": 239,
+        "tested": 1789,
+        "died": 8
+    },
+    {
+        "date": "2020-09-21",
+        "total_cases": 25521,
+        "new_cases": 93,
+        "population": 3280815,
+        "recovered": 744,
+        "tested": 4291,
+        "died": 18
+    },
+    {
+        "date": "2020-09-22",
+        "total_cases": 25737,
+        "new_cases": 216,
+        "population": 3280815,
+        "recovered": 250,
+        "tested": 2115,
+        "died": 8
+    },
+    {
+        "date": "2020-09-23",
+        "total_cases": 26081,
+        "new_cases": 344,
+        "population": 3280815,
+        "recovered": 275,
+        "tested": 2258,
+        "died": 12
+    },
+    {
+        "date": "2020-09-24",
+        "total_cases": 26316,
+        "new_cases": 235,
+        "population": 3280815,
+        "recovered": 508,
+        "tested": 2060,
+        "died": 12
+    },
+    {
+        "date": "2020-09-25",
+        "total_cases": 26564,
+        "new_cases": 248,
+        "population": 3280815,
+        "recovered": 365,
+        "tested": 1971,
+        "died": 6
+    },
+    {
+        "date": "2020-09-26",
+        "total_cases": 26797,
+        "new_cases": 233,
+        "population": 3280815,
+        "recovered": 355,
+        "tested": 2144,
+        "died": 12
+    },
+    {
+        "date": "2020-09-27",
+        "total_cases": 26920,
+        "new_cases": 123,
+        "population": 3280815,
+        "recovered": 279,
+        "tested": 1680,
+        "died": 9
+    },
+    {
+        "date": "2020-09-28",
+        "total_cases": 27001,
+        "new_cases": 81,
+        "population": 3280815,
+        "recovered": 498,
+        "tested": 3827,
+        "died": 21
+    },
+    {
+        "date": "2020-09-29",
+        "total_cases": 27226,
+        "new_cases": 225,
+        "population": 3280815,
+        "recovered": 317,
+        "tested": 2349,
+        "died": 14
+    },
+    {
+        "date": "2020-09-30",
+        "total_cases": 27469,
+        "new_cases": 243,
+        "population": 3280815,
+        "recovered": 294,
+        "tested": 2081,
+        "died": 13
+    },
+    {
+        "date": "2020-10-01",
+        "total_cases": 27749,
+        "new_cases": 280,
+        "population": 3280815,
+        "recovered": 331,
+        "tested": 2181,
+        "died": 5
+    },
+    {
+        "date": "2020-10-02",
+        "total_cases": 27975,
+        "new_cases": 226,
+        "population": 3280815,
+        "recovered": 161,
+        "tested": 1800,
+        "died": 10
+    },
+    {
+        "date": "2020-10-03",
+        "total_cases": 27975,
+        "new_cases": 190,
+        "population": 3280815,
+        "recovered": 288,
+        "tested": 2087,
+        "died": 9
+    },
+    {
+        "date": "2020-10-04",
+        "total_cases": 28354,
+        "new_cases": 379,
+        "population": 3280815,
+        "recovered": 220,
+        "tested": 1682,
+        "died": 7
+    },
+    {
+        "date": "2020-10-05",
+        "total_cases": 28449,
+        "new_cases": 95,
+        "population": 3280815,
+        "recovered": 924,
+        "tested": 3764,
+        "died": 17
+    },
+    {
+        "date": "2020-10-06",
+        "total_cases": 28710,
+        "new_cases": 261,
+        "population": 3280815,
+        "recovered": 242,
+        "tested": 2185,
+        "died": 15
+    },
+    {
+        "date": "2020-10-07",
+        "total_cases": 29075,
+        "new_cases": 365,
+        "population": 3280815,
+        "recovered": 340,
+        "tested": 2104,
+        "died": 5
+    },
+    {
+        "date": "2020-10-08",
+        "total_cases": 29528,
+        "new_cases": 453,
+        "population": 3280815,
+        "recovered": 325,
+        "tested": 2281,
+        "died": 5
+    },
+    {
+        "date": "2020-10-09",
+        "total_cases": 29917,
+        "new_cases": 389,
+        "population": 3280815,
+        "recovered": 302,
+        "tested": 2192,
+        "died": 13
+    },
+    {
+        "date": "2020-10-10",
+        "total_cases": 30345,
+        "new_cases": 428,
+        "population": 3280815,
+        "recovered": 366,
+        "tested": 2066,
+        "died": 5
+    },
+    {
+        "date": "2020-10-11",
+        "total_cases": 30647,
+        "new_cases": 302,
+        "population": 3280815,
+        "recovered": 241,
+        "tested": 1752,
+        "died": 9
+    },
+    {
+        "date": "2020-10-12",
+        "total_cases": 30837,
+        "new_cases": 190,
+        "population": 3280815,
+        "recovered": 346,
+        "tested": 4900,
+        "died": 10
+    },
+    {
+        "date": "2020-10-13",
+        "total_cases": 31173,
+        "new_cases": 336,
+        "population": 3280815,
+        "recovered": 190,
+        "tested": 2140,
+        "died": 11
+    },
+    {
+        "date": "2020-10-14",
+        "total_cases": 31655,
+        "new_cases": 482,
+        "population": 3280815,
+        "recovered": 297,
+        "tested": 2511,
+        "died": 11
+    },
+    {
+        "date": "2020-10-15",
+        "total_cases": 32224,
+        "new_cases": 569,
+        "population": 3280815,
+        "recovered": 282,
+        "tested": 2326,
+        "died": 14
+    },
+    {
+        "date": "2020-10-16",
+        "total_cases": 32845,
+        "new_cases": 621,
+        "population": 3280815,
+        "recovered": 247,
+        "tested": 2525,
+        "died": 8
+    },
+    {
+        "date": "2020-10-17",
+        "total_cases": 33561,
+        "new_cases": 716,
+        "population": 3280815,
+        "recovered": 223,
+        "tested": 2375,
+        "died": 12
+    },
+    {
+        "date": "2020-10-18",
+        "total_cases": 34112,
+        "new_cases": 551,
+        "population": 3280815,
+        "recovered": 203,
+        "tested": 1900,
+        "died": 11
+    },
+    {
+        "date": "2020-10-19",
+        "total_cases": 34661,
+        "new_cases": 549,
+        "population": 3280815,
+        "recovered": 839,
+        "tested": 5529,
+        "died": 17
+    },
+    {
+        "date": "2020-10-20",
+        "total_cases": 35389,
+        "new_cases": 728,
+        "population": 3280815,
+        "recovered": 118,
+        "tested": 5667,
+        "died": 20
+    },
+    {
+        "date": "2020-10-21",
+        "total_cases": 36315,
+        "new_cases": 926,
+        "population": 3280815,
+        "recovered": 219,
+        "tested": 3599,
+        "died": 14
+    },
+    {
+        "date": "2020-10-22",
+        "total_cases": 37314,
+        "new_cases": 999,
+        "population": 3280815,
+        "recovered": 210,
+        "tested": 3056,
+        "died": 20
+    },
+    {
+        "date": "2020-10-23",
+        "total_cases": 38493,
+        "new_cases": 1179,
+        "population": 3280815,
+        "recovered": 271,
+        "tested": 2966,
+        "died": 14
+    },
+    {
+        "date": "2020-10-24",
+        "total_cases": 39758,
+        "new_cases": 1265,
+        "population": 3280815,
+        "recovered": 108,
+        "tested": 2686,
+        "died": 6
+    },
+    {
+        "date": "2020-10-25",
+        "total_cases": 40893,
+        "new_cases": 1135,
+        "population": 3280815,
+        "recovered": 91,
+        "tested": 2504,
+        "died": 15
+    },
+    {
+        "date": "2020-10-26",
+        "total_cases": 41596,
+        "new_cases": 703,
+        "population": 3280815,
+        "recovered": 83,
+        "tested": 1848,
+        "died": 18
+    },
+    {
+        "date": "2020-10-27",
+        "total_cases": 43151,
+        "new_cases": 1555,
+        "population": 3280815,
+        "recovered": 361,
+        "tested": 3080,
+        "died": 21
+    },
+    {
+        "date": "2020-10-28",
+        "total_cases": 44737,
+        "new_cases": 1586,
+        "population": 3280815,
+        "recovered": 184,
+        "tested": 3717,
+        "died": 36
+    },
+    {
+        "date": "2020-10-29",
+        "total_cases": 46639,
+        "new_cases": 1902,
+        "population": 3280815,
+        "recovered": 493,
+        "tested": 4328,
+        "died": 21
+    },
+    {
+        "date": "2020-10-30",
+        "total_cases": 48137,
+        "new_cases": 1498,
+        "population": 3280815,
+        "recovered": 290,
+        "tested": 3845,
+        "died": 30
+    },
+    {
+        "date": "2020-10-31",
+        "total_cases": 50090,
+        "new_cases": 1953,
+        "population": 3280815,
+        "recovered": 213,
+        "tested": 3956,
+        "died": 22
+    },
+    {
+        "date": "2020-11-01",
+        "total_cases": 51505,
+        "new_cases": 1415,
+        "population": 3280815,
+        "recovered": 111,
+        "tested": 2948,
+        "died": 14
+    },
+    {
+        "date": "2020-11-02",
+        "total_cases": 52269,
+        "new_cases": 764,
+        "population": 3280815,
+        "recovered": 373,
+        "tested": 1618,
+        "died": 32
+    },
+    {
+        "date": "2020-11-03",
+        "total_cases": 53822,
+        "new_cases": 1553,
+        "population": 3280815,
+        "recovered": 589,
+        "tested": 2816,
+        "died": 37
+    },
+    {
+        "date": "2020-11-04",
+        "total_cases": 55598,
+        "new_cases": 1776,
+        "population": 3280815,
+        "recovered": 233,
+        "tested": 4456,
+        "died": 41
+    },
+    {
+        "date": "2020-11-05",
+        "total_cases": 57506,
+        "new_cases": 1908,
+        "population": 3280815,
+        "recovered": 300,
+        "tested": 5171,
+        "died": 44
+    },
+    {
+        "date": "2020-11-06",
+        "total_cases": 59427,
+        "new_cases": 1921,
+        "population": 3280815,
+        "recovered": 281,
+        "tested": 4694,
+        "died": 55
+    },
+    {
+        "date": "2020-11-07",
+        "total_cases": 61212,
+        "new_cases": 1785,
+        "population": 3280815,
+        "recovered": 684,
+        "tested": 4442,
+        "died": 33
+    },
+    {
+        "date": "2020-11-08",
+        "total_cases": 62423,
+        "new_cases": 1211,
+        "population": 3280815,
+        "recovered": 285,
+        "tested": 2797,
+        "died": 20
+    },
+    {
+        "date": "2020-11-09",
+        "total_cases": 63419,
+        "new_cases": 996,
+        "population": 3280815,
+        "recovered": 283,
+        "tested": 2366,
+        "died": 73
+    },
+    {
+        "date": "2020-11-10",
+        "total_cases": 65024,
+        "new_cases": 1605,
+        "population": 3280815,
+        "recovered": 1039,
+        "tested": 5375,
+        "died": 46
+    },
+    {
+        "date": "2020-11-11",
+        "total_cases": 66565,
+        "new_cases": 1541,
+        "population": 3280815,
+        "recovered": 508,
+        "tested": 5579,
+        "died": 72
+    },
+    {
+        "date": "2020-11-12",
+        "total_cases": 68293,
+        "new_cases": 1728,
+        "population": 3280815,
+        "recovered": 921,
+        "tested": 5014,
+        "died": 49
+    },
+    {
+        "date": "2020-11-13",
+        "total_cases": 69625,
+        "new_cases": 1332,
+        "population": 3280815,
+        "recovered": 801,
+        "tested": 3854,
+        "died": 58
+    },
+    {
+        "date": "2020-11-14",
+        "total_cases": 70900,
+        "new_cases": 1275,
+        "population": 3280815,
+        "recovered": 870,
+        "tested": 3773,
+        "died": 49
+    },
+    {
+        "date": "2020-11-15",
+        "total_cases": 71956,
+        "new_cases": 1056,
+        "population": 3280815,
+        "recovered": 245,
+        "tested": 2334,
+        "died": 41
+    },
+    {
+        "date": "2020-11-16",
+        "total_cases": 72689,
+        "new_cases": 733,
+        "population": 3280815,
+        "recovered": 867,
+        "tested": 2390,
+        "died": 75
+    },
+    {
+        "date": "2020-11-17",
+        "total_cases": 73944,
+        "new_cases": 1255,
+        "population": 3280815,
+        "recovered": 2187,
+        "tested": 3725,
+        "died": 69
+    },
+    {
+        "date": "2020-11-18",
+        "total_cases": 75577,
+        "new_cases": 1633,
+        "population": 3280815,
+        "recovered": 1226,
+        "tested": 4549,
+        "died": 47
+    },
+    {
+        "date": "2020-11-19",
+        "total_cases": 76757,
+        "new_cases": 1180,
+        "population": 3280815,
+        "recovered": 1145,
+        "tested": 3614,
+        "died": 64
+    },
+    {
+        "date": "2020-11-20",
+        "total_cases": 77994,
+        "new_cases": 1237,
+        "population": 3280815,
+        "recovered": 1885,
+        "tested": 4139,
+        "died": 56
+    },
+    {
+        "date": "2020-11-21",
+        "total_cases": 79309,
+        "new_cases": 1315,
+        "population": 3280815,
+        "recovered": 877,
+        "tested": 3823,
+        "died": 40
+    },
+    {
+        "date": "2020-11-22",
+        "total_cases": 80006,
+        "new_cases": 697,
+        "population": 3280815,
+        "recovered": 623,
+        "tested": 1969,
+        "died": 27
+    },
+    {
+        "date": "2020-11-23",
+        "total_cases": 80553,
+        "new_cases": 547,
+        "population": 3280815,
+        "recovered": 1344,
+        "tested": 1449,
+        "died": 66
+    },
+    {
+        "date": "2020-11-24",
+        "total_cases": 81739,
+        "new_cases": 1186,
+        "population": 3280815,
+        "recovered": 1765,
+        "tested": 3578,
+        "died": 52
+    },
+    {
+        "date": "2020-11-25",
+        "total_cases": 83328,
+        "new_cases": 1589,
+        "population": 3280815,
+        "recovered": 685,
+        "tested": 3929,
+        "died": 35
+    },
+    {
+        "date": "2020-11-26",
+        "total_cases": 84252,
+        "new_cases": 924,
+        "population": 3280815,
+        "recovered": 570,
+        "tested": 2757,
+        "died": 51
+    },
+    {
+        "date": "2020-11-27",
+        "total_cases": 85431,
+        "new_cases": 1179,
+        "population": 3280815,
+        "recovered": 1221,
+        "tested": 3180,
+        "died": 62
+    },
+    {
+        "date": "2020-11-28",
+        "total_cases": 86710,
+        "new_cases": 1279,
+        "population": 3280815,
+        "recovered": 1067,
+        "tested": 3252,
+        "died": 34
+    },
+    {
+        "date": "2020-11-29",
+        "total_cases": 87374,
+        "new_cases": 664,
+        "population": 3280815,
+        "recovered": 411,
+        "tested": 1698,
+        "died": 44
+    },
+    {
+        "date": "2020-11-30",
+        "total_cases": 87901,
+        "new_cases": 527,
+        "population": 3280815,
+        "recovered": 1290,
+        "tested": 1553,
+        "died": 61
+    },
+    {
+        "date": "2020-12-01",
+        "total_cases": 89085,
+        "new_cases": 1184,
+        "population": 3280815,
+        "recovered": 955,
+        "tested": 3428,
+        "died": 46
+    },
+    {
+        "date": "2020-12-02",
+        "total_cases": 90378,
+        "new_cases": 1293,
+        "population": 3280815,
+        "recovered": 1243,
+        "tested": 3477,
+        "died": 46
+    },
+    {
+        "date": "2020-12-03",
+        "total_cases": 91539,
+        "new_cases": 1161,
+        "population": 3280815,
+        "recovered": 1083,
+        "tested": 3810,
+        "died": 39
+    },
+    {
+        "date": "2020-12-04",
+        "total_cases": 92793,
+        "new_cases": 1254,
+        "population": 3280815,
+        "recovered": 1495,
+        "tested": 4158,
+        "died": 53
+    },
+    {
+        "date": "2020-12-05",
+        "total_cases": 93768,
+        "new_cases": 975,
+        "population": 3280815,
+        "recovered": 489,
+        "tested": 2815,
+        "died": 57
+    },
+    {
+        "date": "2020-12-06",
+        "total_cases": 94507,
+        "new_cases": 739,
+        "population": 3280815,
+        "recovered": 591,
+        "tested": 2262,
+        "died": 30
+    },
+    {
+        "date": "2020-12-07",
+        "total_cases": 94944,
+        "new_cases": 437,
+        "population": 3280815,
+        "recovered": 863,
+        "tested": 1754,
+        "died": 60
+    },
+    {
+        "date": "2020-12-08",
+        "total_cases": 96021,
+        "new_cases": 1077,
+        "population": 3280815,
+        "recovered": 722,
+        "tested": 3596,
+        "died": 69
+    },
+    {
+        "date": "2020-12-09",
+        "total_cases": 97317,
+        "new_cases": 1296,
+        "population": 3280815,
+        "recovered": 1112,
+        "tested": 9431,
+        "died": 70
+    },
+    {
+        "date": "2020-12-10",
+        "total_cases": 98603,
+        "new_cases": 1286,
+        "population": 3280815,
+        "recovered": 1270,
+        "tested": 3979,
+        "died": 48
+    },
+    {
+        "date": "2020-12-11",
+        "total_cases": 99543,
+        "new_cases": 940,
+        "population": 3280815,
+        "recovered": 1141,
+        "tested": 3360,
+        "died": 51
+    },
+    {
+        "date": "2020-12-12",
+        "total_cases": 100306,
+        "new_cases": 763,
+        "population": 3280815,
+        "recovered": 1556,
+        "tested": 2941,
+        "died": 48
+    },
+    {
+        "date": "2020-12-13",
+        "total_cases": 101117,
+        "new_cases": 811,
+        "population": 3280815,
+        "recovered": 469,
+        "tested": 2022,
+        "died": 38
+    },
+    {
+        "date": "2020-12-14",
+        "total_cases": 101461,
+        "new_cases": 344,
+        "population": 3280815,
+        "recovered": 728,
+        "tested": 1286,
+        "died": 55
+    },
+    {
+        "date": "2020-12-15",
+        "total_cases": 102330,
+        "new_cases": 869,
+        "population": 3280815,
+        "recovered": 1163,
+        "tested": 3319,
+        "died": 66
+    },
+    {
+        "date": "2020-12-16",
+        "total_cases": 103232,
+        "new_cases": 902,
+        "population": 3280815,
+        "recovered": 596,
+        "tested": 3555,
+        "died": 54
+    },
+    {
+        "date": "2020-12-17",
+        "total_cases": 104087,
+        "new_cases": 855,
+        "population": 3280815,
+        "recovered": 1250,
+        "tested": 3624,
+        "died": 38
+    },
+    {
+        "date": "2020-12-18",
+        "total_cases": 104881,
+        "new_cases": 794,
+        "population": 3280815,
+        "recovered": 754,
+        "tested": 3289,
+        "died": 34
+    },
+    {
+        "date": "2020-12-19",
+        "total_cases": 105524,
+        "new_cases": 643,
+        "population": 3280815,
+        "recovered": 371,
+        "tested": 2840,
+        "died": 42
+    },
+    {
+        "date": "2020-12-20",
+        "total_cases": 105524,
+        "new_cases": 752,
+        "population": 3280815,
+        "recovered": 274,
+        "tested": 2375,
+        "died": 28
+    },
+    {
+        "date": "2020-12-21",
+        "total_cases": 106222,
+        "new_cases": 698,
+        "population": 3280815,
+        "recovered": 654,
+        "tested": 1843,
+        "died": 53
+    },
+    {
+        "date": "2020-12-22",
+        "total_cases": 106986,
+        "new_cases": 764,
+        "population": 3280815,
+        "recovered": 1049,
+        "tested": 3339,
+        "died": 86
+    },
+    {
+        "date": "2020-12-23",
+        "total_cases": 107570,
+        "new_cases": 584,
+        "population": 3280815,
+        "recovered": 552,
+        "tested": 3054,
+        "died": 46
+    },
+    {
+        "date": "2020-12-24",
+        "total_cases": 108298,
+        "new_cases": 728,
+        "population": 3280815,
+        "recovered": 747,
+        "tested": 3261,
+        "died": 40
+    },
+    {
+        "date": "2020-12-25",
+        "total_cases": 108891,
+        "new_cases": 593,
+        "population": 3280815,
+        "recovered": 771,
+        "tested": 2958,
+        "died": 23
+    },
+    {
+        "date": "2020-12-26",
+        "total_cases": 109330,
+        "new_cases": 439,
+        "population": 3280815,
+        "recovered": 457,
+        "tested": 2180,
+        "died": 22
+    },
+    {
+        "date": "2020-12-27",
+        "total_cases": 109691,
+        "new_cases": 361,
+        "population": 3280815,
+        "recovered": 593,
+        "tested": 1843,
+        "died": 30
+    },
+    {
+        "date": "2020-12-28",
+        "total_cases": 109911,
+        "new_cases": 220,
+        "population": 3280815,
+        "recovered": 404,
+        "tested": 1775,
+        "died": 23
+    },
+    {
+        "date": "2020-12-29",
+        "total_cases": 110454,
+        "new_cases": 543,
+        "population": 3280815,
+        "recovered": 681,
+        "tested": 3386,
+        "died": 48
+    },
+    {
+        "date": "2020-12-30",
+        "total_cases": 110985,
+        "new_cases": 531,
+        "population": 3280815,
+        "recovered": 423,
+        "tested": 2873,
+        "died": 26
+    },
+    {
+        "date": "2020-12-31",
+        "total_cases": 110985,
+        "new_cases": 431,
+        "population": 3280815,
+        "recovered": 427,
+        "tested": 1836,
+        "died": 35
+    },
+    {
+        "date": "2021-01-01",
+        "total_cases": 112143,
+        "new_cases": 1158,
+        "population": 3280815,
+        "recovered": 420,
+        "tested": 1975,
+        "died": 37
+    },
+    {
+        "date": "2021-01-02",
+        "total_cases": 112143,
+        "new_cases": 417,
+        "population": 3280815,
+        "recovered": 387,
+        "tested": 1974,
+        "died": 30
+    },
+    {
+        "date": "2021-01-03",
+        "total_cases": 112645,
+        "new_cases": 502,
+        "population": 3280815,
+        "recovered": 390,
+        "tested": 2014,
+        "died": 36
+    },
+    {
+        "date": "2021-01-04",
+        "total_cases": 112645,
+        "new_cases": 616,
+        "population": 3280815,
+        "recovered": 331,
+        "tested": 1731,
+        "died": 33
+    },
+    {
+        "date": "2021-01-05",
+        "total_cases": 113392,
+        "new_cases": 747,
+        "population": 3280815,
+        "recovered": 1574,
+        "tested": 5053,
+        "died": 80
+    },
+    {
+        "date": "2021-01-06",
+        "total_cases": 113392,
+        "new_cases": 624,
+        "population": 3280815,
+        "recovered": 305,
+        "tested": 1538,
+        "died": 34
+    },
+    {
+        "date": "2021-01-07",
+        "total_cases": 113392,
+        "new_cases": 688,
+        "population": 3280815,
+        "recovered": 536,
+        "tested": 2154,
+        "died": 56
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1342,
+        "tested": 5842,
+        "died": 38
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1342,
+        "tested": 5842,
+        "died": 74
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1342,
+        "tested": 10532,
+        "died": 38
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1342,
+        "tested": 10532,
+        "died": 74
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1403,
+        "tested": 5842,
+        "died": 38
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1403,
+        "tested": 5842,
+        "died": 74
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1403,
+        "tested": 10532,
+        "died": 38
+    },
+    {
+        "date": "2021-01-08",
+        "total_cases": 114920,
+        "new_cases": 1528,
+        "population": 3280815,
+        "recovered": 1403,
+        "tested": 10532,
+        "died": 74
+    },
+    {
+        "date": "2021-01-09",
+        "total_cases": 115379,
+        "new_cases": 459,
+        "population": 3280815,
+        "recovered": 457,
+        "tested": 3409,
+        "died": 20
+    },
+    {
+        "date": "2021-01-10",
+        "total_cases": 115633,
+        "new_cases": 254,
+        "population": 3280815,
+        "recovered": 299,
+        "tested": 3027,
+        "died": 25
+    },
+    {
+        "date": "2021-01-11",
+        "total_cases": 115633,
+        "new_cases": 1314,
+        "population": 3280815,
+        "recovered": 567,
+        "tested": 2557,
+        "died": 28
+    },
+    {
+        "date": "2021-01-12",
+        "total_cases": 116200,
+        "new_cases": 567,
+        "population": 3280815,
+        "recovered": 631,
+        "tested": 4386,
+        "died": 15
+    },
+    {
+        "date": "2021-01-13",
+        "total_cases": 116668,
+        "new_cases": 468,
+        "population": 3280815,
+        "recovered": 840,
+        "tested": 4170,
+        "died": 26
+    },
+    {
+        "date": "2021-01-14",
+        "total_cases": 117011,
+        "new_cases": 343,
+        "population": 3280815,
+        "recovered": 988,
+        "tested": 3021,
+        "died": 12
+    },
+    {
+        "date": "2021-01-15",
+        "total_cases": 117011,
+        "new_cases": 612,
+        "population": 3280815,
+        "recovered": 584,
+        "tested": 2554,
+        "died": 18
+    },
+    {
+        "date": "2021-01-16",
+        "total_cases": 117011,
+        "new_cases": 589,
+        "population": 3280815,
+        "recovered": 346,
+        "tested": 3575,
+        "died": 20
+    },
+    {
+        "date": "2021-01-17",
+        "total_cases": 117011,
+        "new_cases": 660,
+        "population": 3280815,
+        "recovered": 303,
+        "tested": 1711,
+        "died": 23
+    },
+    {
+        "date": "2021-01-18",
+        "total_cases": 118083,
+        "new_cases": 1072,
+        "population": 3280815,
+        "recovered": 622,
+        "tested": 1849,
+        "died": 14
+    },
+    {
+        "date": "2021-01-19",
+        "total_cases": 118383,
+        "new_cases": 300,
+        "population": 3280815,
+        "recovered": 1566,
+        "tested": 3045,
+        "died": 23
+    },
+    {
+        "date": "2021-01-20",
+        "total_cases": 118717,
+        "new_cases": 334,
+        "population": 3280815,
+        "recovered": 1004,
+        "tested": 2471,
+        "died": 12
+    },
+    {
+        "date": "2021-01-21",
+        "total_cases": 119206,
+        "new_cases": 489,
+        "population": 3280815,
+        "recovered": 807,
+        "tested": 2613,
+        "died": 15
+    },
+    {
+        "date": "2021-01-22",
+        "total_cases": 119420,
+        "new_cases": 214,
+        "population": 3280815,
+        "recovered": 809,
+        "tested": 2169,
+        "died": 19
+    },
+    {
+        "date": "2021-01-23",
+        "total_cases": 119420,
+        "new_cases": 571,
+        "population": 3280815,
+        "recovered": 799,
+        "tested": 1995,
+        "died": 13
+    },
+    {
+        "date": "2021-01-24",
+        "total_cases": 119420,
+        "new_cases": 481,
+        "population": 3280815,
+        "recovered": 837,
+        "tested": 2059,
+        "died": 17
+    },
+    {
+        "date": "2021-01-25",
+        "total_cases": 120143,
+        "new_cases": 723,
+        "population": 3280815,
+        "recovered": 1914,
+        "tested": 5362,
+        "died": 38
+    },
+    {
+        "date": "2021-01-26",
+        "total_cases": 120532,
+        "new_cases": 389,
+        "population": 3280815,
+        "recovered": 727,
+        "tested": 2935,
+        "died": 28
+    },
+    {
+        "date": "2021-01-27",
+        "total_cases": 120864,
+        "new_cases": 332,
+        "population": 3280815,
+        "recovered": 325,
+        "tested": 3038,
+        "died": 22
+    },
+    {
+        "date": "2021-01-28",
+        "total_cases": 121194,
+        "new_cases": 330,
+        "population": 3280815,
+        "recovered": 415,
+        "tested": 2542,
+        "died": 16
+    },
+    {
+        "date": "2021-01-29",
+        "total_cases": 121497,
+        "new_cases": 303,
+        "population": 3280815,
+        "recovered": 532,
+        "tested": 2348,
+        "died": 20
+    },
+    {
+        "date": "2021-01-30",
+        "total_cases": 121497,
+        "new_cases": 451,
+        "population": 3280815,
+        "recovered": 676,
+        "tested": 2775,
+        "died": 19
+    },
+    {
+        "date": "2021-01-31",
+        "total_cases": 121497,
+        "new_cases": 415,
+        "population": 3280815,
+        "recovered": 399,
+        "tested": 2172,
+        "died": 18
+    },
+    {
+        "date": "2021-02-01",
+        "total_cases": 122199,
+        "new_cases": 702,
+        "population": 3280815,
+        "recovered": 576,
+        "tested": 5452,
+        "died": 45
+    },
+    {
+        "date": "2021-02-02",
+        "total_cases": 122461,
+        "new_cases": 262,
+        "population": 3280815,
+        "recovered": 389,
+        "tested": 2663,
+        "died": 13
+    },
+    {
+        "date": "2021-02-03",
+        "total_cases": 122828,
+        "new_cases": 367,
+        "population": 3280815,
+        "recovered": 527,
+        "tested": 3185,
+        "died": 8
+    },
+    {
+        "date": "2021-02-04",
+        "total_cases": 122828,
+        "new_cases": 426,
+        "population": 3280815,
+        "recovered": 631,
+        "tested": 2467,
+        "died": 16
+    },
+    {
+        "date": "2021-02-05",
+        "total_cases": 123434,
+        "new_cases": 606,
+        "population": 3280815,
+        "recovered": 401,
+        "tested": 2511,
+        "died": 14
+    },
+    {
+        "date": "2021-02-06",
+        "total_cases": 123434,
+        "new_cases": 434,
+        "population": 3280815,
+        "recovered": 424,
+        "tested": 2753,
+        "died": 12
+    },
+    {
+        "date": "2021-02-07",
+        "total_cases": 123434,
+        "new_cases": 472,
+        "population": 3280815,
+        "recovered": 389,
+        "tested": 2165,
+        "died": 15
+    },
+    {
+        "date": "2021-02-08",
+        "total_cases": 124101,
+        "new_cases": 667,
+        "population": 3280815,
+        "recovered": 396,
+        "tested": 2183,
+        "died": 13
+    },
+    {
+        "date": "2021-02-09",
+        "total_cases": 124443,
+        "new_cases": 342,
+        "population": 3280815,
+        "recovered": 1199,
+        "tested": 3423,
+        "died": 21
+    },
+    {
+        "date": "2021-02-10",
+        "total_cases": 124696,
+        "new_cases": 253,
+        "population": 3280815,
+        "recovered": 971,
+        "tested": 2945,
+        "died": 19
+    },
+    {
+        "date": "2021-02-11",
+        "total_cases": 125123,
+        "new_cases": 427,
+        "population": 3280815,
+        "recovered": 1699,
+        "tested": 2638,
+        "died": 15
+    },
+    {
+        "date": "2021-02-12",
+        "total_cases": 125402,
+        "new_cases": 279,
+        "population": 3280815,
+        "recovered": 1796,
+        "tested": 2451,
+        "died": 13
+    },
+    {
+        "date": "2021-02-13",
+        "total_cases": 125402,
+        "new_cases": 432,
+        "population": 3280815,
+        "recovered": 853,
+        "tested": 2237,
+        "died": 17
+    },
+    {
+        "date": "2021-02-14",
+        "total_cases": 125402,
+        "new_cases": 393,
+        "population": 3280815,
+        "recovered": 1133,
+        "tested": 2291,
+        "died": 14
+    },
+    {
+        "date": "2021-02-15",
+        "total_cases": 126139,
+        "new_cases": 737,
+        "population": 3280815,
+        "recovered": 1005,
+        "tested": 5389,
+        "died": 35
+    },
+    {
+        "date": "2021-02-16",
+        "total_cases": 126413,
+        "new_cases": 274,
+        "population": 3280815,
+        "recovered": 1691,
+        "tested": 3194,
+        "died": 19
+    },
+    {
+        "date": "2021-02-17",
+        "total_cases": 126781,
+        "new_cases": 368,
+        "population": 3280815,
+        "recovered": 2443,
+        "tested": 2598,
+        "died": 14
+    },
+    {
+        "date": "2021-02-18",
+        "total_cases": 127135,
+        "new_cases": 354,
+        "population": 3280815,
+        "recovered": 1478,
+        "tested": 2366,
+        "died": 13
+    },
+    {
+        "date": "2021-02-19",
+        "total_cases": 127537,
+        "new_cases": 402,
+        "population": 3280815,
+        "recovered": 1239,
+        "tested": 2576,
+        "died": 17
+    },
+    {
+        "date": "2021-02-20",
+        "total_cases": 127537,
+        "new_cases": 425,
+        "population": 3280815,
+        "recovered": 1323,
+        "tested": 2709,
+        "died": 13
+    },
+    {
+        "date": "2021-02-21",
+        "total_cases": 127537,
+        "new_cases": 427,
+        "population": 3280815,
+        "recovered": 1370,
+        "tested": 2146,
+        "died": 15
+    },
+    {
+        "date": "2021-02-22",
+        "total_cases": 128661,
+        "new_cases": 1124,
+        "population": 3280815,
+        "recovered": 888,
+        "tested": 6237,
+        "died": 37
+    },
+    {
+        "date": "2021-02-23",
+        "total_cases": 129176,
+        "new_cases": 515,
+        "population": 3280815,
+        "recovered": 809,
+        "tested": 3909,
+        "died": 18
+    },
+    {
+        "date": "2021-02-24",
+        "total_cases": 129753,
+        "new_cases": 577,
+        "population": 3280815,
+        "recovered": 673,
+        "tested": 3172,
+        "died": 17
+    },
+    {
+        "date": "2021-02-25",
+        "total_cases": 130510,
+        "new_cases": 757,
+        "population": 3280815,
+        "recovered": 634,
+        "tested": 3271,
+        "died": 11
+    },
+    {
+        "date": "2021-02-26",
+        "total_cases": 130979,
+        "new_cases": 469,
+        "population": 3280815,
+        "recovered": 852,
+        "tested": 2696,
+        "died": 9
+    },
+    {
+        "date": "2021-02-27",
+        "total_cases": 130979,
+        "new_cases": 680,
+        "population": 3280815,
+        "recovered": 600,
+        "tested": 3317,
+        "died": 14
+    },
+    {
+        "date": "2021-02-28",
+        "total_cases": 130979,
+        "new_cases": 688,
+        "population": 3280815,
+        "recovered": 593,
+        "tested": 2609,
+        "died": 10
+    },
+    {
+        "date": "2021-03-01",
+        "total_cases": 130979,
+        "new_cases": 599,
+        "population": 3280815,
+        "recovered": 551,
+        "tested": 2491,
+        "died": 11
+    },
+    {
+        "date": "2021-03-02",
+        "total_cases": 133088,
+        "new_cases": 2109,
+        "population": 3280815,
+        "recovered": 974,
+        "tested": 2876,
+        "died": 74
+    },
+    {
+        "date": "2021-03-03",
+        "total_cases": 133982,
+        "new_cases": 894,
+        "population": 3280815,
+        "recovered": 575,
+        "tested": 16699,
+        "died": 29
+    },
+    {
+        "date": "2021-03-04",
+        "total_cases": 134892,
+        "new_cases": 910,
+        "population": 3280815,
+        "recovered": 247,
+        "tested": 4243,
+        "died": 26
+    },
+    {
+        "date": "2021-03-05",
+        "total_cases": 135513,
+        "new_cases": 621,
+        "population": 3280815,
+        "recovered": 242,
+        "tested": 3003,
+        "died": 28
+    },
+    {
+        "date": "2021-03-06",
+        "total_cases": 135513,
+        "new_cases": 1040,
+        "population": 3280815,
+        "recovered": 469,
+        "tested": 5261,
+        "died": 27
+    },
+    {
+        "date": "2021-03-07",
+        "total_cases": 135513,
+        "new_cases": 1026,
+        "population": 3280815,
+        "recovered": 407,
+        "tested": 5364,
+        "died": 27
+    },
+    {
+        "date": "2021-03-08",
+        "total_cases": 137291,
+        "new_cases": 1778,
+        "population": 3280815,
+        "recovered": 835,
+        "tested": 8148,
+        "died": 69
+    },
+    {
+        "date": "2021-03-09",
+        "total_cases": 138542,
+        "new_cases": 1251,
+        "population": 3280815,
+        "recovered": 415,
+        "tested": 4701,
+        "died": 48
+    },
+    {
+        "date": "2021-03-10",
+        "total_cases": 139652,
+        "new_cases": 1110,
+        "population": 3280815,
+        "recovered": 201,
+        "tested": 4163,
+        "died": 37
+    },
+    {
+        "date": "2021-03-11",
+        "total_cases": 140990,
+        "new_cases": 1338,
+        "population": 3280815,
+        "recovered": 568,
+        "tested": 4625,
+        "died": 28
+    },
+    {
+        "date": "2021-03-12",
+        "total_cases": 142160,
+        "new_cases": 1170,
+        "population": 3280815,
+        "recovered": 254,
+        "tested": 4270,
+        "died": 36
+    },
+    {
+        "date": "2021-03-13",
+        "total_cases": 142160,
+        "new_cases": 1300,
+        "population": 3280815,
+        "recovered": 403,
+        "tested": 4327,
+        "died": 32
+    },
+    {
+        "date": "2021-03-14",
+        "total_cases": 142160,
+        "new_cases": 1329,
+        "population": 3280815,
+        "recovered": 287,
+        "tested": 3551,
+        "died": 32
+    },
+    {
+        "date": "2021-03-15",
+        "total_cases": 144831,
+        "new_cases": 2671,
+        "population": 3280815,
+        "recovered": 1283,
+        "tested": 9853,
+        "died": 138
+    },
+    {
+        "date": "2021-03-16",
+        "total_cases": 146437,
+        "new_cases": 1606,
+        "population": 3280815,
+        "recovered": 666,
+        "tested": 5403,
+        "died": 53
+    },
+    {
+        "date": "2021-03-17",
+        "total_cases": 148163,
+        "new_cases": 1726,
+        "population": 3280815,
+        "recovered": 573,
+        "tested": 5218,
+        "died": 35
+    },
+    {
+        "date": "2021-03-18",
+        "total_cases": 149891,
+        "new_cases": 1728,
+        "population": 3280815,
+        "recovered": 753,
+        "tested": 5368,
+        "died": 57
+    },
+    {
+        "date": "2021-03-19",
+        "total_cases": 151337,
+        "new_cases": 1446,
+        "population": 3280815,
+        "recovered": 220,
+        "tested": 3755,
+        "died": 44
+    },
+    {
+        "date": "2021-03-20",
+        "total_cases": 151337,
+        "new_cases": 1812,
+        "population": 3280815,
+        "recovered": 655,
+        "tested": 5168,
+        "died": 46
+    },
+    {
+        "date": "2021-03-21",
+        "total_cases": 151337,
+        "new_cases": 1835,
+        "population": 3280815,
+        "recovered": 442,
+        "tested": 3948,
+        "died": 50
+    },
+    {
+        "date": "2021-03-22",
+        "total_cases": 154627,
+        "new_cases": 3290,
+        "population": 3280815,
+        "recovered": 1690,
+        "tested": 11007,
+        "died": 165
+    },
+    {
+        "date": "2021-03-23",
+        "total_cases": 156346,
+        "new_cases": 1719,
+        "population": 3280815,
+        "recovered": 894,
+        "tested": 5469,
+        "died": 67
+    },
+    {
+        "date": "2021-03-24",
+        "total_cases": 158198,
+        "new_cases": 1852,
+        "population": 3280815,
+        "recovered": 1010,
+        "tested": 5277,
+        "died": 62
+    },
+    {
+        "date": "2021-03-25",
+        "total_cases": 160163,
+        "new_cases": 1965,
+        "population": 3280815,
+        "recovered": 552,
+        "tested": 5659,
+        "died": 77
+    },
+    {
+        "date": "2021-03-26",
+        "total_cases": 162032,
+        "new_cases": 1869,
+        "population": 3280815,
+        "recovered": 442,
+        "tested": 5207,
+        "died": 76
+    },
+    {
+        "date": "2021-03-27",
+        "total_cases": 162032,
+        "new_cases": 2132,
+        "population": 3280815,
+        "recovered": 829,
+        "tested": 5482,
+        "died": 69
+    },
+    {
+        "date": "2021-03-28",
+        "total_cases": 162032,
+        "new_cases": 2139,
+        "population": 3280815,
+        "recovered": 579,
+        "tested": 4322,
+        "died": 76
+    },
+    {
+        "date": "2021-03-29",
+        "total_cases": 165787,
+        "new_cases": 3755,
+        "population": 3280815,
+        "recovered": 739,
+        "tested": 10675,
+        "died": 207
+    },
+    {
+        "date": "2021-03-30",
+        "total_cases": 167654,
+        "new_cases": 1867,
+        "population": 3280815,
+        "recovered": 938,
+        "tested": 5398,
+        "died": 92
+    },
+    {
+        "date": "2021-03-31",
+        "total_cases": 169626,
+        "new_cases": 1972,
+        "population": 3280815,
+        "recovered": 574,
+        "tested": 5598,
+        "died": 80
+    },
+    {
+        "date": "2021-04-01",
+        "total_cases": 171324,
+        "new_cases": 1698,
+        "population": 3280815,
+        "recovered": 674,
+        "tested": 5371,
+        "died": 76
+    },
+    {
+        "date": "2021-04-02",
+        "total_cases": 173478,
+        "new_cases": 2154,
+        "population": 3280815,
+        "recovered": 560,
+        "tested": 5670,
+        "died": 88
+    },
+    {
+        "date": "2021-04-03",
+        "total_cases": 173478,
+        "new_cases": 2286,
+        "population": 3280815,
+        "recovered": 585,
+        "tested": 5408,
+        "died": 78
+    },
+    {
+        "date": "2021-04-04",
+        "total_cases": 173478,
+        "new_cases": 2289,
+        "population": 3280815,
+        "recovered": 549,
+        "tested": 4407,
+        "died": 82
+    },
+    {
+        "date": "2021-04-05",
+        "total_cases": 176413,
+        "new_cases": 2935,
+        "population": 3280815,
+        "recovered": 1536,
+        "tested": 10386,
+        "died": 190
+    },
+    {
+        "date": "2021-04-06",
+        "total_cases": 177506,
+        "new_cases": 1093,
+        "population": 3280815,
+        "recovered": 1438,
+        "tested": 5677,
+        "died": 99
+    },
+    {
+        "date": "2021-04-07",
+        "total_cases": 179248,
+        "new_cases": 1742,
+        "population": 3280815,
+        "recovered": 2542,
+        "tested": 5969,
+        "died": 80
+    },
+    {
+        "date": "2021-04-08",
+        "total_cases": 180831,
+        "new_cases": 1583,
+        "population": 3280815,
+        "recovered": 1052,
+        "tested": 5653,
+        "died": 84
+    },
+    {
+        "date": "2021-04-09",
+        "total_cases": 181927,
+        "new_cases": 1096,
+        "population": 3280815,
+        "recovered": 1125,
+        "tested": 5675,
+        "died": 82
+    },
+    {
+        "date": "2021-04-10",
+        "total_cases": 181927,
+        "new_cases": 1928,
+        "population": 3280815,
+        "recovered": 1313,
+        "tested": 5537,
+        "died": 82
+    },
+    {
+        "date": "2021-04-11",
+        "total_cases": 181927,
+        "new_cases": 1689,
+        "population": 3280815,
+        "recovered": 1231,
+        "tested": 4594,
+        "died": 83
+    },
+    {
+        "date": "2021-04-12",
+        "total_cases": 184698,
+        "new_cases": 2771,
+        "population": 3280815,
+        "recovered": 2183,
+        "tested": 11058,
+        "died": 189
+    },
+    {
+        "date": "2021-04-13",
+        "total_cases": 184698,
+        "new_cases": 1607,
+        "population": 3280815,
+        "recovered": 1052,
+        "tested": 3963,
+        "died": 79
+    },
+    {
+        "date": "2021-04-14",
+        "total_cases": 186372,
+        "new_cases": 1674,
+        "population": 3280815,
+        "recovered": 1290,
+        "tested": 4929,
+        "died": 76
+    },
+    {
+        "date": "2021-04-15",
+        "total_cases": 187715,
+        "new_cases": 1343,
+        "population": 3280815,
+        "recovered": 988,
+        "tested": 3540,
+        "died": 60
+    },
+    {
+        "date": "2021-04-16",
+        "total_cases": 188994,
+        "new_cases": 1279,
+        "population": 3280815,
+        "recovered": 931,
+        "tested": 3484,
+        "died": 86
+    },
+    {
+        "date": "2021-04-17",
+        "total_cases": 188994,
+        "new_cases": 1816,
+        "population": 3280815,
+        "recovered": 1102,
+        "tested": 4698,
+        "died": 68
+    },
+    {
+        "date": "2021-04-18",
+        "total_cases": 188994,
+        "new_cases": 1734,
+        "population": 3280815,
+        "recovered": 852,
+        "tested": 3183,
+        "died": 73
+    },
+    {
+        "date": "2021-04-19",
+        "total_cases": 191154,
+        "new_cases": 2160,
+        "population": 3280815,
+        "recovered": 2283,
+        "tested": 9929,
+        "died": 150
+    },
+    {
+        "date": "2021-04-20",
+        "total_cases": 191876,
+        "new_cases": 722,
+        "population": 3280815,
+        "recovered": 1127,
+        "tested": 3925,
+        "died": 87
+    },
+    {
+        "date": "2021-04-21",
+        "total_cases": 193115,
+        "new_cases": 1239,
+        "population": 3280815,
+        "recovered": 1185,
+        "tested": 4361,
+        "died": 57
+    },
+    {
+        "date": "2021-04-22",
+        "total_cases": 194371,
+        "new_cases": 1256,
+        "population": 3280815,
+        "recovered": 1549,
+        "tested": 3447,
+        "died": 82
+    },
+    {
+        "date": "2021-04-23",
+        "total_cases": 194733,
+        "new_cases": 362,
+        "population": 3280815,
+        "recovered": 1401,
+        "tested": 3392,
+        "died": 39
+    },
+    {
+        "date": "2021-04-24",
+        "total_cases": 194733,
+        "new_cases": 1422,
+        "population": 3280815,
+        "recovered": 1228,
+        "tested": 4332,
+        "died": 69
+    },
+    {
+        "date": "2021-04-25",
+        "total_cases": 194733,
+        "new_cases": 1147,
+        "population": 3280815,
+        "recovered": 1052,
+        "tested": 3025,
+        "died": 60
+    },
+    {
+        "date": "2021-04-26",
+        "total_cases": 195971,
+        "new_cases": 1238,
+        "population": 3280815,
+        "recovered": 2239,
+        "tested": 6799,
+        "died": 147
+    },
+    {
+        "date": "2021-04-27",
+        "total_cases": 196732,
+        "new_cases": 761,
+        "population": 3280815,
+        "recovered": 1448,
+        "tested": 3350,
+        "died": 68
+    },
+    {
+        "date": "2021-04-28",
+        "total_cases": 197378,
+        "new_cases": 646,
+        "population": 3280815,
+        "recovered": 1065,
+        "tested": 3119,
+        "died": 46
+    },
+    {
+        "date": "2021-04-29",
+        "total_cases": 197866,
+        "new_cases": 488,
+        "population": 3280815,
+        "recovered": 481,
+        "tested": 3168,
+        "died": 48
+    },
+    {
+        "date": "2021-04-30",
+        "total_cases": 198461,
+        "new_cases": 595,
+        "population": 3280815,
+        "recovered": 582,
+        "tested": 3112,
+        "died": 39
+    },
+    {
+        "date": "2021-05-01",
+        "total_cases": 198461,
+        "new_cases": 856,
+        "population": 3280815,
+        "recovered": 1046,
+        "tested": 3287,
+        "died": 47
+    },
+    {
+        "date": "2021-05-02",
+        "total_cases": 198461,
+        "new_cases": 745,
+        "population": 3280815,
+        "recovered": 715,
+        "tested": 2549,
+        "died": 43
+    },
+    {
+        "date": "2021-05-03",
+        "total_cases": 198461,
+        "new_cases": 669,
+        "population": 3280815,
+        "recovered": 634,
+        "tested": 2537,
+        "died": 43
+    },
+    {
+        "date": "2021-05-04",
+        "total_cases": 199463,
+        "new_cases": 1002,
+        "population": 3280815,
+        "recovered": 2146,
+        "tested": 6379,
+        "died": 162
+    },
+    {
+        "date": "2021-05-05",
+        "total_cases": 199882,
+        "new_cases": 419,
+        "population": 3280815,
+        "recovered": 904,
+        "tested": 3446,
+        "died": 23
+    },
+    {
+        "date": "2021-05-06",
+        "total_cases": 200353,
+        "new_cases": 471,
+        "population": 3280815,
+        "recovered": 1172,
+        "tested": 3128,
+        "died": 26
+    },
+    {
+        "date": "2021-05-07",
+        "total_cases": 200693,
+        "new_cases": 340,
+        "population": 3280815,
+        "recovered": 1272,
+        "tested": 2561,
+        "died": 28
+    },
+    {
+        "date": "2021-05-08",
+        "total_cases": 200693,
+        "new_cases": 661,
+        "population": 3280815,
+        "recovered": 971,
+        "tested": 3098,
+        "died": 24
+    },
+    {
+        "date": "2021-05-09",
+        "total_cases": 200693,
+        "new_cases": 580,
+        "population": 3280815,
+        "recovered": 1098,
+        "tested": 3102,
+        "died": 27
+    },
+    {
+        "date": "2021-05-10",
+        "total_cases": 201217,
+        "new_cases": 524,
+        "population": 3280815,
+        "recovered": 1330,
+        "tested": 6551,
+        "died": 72
+    },
+    {
+        "date": "2021-05-11",
+        "total_cases": 201512,
+        "new_cases": 295,
+        "population": 3280815,
+        "recovered": 840,
+        "tested": 2914,
+        "died": 50
+    },
+    {
+        "date": "2021-05-12",
+        "total_cases": 201796,
+        "new_cases": 284,
+        "population": 3280815,
+        "recovered": 817,
+        "tested": 2427,
+        "died": 31
+    },
+    {
+        "date": "2021-05-13",
+        "total_cases": 202003,
+        "new_cases": 207,
+        "population": 3280815,
+        "recovered": 441,
+        "tested": 1799,
+        "died": 15
+    },
+    {
+        "date": "2021-05-14",
+        "total_cases": 202143,
+        "new_cases": 140,
+        "population": 3280815,
+        "recovered": 404,
+        "tested": 1705,
+        "died": 23
+    },
+    {
+        "date": "2021-05-15",
+        "total_cases": 202143,
+        "new_cases": 378,
+        "population": 3280815,
+        "recovered": 685,
+        "tested": 2738,
+        "died": 23
+    },
+    {
+        "date": "2021-05-16",
+        "total_cases": 202143,
+        "new_cases": 290,
+        "population": 3280815,
+        "recovered": 500,
+        "tested": 1769,
+        "died": 19
+    },
+    {
+        "date": "2021-05-17",
+        "total_cases": 202490,
+        "new_cases": 347,
+        "population": 3280815,
+        "recovered": 906,
+        "tested": 7595,
+        "died": 70
+    },
+    {
+        "date": "2021-05-18",
+        "total_cases": 202675,
+        "new_cases": 185,
+        "population": 3280815,
+        "recovered": 801,
+        "tested": 3873,
+        "died": 19
+    },
+    {
+        "date": "2021-05-19",
+        "total_cases": 202847,
+        "new_cases": 172,
+        "population": 3280815,
+        "recovered": 532,
+        "tested": 2687,
+        "died": 16
+    },
+    {
+        "date": "2021-05-20",
+        "total_cases": 203018,
+        "new_cases": 171,
+        "population": 3280815,
+        "recovered": 544,
+        "tested": 2121,
+        "died": 10
+    },
+    {
+        "date": "2021-05-21",
+        "total_cases": 203150,
+        "new_cases": 132,
+        "population": 3280815,
+        "recovered": 673,
+        "tested": 2296,
+        "died": 12
+    },
+    {
+        "date": "2021-05-22",
+        "total_cases": 203150,
+        "new_cases": 233,
+        "population": 3280815,
+        "recovered": 556,
+        "tested": 3255,
+        "died": 13
+    },
+    {
+        "date": "2021-05-23",
+        "total_cases": 203150,
+        "new_cases": 201,
+        "population": 3280815,
+        "recovered": 510,
+        "tested": 2195,
+        "died": 11
+    },
+    {
+        "date": "2021-05-24",
+        "total_cases": 203391,
+        "new_cases": 241,
+        "population": 3280815,
+        "recovered": 725,
+        "tested": 6001,
+        "died": 42
+    },
+    {
+        "date": "2021-05-25",
+        "total_cases": 203513,
+        "new_cases": 122,
+        "population": 3280815,
+        "recovered": 457,
+        "tested": 2771,
+        "died": 18
+    },
+    {
+        "date": "2021-05-26",
+        "total_cases": 203658,
+        "new_cases": 145,
+        "population": 3280815,
+        "recovered": 300,
+        "tested": 2768,
+        "died": 16
+    },
+    {
+        "date": "2021-05-27",
+        "total_cases": 203762,
+        "new_cases": 104,
+        "population": 3280815,
+        "recovered": 139,
+        "tested": 2261,
+        "died": 10
+    },
+    {
+        "date": "2021-05-28",
+        "total_cases": 203839,
+        "new_cases": 77,
+        "population": 3280815,
+        "recovered": 610,
+        "tested": 2253,
+        "died": 17
+    },
+    {
+        "date": "2021-05-29",
+        "total_cases": 203839,
+        "new_cases": 162,
+        "population": 3280815,
+        "recovered": 324,
+        "tested": 2760,
+        "died": 13
+    },
+    {
+        "date": "2021-05-30",
+        "total_cases": 203839,
+        "new_cases": 137,
+        "population": 3280815,
+        "recovered": 301,
+        "tested": 2010,
+        "died": 13
+    },
+    {
+        "date": "2021-05-31",
+        "total_cases": 204012,
+        "new_cases": 173,
+        "population": 3280815,
+        "recovered": 845,
+        "tested": 5268,
+        "died": 42
+    },
+    {
+        "date": "2021-06-01",
+        "total_cases": 204093,
+        "new_cases": 81,
+        "population": 3280815,
+        "recovered": 375,
+        "tested": 2670,
+        "died": 17
+    },
+    {
+        "date": "2021-06-02",
+        "total_cases": 204172,
+        "new_cases": 79,
+        "population": 3280815,
+        "recovered": 248,
+        "tested": 1926,
+        "died": 33
+    },
+    {
+        "date": "2021-06-03",
+        "total_cases": 204252,
+        "new_cases": 80,
+        "population": 3280815,
+        "recovered": 123,
+        "tested": 2252,
+        "died": 29
+    },
+    {
+        "date": "2021-06-04",
+        "total_cases": 204304,
+        "new_cases": 52,
+        "population": 3280815,
+        "recovered": 459,
+        "tested": 1872,
+        "died": 42
+    },
+    {
+        "date": "2021-06-05",
+        "total_cases": 204304,
+        "new_cases": 110,
+        "population": 3280815,
+        "recovered": 318,
+        "tested": 2423,
+        "died": 31
+    },
+    {
+        "date": "2021-06-06",
+        "total_cases": 204304,
+        "new_cases": 93,
+        "population": 3280815,
+        "recovered": 241,
+        "tested": 1744,
+        "died": 35
+    },
+    {
+        "date": "2021-06-07",
+        "total_cases": 204410,
+        "new_cases": 106,
+        "population": 3280815,
+        "recovered": 303,
+        "tested": 5898,
+        "died": 37
+    },
+    {
+        "date": "2021-06-08",
+        "total_cases": 204455,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 114,
+        "tested": 2169,
+        "died": 49
+    },
+    {
+        "date": "2021-06-09",
+        "total_cases": 204512,
+        "new_cases": 57,
+        "population": 3280815,
+        "recovered": 178,
+        "tested": 2232,
+        "died": 7
+    },
+    {
+        "date": "2021-06-10",
+        "total_cases": 204567,
+        "new_cases": 55,
+        "population": 3280815,
+        "recovered": 83,
+        "tested": 1992,
+        "died": 6
+    },
+    {
+        "date": "2021-06-11",
+        "total_cases": 204597,
+        "new_cases": 30,
+        "population": 3280815,
+        "recovered": 158,
+        "tested": 1711,
+        "died": 6
+    },
+    {
+        "date": "2021-06-12",
+        "total_cases": 204597,
+        "new_cases": 71,
+        "population": 3280815,
+        "recovered": 135,
+        "tested": 2458,
+        "died": 6
+    },
+    {
+        "date": "2021-06-13",
+        "total_cases": 204597,
+        "new_cases": 58,
+        "population": 3280815,
+        "recovered": 106,
+        "tested": 1620,
+        "died": 6
+    },
+    {
+        "date": "2021-06-14",
+        "total_cases": 204668,
+        "new_cases": 71,
+        "population": 3280815,
+        "recovered": 854,
+        "tested": 4396,
+        "died": 16
+    },
+    {
+        "date": "2021-06-15",
+        "total_cases": 204697,
+        "new_cases": 29,
+        "population": 3280815,
+        "recovered": 160,
+        "tested": 2019,
+        "died": 39
+    },
+    {
+        "date": "2021-06-16",
+        "total_cases": 204730,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 183,
+        "tested": 1858,
+        "died": 74
+    },
+    {
+        "date": "2021-06-17",
+        "total_cases": 204791,
+        "new_cases": 61,
+        "population": 3280815,
+        "recovered": 1083,
+        "tested": 2033,
+        "died": 18
+    },
+    {
+        "date": "2021-06-18",
+        "total_cases": 204814,
+        "new_cases": 23,
+        "population": 3280815,
+        "recovered": 456,
+        "tested": 1823,
+        "died": 4
+    },
+    {
+        "date": "2021-06-19",
+        "total_cases": 204814,
+        "new_cases": 50,
+        "population": 3280815,
+        "recovered": 456,
+        "tested": 2061,
+        "died": 46
+    },
+    {
+        "date": "2021-06-20",
+        "total_cases": 204814,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 376,
+        "tested": 1546,
+        "died": 11
+    },
+    {
+        "date": "2021-06-21",
+        "total_cases": 204860,
+        "new_cases": 46,
+        "population": 3280815,
+        "recovered": 387,
+        "tested": 4184,
+        "died": 13
+    },
+    {
+        "date": "2021-06-22",
+        "total_cases": 204886,
+        "new_cases": 26,
+        "population": 3280815,
+        "recovered": 398,
+        "tested": 1846,
+        "died": 5
+    },
+    {
+        "date": "2021-06-23",
+        "total_cases": 204910,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 219,
+        "tested": 1569,
+        "died": 3
+    },
+    {
+        "date": "2021-06-24",
+        "total_cases": 204936,
+        "new_cases": 26,
+        "population": 3280815,
+        "recovered": 337,
+        "tested": 1540,
+        "died": 2
+    },
+    {
+        "date": "2021-06-25",
+        "total_cases": 204945,
+        "new_cases": 9,
+        "population": 3280815,
+        "recovered": 526,
+        "tested": 1462,
+        "died": 2
+    },
+    {
+        "date": "2021-06-26",
+        "total_cases": 204945,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 268,
+        "tested": 1827,
+        "died": 2
+    },
+    {
+        "date": "2021-06-27",
+        "total_cases": 204945,
+        "new_cases": 26,
+        "population": 3280815,
+        "recovered": 296,
+        "tested": 1283,
+        "died": 2
+    },
+    {
+        "date": "2021-06-28",
+        "total_cases": 204991,
+        "new_cases": 46,
+        "population": 3280815,
+        "recovered": 699,
+        "tested": 4108,
+        "died": 3
+    },
+    {
+        "date": "2021-06-29",
+        "total_cases": 205004,
+        "new_cases": 13,
+        "population": 3280815,
+        "recovered": 562,
+        "tested": 1697,
+        "died": 5
+    },
+    {
+        "date": "2021-06-30",
+        "total_cases": 205022,
+        "new_cases": 18,
+        "population": 3280815,
+        "recovered": 320,
+        "tested": 1551,
+        "died": 2
+    },
+    {
+        "date": "2021-07-01",
+        "total_cases": 205032,
+        "new_cases": 10,
+        "population": 3280815,
+        "recovered": 228,
+        "tested": 1440,
+        "died": 2
+    },
+    {
+        "date": "2021-07-02",
+        "total_cases": 205047,
+        "new_cases": 15,
+        "population": 3280815,
+        "recovered": 129,
+        "tested": 1267,
+        "died": 0
+    },
+    {
+        "date": "2021-07-03",
+        "total_cases": 205047,
+        "new_cases": 22,
+        "population": 3280815,
+        "recovered": 361,
+        "tested": 1759,
+        "died": 2
+    },
+    {
+        "date": "2021-07-04",
+        "total_cases": 205047,
+        "new_cases": 20,
+        "population": 3280815,
+        "recovered": 247,
+        "tested": 1191,
+        "died": 1
+    },
+    {
+        "date": "2021-07-05",
+        "total_cases": 205047,
+        "new_cases": 15,
+        "population": 3280815,
+        "recovered": 207,
+        "tested": 1203,
+        "died": 1
+    },
+    {
+        "date": "2021-07-06",
+        "total_cases": 205047,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 193,
+        "tested": 1131,
+        "died": 1
+    },
+    {
+        "date": "2021-07-07",
+        "total_cases": 205047,
+        "new_cases": 16,
+        "population": 3280815,
+        "recovered": 986,
+        "tested": 6508,
+        "died": 13
+    },
+    {
+        "date": "2021-07-08",
+        "total_cases": 205047,
+        "new_cases": 17,
+        "population": 3280815,
+        "recovered": 161,
+        "tested": 1413,
+        "died": 0
+    },
+    {
+        "date": "2021-07-09",
+        "total_cases": 205047,
+        "new_cases": 18,
+        "population": 3280815,
+        "recovered": 189,
+        "tested": 1445,
+        "died": 2
+    },
+    {
+        "date": "2021-07-10",
+        "total_cases": 205145,
+        "new_cases": 98,
+        "population": 3280815,
+        "recovered": 309,
+        "tested": 2051,
+        "died": 6
+    },
+    {
+        "date": "2021-07-11",
+        "total_cases": 205145,
+        "new_cases": 16,
+        "population": 3280815,
+        "recovered": 305,
+        "tested": 2099,
+        "died": 1
+    },
+    {
+        "date": "2021-07-12",
+        "total_cases": 205181,
+        "new_cases": 36,
+        "population": 3280815,
+        "recovered": 718,
+        "tested": 2998,
+        "died": 6
+    },
+    {
+        "date": "2021-07-13",
+        "total_cases": 205214,
+        "new_cases": 33,
+        "population": 3280815,
+        "recovered": 274,
+        "tested": 1456,
+        "died": 1
+    },
+    {
+        "date": "2021-07-14",
+        "total_cases": 205238,
+        "new_cases": 24,
+        "population": 3280815,
+        "recovered": 391,
+        "tested": 1560,
+        "died": 1
+    },
+    {
+        "date": "2021-07-15",
+        "total_cases": 205267,
+        "new_cases": 29,
+        "population": 3280815,
+        "recovered": 490,
+        "tested": 1970,
+        "died": 1
+    },
+    {
+        "date": "2021-07-16",
+        "total_cases": 205285,
+        "new_cases": 18,
+        "population": 3280815,
+        "recovered": 341,
+        "tested": 1131,
+        "died": 1
+    },
+    {
+        "date": "2021-07-17",
+        "total_cases": 205285,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 374,
+        "tested": 1596,
+        "died": 1
+    },
+    {
+        "date": "2021-07-18",
+        "total_cases": 205285,
+        "new_cases": 28,
+        "population": 3280815,
+        "recovered": 299,
+        "tested": 1223,
+        "died": 1
+    },
+    {
+        "date": "2021-07-19",
+        "total_cases": 205313,
+        "new_cases": 28,
+        "population": 3280815,
+        "recovered": 672,
+        "tested": 2953,
+        "died": 3
+    },
+    {
+        "date": "2021-07-20",
+        "total_cases": 205340,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 134,
+        "tested": 1330,
+        "died": 0
+    },
+    {
+        "date": "2021-07-21",
+        "total_cases": 205345,
+        "new_cases": 5,
+        "population": 3280815,
+        "recovered": 118,
+        "tested": 905,
+        "died": 2
+    },
+    {
+        "date": "2021-07-22",
+        "total_cases": 205384,
+        "new_cases": 39,
+        "population": 3280815,
+        "recovered": 193,
+        "tested": 1543,
+        "died": 2
+    },
+    {
+        "date": "2021-07-23",
+        "total_cases": 205420,
+        "new_cases": 36,
+        "population": 3280815,
+        "recovered": 130,
+        "tested": 1883,
+        "died": 2
+    },
+    {
+        "date": "2021-07-24",
+        "total_cases": 205420,
+        "new_cases": 25,
+        "population": 3280815,
+        "recovered": 223,
+        "tested": 1346,
+        "died": 2
+    },
+    {
+        "date": "2021-07-25",
+        "total_cases": 205420,
+        "new_cases": 27,
+        "population": 3280815,
+        "recovered": 115,
+        "tested": 1132,
+        "died": 2
+    },
+    {
+        "date": "2021-07-26",
+        "total_cases": 205495,
+        "new_cases": 75,
+        "population": 3280815,
+        "recovered": 375,
+        "tested": 4413,
+        "died": 2
+    },
+    {
+        "date": "2021-07-27",
+        "total_cases": 205523,
+        "new_cases": 28,
+        "population": 3280815,
+        "recovered": 228,
+        "tested": 1820,
+        "died": 9
+    },
+    {
+        "date": "2021-07-28",
+        "total_cases": 205566,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 196,
+        "tested": 1820,
+        "died": 0
+    },
+    {
+        "date": "2021-07-29",
+        "total_cases": 205610,
+        "new_cases": 44,
+        "population": 3280815,
+        "recovered": 89,
+        "tested": 2065,
+        "died": 0
+    },
+    {
+        "date": "2021-07-30",
+        "total_cases": 205655,
+        "new_cases": 45,
+        "population": 3280815,
+        "recovered": 21,
+        "tested": 1064,
+        "died": 1
+    },
+    {
+        "date": "2021-07-31",
+        "total_cases": 205655,
+        "new_cases": 43,
+        "population": 3280815,
+        "recovered": 177,
+        "tested": 2023,
+        "died": 0
+    },
+    {
+        "date": "2021-08-01",
+        "total_cases": 205655,
+        "new_cases": 47,
+        "population": 3280815,
+        "recovered": 106,
+        "tested": 1353,
+        "died": 0
+    },
+    {
+        "date": "2021-08-02",
+        "total_cases": 205785,
+        "new_cases": 130,
+        "population": 3280815,
+        "recovered": 308,
+        "tested": 4413,
+        "died": 2
+    },
+    {
+        "date": "2021-08-03",
+        "total_cases": 205825,
+        "new_cases": 40,
+        "population": 3280815,
+        "recovered": 20,
+        "tested": 1894,
+        "died": 0
+    },
+    {
+        "date": "2021-08-04",
+        "total_cases": 205949,
+        "new_cases": 124,
+        "population": 3280815,
+        "recovered": 13,
+        "tested": 2352,
+        "died": 0
+    },
+    {
+        "date": "2021-08-05",
+        "total_cases": 206031,
+        "new_cases": 82,
+        "population": 3280815,
+        "recovered": 782,
+        "tested": 1700,
+        "died": 0
+    },
+    {
+        "date": "2021-08-06",
+        "total_cases": 206106,
+        "new_cases": 75,
+        "population": 3280815,
+        "recovered": 173,
+        "tested": 1934,
+        "died": 2
+    },
+    {
+        "date": "2021-08-07",
+        "total_cases": 206106,
+        "new_cases": 84,
+        "population": 3280815,
+        "recovered": 224,
+        "tested": 2071,
+        "died": 0
+    },
+    {
+        "date": "2021-08-08",
+        "total_cases": 206106,
+        "new_cases": 90,
+        "population": 3280815,
+        "recovered": 197,
+        "tested": 1576,
+        "died": 1
+    },
+    {
+        "date": "2021-08-09",
+        "total_cases": 206317,
+        "new_cases": 211,
+        "population": 3280815,
+        "recovered": 694,
+        "tested": 4251,
+        "died": 3
+    },
+    {
+        "date": "2021-08-10",
+        "total_cases": 206476,
+        "new_cases": 159,
+        "population": 3280815,
+        "recovered": 166,
+        "tested": 2399,
+        "died": 0
+    },
+    {
+        "date": "2021-08-11",
+        "total_cases": 206655,
+        "new_cases": 179,
+        "population": 3280815,
+        "recovered": 316,
+        "tested": 2376,
+        "died": 0
+    },
+    {
+        "date": "2021-08-12",
+        "total_cases": 206835,
+        "new_cases": 180,
+        "population": 3280815,
+        "recovered": 193,
+        "tested": 2476,
+        "died": 4
+    },
+    {
+        "date": "2021-08-13",
+        "total_cases": 207076,
+        "new_cases": 241,
+        "population": 3280815,
+        "recovered": 313,
+        "tested": 1820,
+        "died": 3
+    },
+    {
+        "date": "2021-08-14",
+        "total_cases": 207076,
+        "new_cases": 163,
+        "population": 3280815,
+        "recovered": 273,
+        "tested": 2300,
+        "died": 2
+    },
+    {
+        "date": "2021-08-15",
+        "total_cases": 207076,
+        "new_cases": 194,
+        "population": 3280815,
+        "recovered": 197,
+        "tested": 1814,
+        "died": 3
+    },
+    {
+        "date": "2021-08-16",
+        "total_cases": 207571,
+        "new_cases": 495,
+        "population": 3280815,
+        "recovered": 219,
+        "tested": 6091,
+        "died": 10
+    },
+    {
+        "date": "2021-08-17",
+        "total_cases": 207847,
+        "new_cases": 276,
+        "population": 3280815,
+        "recovered": 62,
+        "tested": 2724,
+        "died": 5
+    },
+    {
+        "date": "2021-08-18",
+        "total_cases": 208267,
+        "new_cases": 420,
+        "population": 3280815,
+        "recovered": 200,
+        "tested": 2799,
+        "died": 2
+    },
+    {
+        "date": "2021-08-19",
+        "total_cases": 208644,
+        "new_cases": 377,
+        "population": 3280815,
+        "recovered": 150,
+        "tested": 2312,
+        "died": 3
+    },
+    {
+        "date": "2021-08-20",
+        "total_cases": 209073,
+        "new_cases": 429,
+        "population": 3280815,
+        "recovered": 135,
+        "tested": 2800,
+        "died": 1
+    },
+    {
+        "date": "2021-08-21",
+        "total_cases": 209073,
+        "new_cases": 352,
+        "population": 3280815,
+        "recovered": 126,
+        "tested": 2785,
+        "died": 2
+    },
+    {
+        "date": "2021-08-22",
+        "total_cases": 209073,
+        "new_cases": 399,
+        "population": 3280815,
+        "recovered": 109,
+        "tested": 2127,
+        "died": 2
+    },
+    {
+        "date": "2021-08-23",
+        "total_cases": 209909,
+        "new_cases": 836,
+        "population": 3280815,
+        "recovered": 122,
+        "tested": 2139,
+        "died": 1
+    }
+]

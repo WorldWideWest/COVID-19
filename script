@@ -1,0 +1,42 @@
+import pandas as pd
+import json
+import requests as re
+from models import Covid
+
+def job():
+    path = "../../dataSet/cleanData/cleanData.xlsx"
+    url = "http://127.0.0.1:8000/api/"
+
+    data = pd.read_excel(path, engine = "openpyxl")
+
+    data['date'] = pd.to_datetime(data['date'], format = "%d.%m.%Y")
+    data['date'] = data['date'].dt.strftime('%Y-%m-%d')
+
+    # rowIter = data.iterrows()
+    # objects = [
+    #     Covid(
+    #         date = data['date'],
+    #         total_cases = data['total_cases'],
+    #         new_cases = data['new_cases'],
+    #         population = data['population'],
+    #         recovered = data['recovered'],
+    #         tested = data['tested'],
+    #         died = data['died']
+    #     )
+    #     for index, row in rowIter
+    # ]
+
+    # Covid.objects.all().delete()
+    # Covid.objects.bulk_create(objects)
+
+    result = data.to_json(orient="records")
+    parsed = json.loads(result)
+
+    jsonObject = json.dumps(parsed, indent=4)
+
+    delete = re.delete(url)
+    print(delete.json)    
+    
+    post = re.Request('POST', url, headers = {"Content-Type": "application/json"}, data = jsonObject)
+    # post = re.post(url, json = jsonObject)
+    print(post.json, post.content)    

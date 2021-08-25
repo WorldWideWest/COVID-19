@@ -32,19 +32,19 @@ def GetDay(dataFrame, column, newColumn, columnIndex):
     return data
 
 
-tested = GetDay(bih, "Broj testiranih", "Testirani", 2)
-recovered = GetDay(bih, "Broj oporavljenih osoba", "Oporavljeni", 4)
-died = GetDay(bih, "Broj smrtnih slučajeva", "Smrtni sl.", 3)
+tested = GetDay(bih, "Broj testiranih", "tested", 2)
+recovered = GetDay(bih, "Broj oporavljenih osoba", "recovered", 4)
+died = GetDay(bih, "Broj smrtnih slučajeva", "died", 3)
 
 
 fullDataFrame = pd.merge(left = rawData, left_on = 'date', how = 'left',
-         right = recovered[['Oporavljeni', 'Datum']], right_on = 'Datum').drop('Datum', axis = 1)
+         right = recovered[['recovered', 'Datum']], right_on = 'Datum').drop('Datum', axis = 1)
 
 fullDataFrame = pd.merge(left = fullDataFrame, left_on = 'date', how = 'left',
-                        right = tested[['Datum', 'Testirani']], right_on = 'Datum').drop('Datum', axis = 1)
+                        right = tested[['Datum', 'tested']], right_on = 'Datum').drop('Datum', axis = 1)
 
 fullDataFrame = pd.merge(left = fullDataFrame, left_on = 'date', how = 'left',
-                        right = died[['Datum', 'Smrtni sl.']], right_on = 'Datum').drop('Datum', axis = 1)
+                        right = died[['Datum', 'died']], right_on = 'Datum').drop('Datum', axis = 1)
 
 
 availableData = [item for item in fullDataFrame.count()]

@@ -14,7 +14,7 @@ for i in range(0, 29):
     dataFrame.iloc[i, 6] = startDiedAvg
 
 for colIndex, column in enumerate(dataFrame.columns):
-    if column == "Oporavljeni" or column == "Testirani":
+    if column == "recovered" or column == "tested":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
                 startIndex = index - 5
@@ -33,7 +33,7 @@ for colIndex, column in enumerate(dataFrame.columns):
 
  
 
-    elif column == "Smrtni sl.":
+    elif column == "died":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
                 startIndex = index - 3
@@ -62,9 +62,9 @@ for colIndex, column in enumerate(dataFrame.columns):
                 
 
 for colIndex, column in enumerate(dataFrame.columns):
-     if column == "Oporavljeni":
+     if column == "recovered":
         for index in range(len(dataFrame[column])):
-            if dataFrame.iloc[index, colIndex] > 20000:
+            if dataFrame.iloc[index, colIndex] > 5000 or dataFrame.iloc[index, colIndex] == 0:
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue

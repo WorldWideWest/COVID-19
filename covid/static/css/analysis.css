@@ -1,0 +1,12 @@
+main{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+
+.table{
+    text-align: center;
+}
+.table thead tr{
+    text-align: center;
+}

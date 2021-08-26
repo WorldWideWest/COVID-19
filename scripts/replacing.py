@@ -24,20 +24,12 @@ for colIndex, column in enumerate(dataFrame.columns):
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
-#            elif column == "Oporavljeni":
-#                pctValue = int(dataFrame.iloc[index - 1, colIndex] + dataFrame.iloc[index - 1, colIndex])
-#                if dataFrame.iloc[index, colIndex] > pctValue:
-#                    startIndex = index - 5
-#                    avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
-#                    dataFrame.iloc[index, colIndex] = avgValue
-
- 
 
     elif column == "died":
         for index in range(len(dataFrame[column])):
             if pd.isnull(dataFrame.iloc[index, colIndex]):
                 startIndex = index - 3
-                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 2)
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 3)
                 dataFrame.iloc[index, colIndex] = avgValue
             elif dataFrame.iloc[index, colIndex] < 0:
                 dataFrame.iloc[index, colIndex] = dataFrame.iloc[index, colIndex] * (-1)
@@ -47,12 +39,12 @@ for colIndex, column in enumerate(dataFrame.columns):
     elif column == "new_cases":
         for index in range(len(dataFrame[column])):
             if dataFrame.iloc[index, colIndex] == 0:
-                startIndex = index - 6
+                startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
 
             elif pd.isnull(dataFrame.iloc[index, colIndex]):
-                startIndex = index - 6
+                startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
         
@@ -62,12 +54,15 @@ for colIndex, column in enumerate(dataFrame.columns):
                 
 
 for colIndex, column in enumerate(dataFrame.columns):
-     if column == "recovered":
+     if column == "recovered" or column == "tested":
         for index in range(len(dataFrame[column])):
-            if dataFrame.iloc[index, colIndex] > 5000 or dataFrame.iloc[index, colIndex] == 0:
+            if dataFrame.iloc[index, colIndex] > 5000:
                 startIndex = index - 5
                 avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
-    
+            elif dataFrame.iloc[index, colIndex] == 0 and index > 28:
+                startIndex = index - 5
+                avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
+                dataFrame.iloc[index, colIndex] = avgValue
 
 dataFrame.to_excel(os.path.join("../dataSet/cleanData", "cleanData.xlsx"), index = False)

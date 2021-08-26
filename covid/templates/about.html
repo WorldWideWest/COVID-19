@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <title>About</title>
+
+{% endblock %}
+
+
+{% block body %}
+    
+    {% include "components/navbar.html" %} <!-- Navbar -->
+
+    <article id="general-info">
+        <h1 class="header-h1">General information about the project</h1>
+        <p>The COVID-19 analysis project in Bosnia and Herzegovina is here to show off the COVID pandemic in the county. We look at the country as a whole, so there will not be segmentation for the administrative areas.
+        The data is gathered from the website of <a href="http://www.mcp.gov.ba/Publication/Category/projekti?category=7">Ministry of Civil Affairs of Bosnia and Herzegovina</a> and 
+        <a href="https://ourworldindata.org/coronavirus">Our World in Data</a>. The specific details about the algorithms and technologies used in this project you can find in the API and About sections. One more thing to say before
+        we start with the analysis is that the project is open-source and the content of the project you can find on <a href="https://github.com/WorldWideWest/COVID-19">Github</a></p>
+    </article>
+    
+
+{% endblock %}

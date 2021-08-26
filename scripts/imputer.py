@@ -23,6 +23,6 @@ def job():
     delete = re.delete(url)
 
     post = re.post(url, data = jsonData, headers = headers)
-    print(post.content)
+    print(post.status_code)
 
 job()

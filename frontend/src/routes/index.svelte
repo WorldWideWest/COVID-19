@@ -1,33 +1,22 @@
-{% extends "base.html" %}
-{% load static %}
-{% load sekizai_tags %}
+<script>
+    import { covid } from "../stores/covidStore";
+    import NewCases from "../templates/NewCases.svelte";
+    import DataTable from "../components/DataTable.svelte";
+</script>
 
-{% block head %}
-    <link rel="stylesheet" href="{% static 'css/general.css' %}">
-    <link rel="stylesheet" href="{% static 'css/analysis.css' %}">
-    <!-- <script src="{% static 'js/new_cases_overview.js' %}"></script> -->
+<svelte:head>
     <title>Analysis</title>
+</svelte:head>
 
-{% endblock %}
-
-
-{% block body %}
-
-    {% include "components/navbar.html" %}  <!-- Navbar -->
-
-    <h1 class="header-h1">COVID-19 Analysis in Bosnia and Herzegovina</h1>
-
+<main>
+    <h1 style="text-align: center; font-size: 50px;">COVID-19 Analysis in Bosnia and Herzegovina</h1>
+    <article id="table-1">
+        <DataTable />
+    </article>
+    <caption><strong>Table - 1</strong>: The table gives you a look at the data that is going to be analyzed in this report.</caption>
     
-    <main>
-        <article id="project-introduction">
-            <h3 class="header-table" id="table-1">COVID-19 data for Bosnia and Herzegovina</h3>
-            <div class="table-responsive">
-                {{ dataFrame | safe }}
-            </div>
-            <caption><strong>Table - 1</strong>: The table gives you a look at the data that is going to be analyzed in this report.</caption>
-        </article>
-        <article id="algorithm-structure">
-            <h1 class="header-h1-content">The data geathering methods and the algorithm structure</h1>
+    <article id="project-intro">
+        <h1 class="header-h1-content">The data geathering methods and the algorithm structure</h1>
             <p>
                 To gather the data we needed to first find the sources for the data and it was not easy. The first problem we faced is that there was no data source to be found,
                 the agencies and the government did not care about the COVID-19 data gathering.
@@ -72,23 +61,77 @@
                 As the data was cleaned we exported it to excel and json. So everyone who want's the data can get it over the API or in the excel file. And we ended up with the result
                 shown in the <a href="#table-1">Table - 1</a>.
             </p>
-        </article>
+    </article>
+
+    <article id="covid-new-cases">
+        <h1>Analysing the data</h1>
+       
+        <figure id="chart-1">
+            <NewCases />
+            <figcaption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</figcaption>
+        </figure>
+
         
-        <article id="covid-new-cases">
-            <h1 class="header-h1-content">Analysing the data</h1>
-            <div id="chart-1">
-                <div id="new_cases_overall_chart_area"></div>
-                {% include "charts/charts.html" %}
-            </div>
-            <caption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</caption>
-            <p style="margin-top: 20px;">
-                <a href="#chart-1">Chart - 1</a> shows us how much people were infected with the virus through the year. To understand more about the
-                curve and the pandemic we need to break it down into multiple subcharts where we can better see the situation and anlyse the situation.
-            </p>
-            <!-- 28.06.2020 -->
-            <h2 class="header-h2-content">Begining of the pandemic (Apr. 2020 - July 2020)</h2>
+        <p style="margin-top: 20px;">
+            <a href="#chart-1">Chart - 1</a> shows us how much people were infected with the virus through the year. To understand more about the
+            curve and the pandemic we need to break it down into multiple subcharts where we can better see the situation and anlyse the situation.
+        </p>
+        <!-- 28.06.2020 -->
 
-        </article>
-    </main>
+    </article>
+</main>
 
-{% endblock %}
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    main{
+        margin-top: 150px;
+
+        display: grid;
+        grid-template-columns: 80%;
+        grid-row-gap: 30px;
+
+        justify-content: center;
+    }
+    :global(body){
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :global(h1){
+        margin-top: 30px;
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    :global(h2){
+        margin-top: 30px;
+        text-align: left;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    :global(h3){
+        margin-top: 30px;
+        text-align: left;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    :global(p){
+        font-size: 18px;
+    }
+    :global(a){
+        text-decoration: none;
+    }
+    :global(.tick line) {
+        stroke: #c0c0bb;
+    }
+    
+    :global(.tick text){
+        font-size: 14px;
+        fill: #635f5d;
+    }
+
+</style>

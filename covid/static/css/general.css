@@ -24,7 +24,8 @@ a{
 }
 
 caption{
-    font-size: 12px;    
+    font-size: 12px;
+    margin: 10px;  
 }
 
 .header-h1-content{

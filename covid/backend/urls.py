@@ -4,7 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from .views import CovidDataView
 
 urlpatterns = [
-    path('api/', CovidDataView.as_view()),
+    path('api/', CovidDataView.as_view(), name = "api"),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

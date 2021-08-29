@@ -2,6 +2,7 @@ main{
     display: grid;
     grid-template-columns: 80%;
     justify-content: center;
+    margin-bottom: 500px;
 }
 
 .table{
@@ -9,4 +10,8 @@ main{
 }
 .table thead tr{
     text-align: center;
+}
+
+#covid-new-cases{
+    margin-top: 50px;
 }

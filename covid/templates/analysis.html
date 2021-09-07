@@ -76,18 +76,29 @@
         
         <article id="covid-new-cases">
             <h1 class="header-h1-content">Analysing the data</h1>
-            <div id="chart-1">
-                <div id="new_cases_overall_chart_area"></div>
-                {% include "charts/charts.html" %}
-            </div>
-            <caption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</caption>
-            <p style="margin-top: 20px;">
-                <a href="#chart-1">Chart - 1</a> shows us how much people were infected with the virus through the year. To understand more about the
-                curve and the pandemic we need to break it down into multiple subcharts where we can better see the situation and anlyse the situation.
-            </p>
-            <!-- 28.06.2020 -->
-            <h2 class="header-h2-content">Begining of the pandemic (Apr. 2020 - July 2020)</h2>
-
+            <figure id="chart-1">
+                <div id="new-cases">
+                    <div id="tooltip">
+                        <div class="date"></div>
+                        <div class="cases"></div>
+                    </div>
+                </div>
+                {% include "charts/new_cases.html" %}
+                <caption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</caption>
+            </figure>
+            
+           {% include "reports/time-stamps.html" %}
+            
+            <figure id="chart-2">
+                <div id="tested">
+                    <div id="tooltip">
+                        <div class="date"></div>
+                        <div class="tests"></div>
+                    </div>
+                </div>
+                {% include "charts/tested.html" %}
+                <caption><strong>Chart - 2</strong>: Number of Tested people Bosnia and Herzegovina from April 2020. until Today</caption>
+            </figure>
         </article>
     </main>
 

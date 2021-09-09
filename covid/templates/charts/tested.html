@@ -18,7 +18,7 @@
         const innerHeight = height - margin.top - margin.bottom;
 
 
-        const svg = d3.select("#tested").append("svg")
+        const svg = d3.select("#chart-2 #chart-area").append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox", "0 0 1000 400");
 
@@ -26,7 +26,7 @@
             .attr("transform", `translate(${ margin.left }, ${ margin.top })`)
 
         // Defining the tooltip
-        const tooltip = d3.select("#tested #tooltip")
+        const tooltip = d3.select("#chart-2 #chart-area #tooltip")
         const tooltipdot = g.append("circle")
             .attr("r", 5)
             .attr("fill", "#fc8781")

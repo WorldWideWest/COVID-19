@@ -1,16 +1,20 @@
 from django.shortcuts import render
 
-import requests
+import json
 import pandas as pd
 
-from .importers import getDataFrame
+from .customs import getDataFrame
 # Create your views here.
-
-
-
 
 def analysis_view(request):
     dataFrame = getDataFrame()
+
+    corrFrame = dataFrame.corr().to_html(
+        max_rows = 10,
+        classes = (
+            ('class', 'table table-hover custom')
+        )
+    )
 
     dataFrame = dataFrame.to_html(
         col_space = 100, index = False, max_rows = 10,
@@ -18,8 +22,10 @@ def analysis_view(request):
             ('class', 'table table-hover')
         )
     )
+
     context = {
         "dataFrame": dataFrame,
+        "corrFrame": corrFrame,
     }
 
     return render(request, "analysis.html", context)

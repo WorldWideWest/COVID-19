@@ -15,69 +15,13 @@
 
     {% include "components/navbar.html" %}  <!-- Navbar -->
 
-    <h1 class="header-h1">COVID-19 Analysis in Bosnia and Herzegovina</h1>
-
-    
     <main>
-        <article id="project-introduction">
-            <h3 class="header-table" id="table-1">COVID-19 data for Bosnia and Herzegovina</h3>
-            <div class="table-responsive">
-                {{ dataFrame | safe }}
-            </div>
-            <caption><strong>Table - 1</strong>: The table gives you a look at the data that is going to be analyzed in this report.</caption>
-        </article>
-        <article id="algorithm-structure">
-            <h1 class="header-h1-content">The data geathering methods and the algorithm structure</h1>
-            <p>
-                To gather the data we needed to first find the sources for the data and it was not easy. The first problem we faced is that there was no data source to be found,
-                the agencies and the government did not care about the COVID-19 data gathering.
-            </p>
-            <p>
-                And the first month of the COVID-19 crisis we had no data from the local government, so we turned to inernational resources and found <a href="https://ourworldindata.org/coronavirus">
-                Our World in Data</a> And from there we gather our new cases and total casses, because it is the most reliable source.
-            </p>
-            <p>
-                Then as the pandemic took off the local government started to display some data on their <a href="http://www.mcp.gov.ba/Publication/Category/projekti?category=7">website</a>
-                But the data was inconsistent, the table structure often changed and there was missing data. Those are critical problems because a government authority must provide transparent, clean and 
-                understandable data to justify their work to the citizens.
-            </p>
-            <p>
-                Facing all of these problems we needed to find a solution, and we did. The new cases and the total cases we gathered from the OurWorldinData, and the data about the 
-                number of recovered, tested and died people we got from the government's website. The data gathered from the government website needed to be parsed through multiple
-                custom algorithms to be usable.
-            </p>
+        {% include "reports/intro.html" %}
 
-            <h2 class="header-h2-content">Data collection and processing steps</h2>
-            <h3 class="header-h3-content">Step one:</h3>
-            <p>
-                The data set we collected from <a href="https://ourworldindata.org/coronavirus">Our World in Data</a> was shipped in excel and it was easy with <a href="https://www.python.org/">Python</a> to read the data and extract the information we needed. The government source
-                was far more difficult, because the data didn't shipp in any kind of a data structure we needed to find some way to extract the data. We then decided to scrape the data with
-                <a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>.
-            </p> 
-            <h3 class="header-h3-content">Step two:</h3>
-            <p>
-               In this step we needed to somehow parse the data, with the excel file it was easy, load it to <a href="https://pandas.pydata.org/">Pandas</a> and we are good to go, but with the government data, we
-               had a problem, the scraped data had inconsistenties with the data, table structure and as a "bonus" it shipped in plain HTML. 
-            </p> 
-            <p>
-                We first needed to get rid off the HTML tags, once that was done we turned our attention to the table structure inconsistenties and identified the dates where the table
-                structure was changing. Now the algorithm know's where to group the data regardless is the column there or not. 
-            </p>
-            <p>
-                Then there was the problem with the missing data. We addressed this problem per column because the number of tested people can't be filled the same way that the died people
-                column get's filled. So the columns (New Cases, Recovered, Tested) are filled with the mean of the last 5 days and the died column with the last 3 days.
-            </p>
-            <h3 class="header-h3-content">Step three:</h3>
-            <p>
-                As the data was cleaned we exported it to excel and json. So everyone who want's the data can get it over the API or in the excel file. And we ended up with the result
-                shown in the <a href="#table-1">Table - 1</a>.
-            </p>
-        </article>
-        
         <article id="covid-new-cases">
             <h1 class="header-h1-content">Analysing the data</h1>
             <figure id="chart-1">
-                <div id="new-cases">
+                <div id="chart-area">
                     <div id="tooltip">
                         <div class="date"></div>
                         <div class="cases"></div>
@@ -89,16 +33,15 @@
             
            {% include "reports/time-stamps.html" %}
             
-            <figure id="chart-2">
-                <div id="tested">
-                    <div id="tooltip">
-                        <div class="date"></div>
-                        <div class="tests"></div>
-                    </div>
+            <p>
+                To better understand the relationships between the variables in the dataset we calculated the correlation coefficient in the <a href="#table-2">Table - 2</a>
+            </p>
+            <div id="table-2" class="table-" style="text-align: center; margin: 10px;">
+                <div class="table-responsive">
+                    {{ corrFrame | safe }}
                 </div>
-                {% include "charts/tested.html" %}
-                <caption><strong>Chart - 2</strong>: Number of Tested people Bosnia and Herzegovina from April 2020. until Today</caption>
-            </figure>
+                <caption><strong>Table - 2</strong>: Correlation coefficient between for each column in the dataset</caption>
+            </div>
         </article>
     </main>
 

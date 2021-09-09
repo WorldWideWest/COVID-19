@@ -7,6 +7,12 @@ main{
 
 .table{
     text-align: center;
+    margin-top: 30px;
+}
+.custom{
+    width: 645px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 .table thead tr{
     text-align: center;
@@ -16,6 +22,3 @@ main{
     margin-top: 50px;
 }
 
-/* ul li{
-    list-style-type: none;
-} */

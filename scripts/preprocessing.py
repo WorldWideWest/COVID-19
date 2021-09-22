@@ -1,13 +1,8 @@
-import os
 import re
-import logging as lg
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from datetime import datetime
-
-# Logging configuration 
-lg.basicConfig(level = lg.INFO)
 
 class Preprocessing:
     def Scrape(url):
@@ -55,7 +50,7 @@ class Preprocessing:
                 else:
                     pass
 
-        lg.info(f"Number of days gathered { len(tables) } days")
+        print(f"Number of days gathered { len(tables) } days")
         return tables
     
     def getData(start, end, tables):

@@ -4,8 +4,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
+import pandas as pd
+import json
+
 from .models import Covid
-from .serializers import CovidSerializer
+from .serializers import CovidSerializer, MetricsSerializer
 
 # Create your views here.
 
@@ -26,3 +29,13 @@ class CovidDataView(APIView):
         covid_data = Covid.objects.all()
         covid_data.delete()
         return Response(status = status.HTTP_204_NO_CONTENT)
+
+class MetricsView(APIView):
+    def get(self, request, format = None):
+        dataFrame = pd.DataFrame(
+            list(Covid.objects.all().values('total_cases', 'new_cases', 'recovered', 'tested', 'died')))
+        corrFrame = dataFrame.corr().to_json(orient = "records")
+        
+        return Response(json.loads(corrFrame))
+
+

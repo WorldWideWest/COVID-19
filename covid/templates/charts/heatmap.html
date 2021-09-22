@@ -1,0 +1,95 @@
+{% load sekizai_tags %}
+
+{% addtoblock "js" %}
+
+<script>
+    const heatmap = data =>{
+        const width = 1000;
+        const height = 400;
+    
+        // Defining the Chart area
+    
+        const margin = {top: 40, right: 70, bottom: 50, left: 90}
+        const innerWidth = width - margin.left - margin.right;
+        const innerHeight = height - margin.top - margin.bottom;
+
+        const box = 30;
+
+        const svg = d3.select("#chart-2 #chart-area").append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "0 0 1000 400");
+
+        const g = svg.append("g")
+            .attr("transform", `translate(${ margin.left }, ${ margin.top })`)
+
+        const colorScale = d3.scaleSequential()
+            .domain(d3.extent(data))
+            .interpolator(d3.interpolateYlOrRd)
+            // .range(d3.interpolateTurbo(0))
+        
+        // Rectangles
+        svg.append("g")
+            .selectAll("rect")
+            .data(data)
+            .join("rect")
+            .attr("width", box -3)
+            .attr("height", box -3)
+            .attr("transform", "translate(2, 2)")
+            .attr("x", (d, i) => box * (i % 5))
+            .attr("y", (d, i) => box * ((i / 5) | 0))
+            .attr("fill", d => colorScale(d))
+            .style("radius", 10)
+
+    }
+
+    let correlation = [];
+
+    d3.json("{% url 'metrics' %}").then(data => {
+        
+        data.forEach(d => {
+            correlation.push(d.total_cases)
+            correlation.push(d.new_cases)
+            correlation.push(d.recovered)
+            correlation.push(d.tested)
+            correlation.push(d.died)
+        });
+
+        heatmap(correlation);
+    })
+    
+</script>
+
+{% endaddtoblock %}
+
+{% addtoblock "css" %}
+<style>
+    .line{
+        fill: none;
+        stroke: #051014;
+        stroke-width: 2px;
+        stroke-linejoin: round;
+    }
+    .tick text{
+        font-size: 14px;
+        fill: #635f5d;
+    }
+    .tick line {
+        stroke: #c0c0bb;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .axis-label{
+        font-size: 14px;
+    }
+
+    #tooltip {
+        border: 1px solid #ccc;
+        position: absolute;
+        padding: 10px;
+        background-color: #fff;
+        display: none;
+        pointer-events: none;
+    }
+</style>
+{% endaddtoblock %}

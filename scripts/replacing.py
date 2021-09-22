@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import os 
 
 dataFrame = pd.read_excel(os.path.join("../dataSet/cleanData", "missingData.xlsx"), engine = "openpyxl")

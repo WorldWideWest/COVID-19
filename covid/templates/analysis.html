@@ -17,7 +17,6 @@
 
     <main>
         {% include "reports/intro.html" %}
-
         <article id="covid-new-cases">
             <h1 class="header-h1-content">Analysing the data</h1>
             <figure id="chart-1">
@@ -31,7 +30,6 @@
                 <caption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</caption>
             </figure>
             
-           {% include "reports/time-stamps.html" %}
             
             <p>
                 To better understand the relationships between the variables in the dataset we calculated the correlation coefficient in the <a href="#table-2">Table - 2</a>
@@ -43,6 +41,16 @@
                 <caption><strong>Table - 2</strong>: Correlation coefficient between for each column in the dataset</caption>
             </div>
         </article>
+        <figure id="chart-2">
+            <div id="chart-area">
+                <div id="tooltip">
+                    <div class="date"></div>
+                    <div class="cases"></div>
+                </div>
+            </div>
+            {% include "charts/heatmap.html" %}
+            <caption><strong>Chart - 1</strong>: Number of New Cases of COVID-19 virus in Bosnia and Herzegovina from April 2020. until Today</caption>
+        </figure>
     </main>
 
 {% endblock %}

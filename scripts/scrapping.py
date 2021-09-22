@@ -1,13 +1,11 @@
 import os
 import time
-import logging as lg
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from preprocessing import Preprocessing
 
 # Logging configuration 
-lg.basicConfig(level = lg.INFO)
 
 process = Preprocessing
 
@@ -40,28 +38,28 @@ driver = webdriver.Chrome(chrome_options = options)
 website = "https://ourworldindata.org/coronavirus#coronavirus-country-profiles"
 driver.get(website)
 
-lg.info(f"Found the website: { website }")
+print(f"Found the website: { website }")
 
 search = driver.find_element_by_id("react-select-2-input")
 search.send_keys("Bosnia and Herzegovina")
 search.send_keys(Keys.RETURN)
 
 xslx = driver.find_element_by_partial_link_text(".xslx").click()
-lg.info("Successfuly started the download of the owid-covid-data.xlsx")
+print("Successfuly started the download of the owid-covid-data.xlsx")
 
 while not os.path.exists("../dataSet/rawData/owid-covid-data.xlsx"):
     time.sleep(1)
-    lg.info("The file is successfuly downloading")
+    print("The file is successfuly downloading")
 
 if os.path.isfile("../dataSet/rawData/owid-covid-data.xlsx"):
     if os.path.isfile("../dataSet/rawData/intBH.xlsx"):
 
         os.remove("../dataSet/rawData/intBH.xlsx")
         os.rename("../dataSet/rawData/owid-covid-data.xlsx", "../dataSet/rawData/intBH.xlsx")
-        lg.info("Deleted unnececary files and renemed the owid-covid-data.xlsx to intBH.xlsx")
+        print("Deleted unnececary files and renemed the owid-covid-data.xlsx to intBH.xlsx")
     else:
         os.rename("../dataSet/rawData/owid-covid-data.xlsx", "../dataSet/rawData/intBH.xlsx")
-        lg.info("Renemed the owid-covid-data.xlsx to intBH.xlsx")
+        print("Renemed the owid-covid-data.xlsx to intBH.xlsx")
 
 driver.quit()
 
@@ -71,4 +69,4 @@ rawData = rawData.dropna(axis = 1)
 rawData = rawData[["date", "total_cases", "new_cases", "population"]]
 rawData.to_excel(os.path.join("../dataSet/rawData/", "intBH.xlsx"), index = False)
 
-lg.info(f"All operations of scraping and downloading are completed successfuly and the file is available at: ../dataSet/rawData/intBH.xlsx, locBH.xlsx")
+print(f"All operations of scraping and downloading are completed successfuly and the file is available at: ../dataSet/rawData/intBH.xlsx, locBH.xlsx")

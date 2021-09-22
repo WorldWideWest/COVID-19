@@ -9,8 +9,6 @@
    
     const draw = data =>  {
 
-        // const data = await d3.json("{% url 'api' %}");
-
         const width = 1000;
         const height = 400;
     
@@ -93,7 +91,7 @@
 
         // Title
         g.append('text')
-            .text("COVID-19 New Cases per day from March 2020. - Aug 2021.")
+            .text("COVID-19 New Cases per day from March 2020. - Today")
             .attr("x", innerWidth / 4)
             .attr("y", -10)
             .attr("class", "title");

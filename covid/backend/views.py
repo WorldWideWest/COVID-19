@@ -34,7 +34,7 @@ class MetricsView(APIView):
     def get(self, request, format = None):
         dataFrame = pd.DataFrame(
             list(Covid.objects.all().values('total_cases', 'new_cases', 'recovered', 'tested', 'died')))
-        corrFrame = dataFrame.corr().to_json(orient = "records")
+        corrFrame = dataFrame.corr().to_json(orient = "split")
         
         return Response(json.loads(corrFrame))
 

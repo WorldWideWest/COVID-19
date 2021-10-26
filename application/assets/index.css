@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#properties-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.DateRangePicker DateRangePicker_1{
+    width: 33%;
+}
+
+#x-axis-selector{
+    width: 33%;
+}
+
+#y-axis-selector{
+    width: 33%;
+}
+
+#correlation-analysis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}

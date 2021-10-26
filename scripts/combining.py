@@ -3,11 +3,11 @@ import os
 import pandas as pd
 
 ## Data import ##
-rawData = pd.read_excel(os.path.join("../dataSet/rawData/", "intBH.xlsx"), engine='openpyxl') # Data from ourworldindata.com
+rawData = pd.read_excel(os.path.join("../dataSet/", "rawIntBH.xlsx"), engine='openpyxl') # Data from ourworldindata.com
 rawData['date'] = rawData['date'].astype('datetime64')
 rawData['date'] = rawData['date'].dt.strftime('%d.%m.%Y')
 
-bih = pd.read_excel(os.path.join("../dataSet/rawData/", "locBH.xlsx"), engine='openpyxl') # Data from local agencies
+bih = pd.read_excel(os.path.join("../dataSet/", "locBH.xlsx"), engine='openpyxl') # Data from local agencies
 
 ## Extracting data ##
 
@@ -59,5 +59,5 @@ missingData = pd.DataFrame({
     "Missing Data": missingData,
     "Missing Pct": missingPct})
 
-fullDataFrame.to_excel(os.path.join("../dataSet/cleanData/", "missingData.xlsx"), index = False)
-missingData.to_excel(os.path.join("../dataSet/cleanData/", "missingDataValues.xlsx"), index = False)
+fullDataFrame.to_excel(os.path.join("../dataSet/", "rawData.xlsx"), index = False)
+missingData.to_excel(os.path.join("../dataSet/", "dataSetStatistics.xlsx"), index = False)

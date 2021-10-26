@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 
-def getDataFrame():
+
+def get_data(url:str) -> object:
     pd.set_option('colheader_justify', 'center') 
-    url = "http://127.0.0.1:8000/api/"
     get = requests.get(url)
     dataFrame = pd.read_json(get.content)
     dataFrame = dataFrame[['date', 'total_cases', 'new_cases', 'recovered', 'tested', 'died']]

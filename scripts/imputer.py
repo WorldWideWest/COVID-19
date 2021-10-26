@@ -3,7 +3,7 @@ import json
 import requests as re
 
 def job():
-    path = "../dataSet/cleanData/cleanData.xlsx"
+    path = "../dataSet/cleanData.xlsx"
     url = "http://127.0.0.1:8000/api/"
 
     data = pd.read_excel(path, engine = "openpyxl")

@@ -1,7 +1,7 @@
 import pandas as pd
 import os 
 
-dataFrame = pd.read_excel(os.path.join("../dataSet/cleanData", "missingData.xlsx"), engine = "openpyxl")
+dataFrame = pd.read_excel(os.path.join("../dataSet/", "rawData.xlsx"), engine = "openpyxl")
 
 
 startTestedAvg = int(sum(dataFrame.iloc[29:35, 5].values) / len(dataFrame.iloc[29:35, 5].values))
@@ -64,4 +64,4 @@ for colIndex, column in enumerate(dataFrame.columns):
                 avgValue = int(sum(dataFrame.iloc[startIndex : index - 1, colIndex]) / 5)
                 dataFrame.iloc[index, colIndex] = avgValue
 
-dataFrame.to_excel(os.path.join("../dataSet/cleanData", "cleanData.xlsx"), index = False)
+dataFrame.to_excel(os.path.join("../dataSet/", "cleanData.xlsx"), index = False)

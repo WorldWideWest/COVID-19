@@ -1,6 +1,6 @@
 from dash import dcc, html, Input, Output
-
-
+from datetime import datetime
+import plotly.graph_objects as go
 
 class Components(object):
 
@@ -22,6 +22,29 @@ class Components(object):
             value = options[default]["value"]
         )
 
+
+class Charts(object):
+    def donut_char(self, dataFrame:object, dependent:str, independent:str, title:str, startDate = None, endDate = None) -> dict:
+        # Date formating 
+        startDate = datetime.strptime(startDate, "%Y-%m-%d")
+        endDate = datetime.strptime(endDate, "%Y-%m-%d")
+
+        filtered = dataFrame[(dataFrame.index >= startDate) & (dataFrame.index <= endDate)]
+
+        # Filtering
+        values = [filtered[[independent]].mean()[0] / filtered[[dependent]].mean()[0]]
+        procentage = round((values[0] / values[1]) * 100, 2)
+        labels = [str(dependent), str(independent)]
+
+        data = [go.Pie(
+            labels = labels, values = values, hole = .5
+        )]
+
+        layout = go.Layout(
+            title = str(title),
+        )
+
+        return dict(data = data, layout = layout)
 
 
 DROPDOWN_STYLE = {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    background: rgb(0,0,0,.8);
 }
 
 #properties-panel{
@@ -10,6 +11,7 @@ body{
     align-items: flex-end;
     width: 100%;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .DateRangePicker DateRangePicker_1{
@@ -24,9 +26,13 @@ body{
     width: 33%;
 }
 
-#correlation-analysis{
+.flex-row{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 10px;
+    margin-top: 10px;
 }
+/* #main-svg{
+    background: rgb(f,f,f,.8);
+} */
